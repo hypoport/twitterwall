@@ -1,4 +1,4 @@
-twitterwall
-===========
+# Interactive Twitterwall
 
-Interaktive Twitterwall
+ Work in progress ...
+ 
