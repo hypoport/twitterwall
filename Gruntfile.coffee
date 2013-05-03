@@ -278,7 +278,7 @@ module.exports = (grunt) ->
 			unit:
 				options:
 					autoWatch: true
-					browsers: ['Chrome']
+					browsers: ['PhantomJS']
 					colors: true
 					configFile: './testacular.conf.js'
 					keepalive: true
