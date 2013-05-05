@@ -279,6 +279,14 @@ module.exports = (grunt) ->
 				PHANTOMJS_BIN: './node_modules/.bin/phantomjs'
 
 		karma:
+			server:
+				options:
+					autoWatch: true
+					colors: true
+					configFile: './karma.conf.js'
+					keepalive: true
+					port: 8081
+					reporters: ['progress']
 			unit:
 				options:
 					autoWatch: true
@@ -358,7 +366,13 @@ module.exports = (grunt) ->
 	grunt.registerTask 'test', [
 		'default'
 		'env:karma'
-		'karma'
+		'karma:unit'
+	]
+
+	grunt.registerTask 'test:server', [
+		'default'
+		'env:karma'
+		'karma:server'
 	]
 
 	# Starts a web server
