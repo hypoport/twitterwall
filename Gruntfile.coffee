@@ -279,24 +279,17 @@ module.exports = (grunt) ->
 				PHANTOMJS_BIN: './node_modules/.bin/phantomjs'
 
 		karma:
-			server:
-				options:
-					autoWatch: true
-					colors: true
-					configFile: './karma.conf.js'
-					keepalive: true
-					port: 8081
-					reporters: ['progress']
+			options:
+				autoWatch: true
+				colors: true
+				configFile: './karma.conf.js'
+				keepalive: true
+				port: 8081
+				reporters: ['progress']
+			server: {}
 			unit:
 				options:
-					autoWatch: true
 					browsers: ['PhantomJS']
-					colors: true
-					configFile: './karma.conf.js'
-					keepalive: true
-					port: 8081
-					reporters: ['progress']
-					runnerPort: 9100
 					singleRun: true
 
 		# Sets up file watchers and runs tasks when watched files are changed.
@@ -368,11 +361,8 @@ module.exports = (grunt) ->
 		'env:karma'
 		'karma:unit'
 	]
-
-	grunt.registerTask 'test:server', [
-		'default'
-		'env:karma'
-		'karma:server'
+	grunt.registerTask 'karma:run', [
+		'karma:server:run'
 	]
 
 	# Starts a web server
