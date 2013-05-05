@@ -273,14 +273,18 @@ module.exports = (grunt) ->
 				files: '<%= template.dev.files %>'
 				environment: 'prod'
 
-		# Runs unit tests using testacular
-		testacular:
+		# Runs unit tests using karma
+		env:
+			karma:
+				PHANTOMJS_BIN: './node_modules/.bin/phantomjs'
+
+		karma:
 			unit:
 				options:
 					autoWatch: true
 					browsers: ['PhantomJS']
 					colors: true
-					configFile: './testacular.conf.js'
+					configFile: './karma.conf.js'
 					keepalive: true
 					port: 8081
 					reporters: ['progress']
@@ -327,6 +331,11 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-contrib-requirejs'
 	grunt.loadNpmTasks 'grunt-contrib-watch'
 
+	# Register grunt env task
+	# Referenced in package.json.
+	# https://github.com/onehealth/grunt-env
+	grunt.loadNpmTasks 'grunt-env'
+
 	# Express server + LiveReload
 	grunt.loadNpmTasks 'grunt-express'
 
@@ -338,17 +347,18 @@ module.exports = (grunt) ->
 	# Recommended watcher for LiveReload + Express.
 	grunt.loadNpmTasks 'grunt-regarde'
 
-	# Register grunt tasks supplied by grunt-testacular.
+	# Register grunt tasks supplied by grunt-karma
 	# Referenced in package.json.
-	# https://github.com/Dignifiedquire/grunt-testacular
-	grunt.loadNpmTasks 'grunt-testacular'
+	# https://github.com/karma-runner/grunt-karma.git
+	grunt.loadNpmTasks 'grunt-karma'
 
 	# Compiles the app with non-optimized build settings, places the build artifacts in the dist directory, and runs unit tests.
 	# Enter the following command at the command line to execute this build task:
 	# grunt test
 	grunt.registerTask 'test', [
 		'default'
-		'testacular'
+		'env:karma'
+		'karma'
 	]
 
 	# Starts a web server
