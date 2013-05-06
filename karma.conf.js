@@ -1,7 +1,6 @@
 // list of files / patterns to load in the browser
+frameworks = ['jasmine']
 files = [
-	JASMINE,
-	JASMINE_ADAPTER,
 	'./dist/scripts/libs/angular.js',
 	'./dist/scripts/libs/angular-resource.js',
 	'./test/scripts/libs/angular-mocks.js',

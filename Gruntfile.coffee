@@ -274,10 +274,6 @@ module.exports = (grunt) ->
 				environment: 'prod'
 
 		# Runs unit tests using karma
-		env:
-			karma:
-				PHANTOMJS_BIN: './node_modules/.bin/phantomjs'
-
 		karma:
 			options:
 				autoWatch: true
@@ -351,14 +347,13 @@ module.exports = (grunt) ->
 	# Register grunt tasks supplied by grunt-karma
 	# Referenced in package.json.
 	# https://github.com/karma-runner/grunt-karma.git
-	grunt.loadNpmTasks 'grunt-karma'
+	grunt.loadNpmTasks 'grunt-karma-0.9.1'
 
 	# Compiles the app with non-optimized build settings, places the build artifacts in the dist directory, and runs unit tests.
 	# Enter the following command at the command line to execute this build task:
 	# grunt test
 	grunt.registerTask 'test', [
 		'default'
-		'env:karma'
 		'karma:unit'
 	]
 	grunt.registerTask 'karma:run', [
