@@ -12,10 +12,13 @@
 
 		<!--[if lte IE 8]> <script src="/scripts/libs/json2.js?v=<%= config.hash('./src/scripts/libs/json2.js') %>"></script> <script src="/scripts/libs/html5shiv-printshiv.js?v=<%= config.hash('./src/scripts/libs/html5shiv-printshiv.js') %>"></script> <![endif]-->
 
+		
+
 		<% if (config.environment === 'prod') { %>
-			<link rel="stylesheet" href="/styles/styles.min.css?v=<%= config.hash('./.temp/styles/styles.min.css') %>" />
+			<!--<link rel="stylesheet" href="/styles/styles.min.css?v=<%= config.hash('./.temp/styles/styles.min.css') %>" />-->
 		<% } else { %>
-			<link rel="stylesheet" href="/styles/styles.css?v=<%= config.hash('./.temp/styles/styles.css') %>" />
+			<!--<link rel="stylesheet" href="/styles/styles.css?v=<%= config.hash('./.temp/styles/styles.css') %>" />-->
+			<link rel="stylesheet" href="/styles/twitterwall.css" />
 		<% } %>
 
 		<!-- ClickJacking Defense begin (https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet) -->
@@ -37,6 +40,7 @@
 			}(window));
 		</script>
 		<!-- ClickJacking Defense end -->
+		
 	</head>
 	<body ng-cloak class="ng-cloak">
 		<ng:view></ng:view>
@@ -49,7 +53,7 @@
 			</div>
 			<div class="row">
 				<div class="span8">
-					<app:tabs>
+					<!--<app:tabs>
 						<app:tab data-tab-id="gitHub" caption="GitHub">
 							<section ng-controller="gitHubController">
 								<div class="alert alert-info" ng-show="!searchTerm.length">
@@ -100,10 +104,10 @@
 								</div>
 							</div>
 						</app:tab>
-					</app:tabs>
+					</app:tabs>-->
 				</div>
 				<div class="span4">
-					<h2>Search History</h2>
+					<!--<h2>Search History</h2>
 					<section ng-controller="searchHistoryController">
 						<form class="well form-search">
 							<input type="text" class="input-medium search-query" placeholder="Type filter..." ng-model="query" />
@@ -117,7 +121,7 @@
 								</div>
 							</li>
 						</ol>
-					</section>
+					</section>-->
 				</div>
 			</div>
 		</div>
