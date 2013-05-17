@@ -87,9 +87,8 @@
 </div>
 
 <div class="container">
-  <ng:view></ng:view>
-  Tweets ....
-  Schicke welche ;-)
+  <ng:view/>
+
 
 </div>
 
