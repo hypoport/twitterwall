@@ -4,6 +4,7 @@ require
 		'controllers/personController'       : deps: ['app', 'services/personService']
 		'controllers/personDetailsController': deps: ['app', 'services/personService']
 		'controllers/searchHistoryController': deps: ['app', 'services/messageService']
+		'controllers/tweetController'        : deps: ['app']
 		'directives/ngController'            : deps: ['app']
 		'directives/tab'                     : deps: ['app']
 		'directives/tabs'                    : deps: ['app', 'directives/tab']
@@ -24,6 +25,7 @@ require
 		'controllers/personController'
 		'controllers/personDetailsController'
 		'controllers/searchHistoryController'
+		'controllers/tweetController'
 		'directives/ngController'
 		'directives/tabs'
 		'filters/twitterfy'

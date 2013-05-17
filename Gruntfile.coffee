@@ -75,6 +75,14 @@ module.exports = (grunt) ->
 					dest: './.temp/'
 					expand: true
 				]
+			# Copies css directory to temp.
+			css:
+				files: [
+					cwd: './src/'
+					src: 'css/**/*.css'
+					dest: './.temp/'
+					expand: true
+				]
 			# Copies js files to the temp directory
 			js:
 				files: [
@@ -96,6 +104,7 @@ module.exports = (grunt) ->
 					cwd: './.temp/'
 					src: [
 						'img/**/*.png'
+            'css/**/*.css'
 						'scripts/libs/html5shiv-printshiv.js'
 						'scripts/libs/json2.js'
 						'scripts/scripts.min.js'
@@ -393,6 +402,7 @@ module.exports = (grunt) ->
 		'less'
 		'template:views'
 		'copy:img'
+		'copy:css'
 		'template:dev'
 		'copy:dev'
 	]

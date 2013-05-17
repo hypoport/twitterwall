@@ -1,0 +1,23 @@
+<h1>Oins</h1>
+
+<div class="container">
+  <div>
+    <ul>
+      <li ng-repeat="tweet in tweets">
+        <div class="well tweet-box">
+          <div class="tweet-text-and-user">
+            <div class="tweet-text pull-left" id="tweetText{{$index}}">{{tweet.text}}</div>
+            <span class="pull-right">
+              <img src="{{tweet.profile_image_url}}" alt="avatar" width="64px">
+              <br>
+              <span class=" tweet-user">{{tweet.from_user}}</span>
+            </span>
+
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>
