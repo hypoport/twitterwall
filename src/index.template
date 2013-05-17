@@ -13,12 +13,12 @@
 		<!--[if lte IE 8]> <script src="/scripts/libs/json2.js?v=<%= config.hash('./src/scripts/libs/json2.js') %>"></script> <script src="/scripts/libs/html5shiv-printshiv.js?v=<%= config.hash('./src/scripts/libs/html5shiv-printshiv.js') %>"></script> <![endif]-->
 
 		
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
 		<% if (config.environment === 'prod') { %>
-			<!--<link rel="stylesheet" href="/styles/styles.min.css?v=<%= config.hash('./.temp/styles/styles.min.css') %>" />-->
+			<link rel="stylesheet" href="/styles/styles.min.css?v=<%= config.hash('./.temp/styles/styles.min.css') %>" />
 		<% } else { %>
-			<!--<link rel="stylesheet" href="/styles/styles.css?v=<%= config.hash('./.temp/styles/styles.css') %>" />-->
-			<link rel="stylesheet" href="/styles/twitterwall.css" />
+			<link rel="stylesheet" href="/styles/styles.css?v=<%= config.hash('./.temp/styles/styles.css') %>" />
 		<% } %>
 
 		<!-- ClickJacking Defense begin (https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet) -->
@@ -44,87 +44,77 @@
 	</head>
 	<body ng-cloak class="ng-cloak">
 		<ng:view></ng:view>
-		<div class="container">
-			<div class="hero-unit">
-				<h1>Playing with <a href="http://angularjs.org" target="_blank">AngularJS</a></h1>
-				<p>and also <a href="http://requirejs.org/" target="_blank">RequireJS</a></p>
-				<p>Dynamically loading dependencies in <b>dev</b>, but minimize the hell out of it for <b>prod</b>.</p>
-				<p>RequireJS is only used for dev and build.</p>
-			</div>
-			<div class="row">
-				<div class="span8">
-					<!--<app:tabs>
-						<app:tab data-tab-id="gitHub" caption="GitHub">
-							<section ng-controller="gitHubController">
-								<div class="alert alert-info" ng-show="!searchTerm.length">
-									<h4 class="alert-heading">Heads up!</h4>
-									<span>Enter GitHub search criteria.</span>
-								</div>
+		
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
 
-								<form class="well form-search" ng-submit="search(searchTerm)">
-									<input type="text" class="input-medium search-query" ng-model="searchTerm" />
-									<button type="submit" class="btn"><i class="icon-search"></i> Search</button>
-								</form>
+      <a class="brand ueberschrift" href="#">Hypoport Twitterwall</a>
 
-								<div ng-include="'/views/repos.html'"></div>
-							</section>
-						</app:tab>
-						<app:tab data-tab-id="people" caption="People">
-							<div class="row">
-								<div class="span6">
-									<section ng-controller="personController">
-										<div class="alert alert-error" ng-show="!!error">
-											<h4 class="alert-heading" ng-bind="error.title"></h4>
-											<span ng-bind="error.message"></span>
-										</div>
+      <div class="nav-collapse collapse">
+        <ul class="nav nav-pills">
+                          <li>
+                            <a href="../v1/twitterwall.html#/{{searchValue}}">
+                              1
+                            </a>
+                          </li>
+                          <li>
+                            <a href="../v2/twitterwall.html#/{{searchValue}}">
+                              2
+                            </a>
+                          </li>
+                          <li>
+                            <a href="../v3/twitterwall.html#/{{searchValue}}">
+                              3
+                            </a>
+                          </li>
+                          <li class="active">
+                            <a href="../v4/twitterwall.html#/{{searchValue}}">
+                              4
+                            </a>
+                          </li>
+                          <li>
+                            <a href="../vaudio/twitterwall.html#/{{searchValue}}">
+                              5
+                            </a>
+                          </li>
+                        </ul>
+        <form class="navbar-form pull-right">
+          <input class="span2" type="text" placeholder="Hashtag" ng-model="searchValue">
+          <button class="btn" ng-click="doTwitterSearch()"><i class="icon-search"></i></button>
+        </form>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
 
-										<form class="well form-search" ng-submit="insertPerson(person)">
-											<p>
-												<span class="label label-info">Heads up!</span>
-												<span class="text-info">Try adding a duplicate name.</span>
-											</p>
+<div class="container">
+  <div id="audio"></div>
+  <div>
+    <ul>
+      <li ng-repeat="tweet in tweets">
+        <div class="well tweet-box">
+          <div class="tweet-text-and-user">
+            <div class="tweet-text pull-left" id="tweetText{{$index}}" >{{tweet.text}}</div>
+            <span class="pull-right">
+              <img src="{{tweet.profile_image_url}}" alt="avatar">
+              <br>
+              <span class=" tweet-user">{{tweet.from_user}}</span>
+            </span>
+            <div class="clearfix"></div>
+          </div>
+          <div class="tweet-text-audio pull-right">
+            <button class="btn btn-mini" ng-click="readTweet($index)"><i class="icon-play"></i></button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
 
-											<input type="text" class="input-medium" ng-model="person.name" placeholder="Name" />
-											<input type="text" class="input-small" ng-model="person.age" placeholder="Age" />
-											<button type="submit" class="btn"><i class="icon-plus"></i> Add Person</button>
-										</form>
+</div>
 
-										<div ng-include="'/views/people.html'"></div>
-									</section>
-								</div>
-								<div class="span2">
-									<section ng-controller="personDetailsController">
-										<dl>
-											<dt>Name</dt>
-											<dd ng-bind="person.name"></dd>
-											<dt>Age</dt>
-											<dd ng-bind="person.age"></dd>
-										</dl>
-									</section>
-								</div>
-							</div>
-						</app:tab>
-					</app:tabs>-->
-				</div>
-				<div class="span4">
-					<!--<h2>Search History</h2>
-					<section ng-controller="searchHistoryController">
-						<form class="well form-search">
-							<input type="text" class="input-medium search-query" placeholder="Type filter..." ng-model="query" />
-							<label ng-bind-template="Displaying:  {{(searchHistory | filter:query).length}}"></label>
-						</form>
-
-						<ol ng-hide="!searchHistory.length">
-							<li ng-animate=" 'wave' " ng-repeat="item in searchHistory | filter:query | orderBy:'timeStamp':true">
-								<div class="floatNone">
-									{{item.source}}/{{item.criteria}}
-								</div>
-							</li>
-						</ol>
-					</section>-->
-				</div>
-			</div>
-		</div>
+<script type="text/javascript" src="TweetController.js"></script>
 
 		<% if (config.environment === 'prod') { %>
 			<script src="/scripts/scripts.min.js?v=<%= config.hash('./.temp/scripts/scripts.min.js') %>"></script>
