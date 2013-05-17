@@ -1,19 +1,16 @@
 angular.module('app').config ['$routeProvider', ($routeProvider) ->
 	$routeProvider
-	.when '/github/:searchTerm',
-		controller: 'gitHubController'
-		reloadOnSearch: true
-		resolve:
-			changeTab: ['$rootScope', ($rootScope) ->
-				$rootScope.$broadcast 'changeTab#gitHub'
-			]
-	.when '/people/:id',
-		controller: 'personDetailsController'
-		reloadOnSearch: true
-		resolve:
-			changeTab: ['$rootScope', ($rootScope) ->
-				$rootScope.$broadcast 'changeTab#people'
-			]
-	.otherwise
-		redirectTo: '/github'
+	.when '/1',
+    templateUrl: '/views/visual1.html'
+  .when '/2',
+    templateUrl: '/views/visual2.html'
+#	.when '/people/:id',
+#		controller: 'personDetailsController'
+#		reloadOnSearch: true
+#		resolve:
+#			changeTab: ['$rootScope', ($rootScope) ->
+#				$rootScope.$broadcast 'changeTab#people'
+#			]
+#	.otherwise
+#		redirectTo: ''
 ]

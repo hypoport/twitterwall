@@ -1,50 +1,57 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:ng="http://angularjs.org" xmlns:app="ignored"> <![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" xmlns:ng="http://angularjs.org" xmlns:app="ignored"> <![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9" xmlns:ng="http://angularjs.org" xmlns:app="ignored"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" xmlns:ng="http://angularjs.org" xmlns:app="ignored"> <!--<![endif]-->
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<title>Angular Fun</title>
-		<meta name="description" content="AngularJS Reference Architecture" />
-		<meta name="viewport" content="width=device-width" />
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:ng="http://angularjs.org" xmlns:app="ignored"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" xmlns:ng="http://angularjs.org" xmlns:app="ignored"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:ng="http://angularjs.org" xmlns:app="ignored"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:ng="http://angularjs.org"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>Angular Fun</title>
+  <meta name="description" content="AngularJS Reference Architecture"/>
+  <meta name="viewport" content="width=device-width"/>
 
-		<!--[if lte IE 8]> <script src="/scripts/libs/json2.js?v=<%= config.hash('./src/scripts/libs/json2.js') %>"></script> <script src="/scripts/libs/html5shiv-printshiv.js?v=<%= config.hash('./src/scripts/libs/html5shiv-printshiv.js') %>"></script> <![endif]-->
+  <!--[if lte IE 8]>
+  <script src="/scripts/libs/json2.js?v=<%= config.hash('./src/scripts/libs/json2.js') %>"></script>
+  <script
+      src="/scripts/libs/html5shiv-printshiv.js?v=<%= config.hash('./src/scripts/libs/html5shiv-printshiv.js') %>"></script>
+  <![endif]-->
 
-		
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-		<% if (config.environment === 'prod') { %>
-			<link rel="stylesheet" href="/styles/styles.min.css?v=<%= config.hash('./.temp/styles/styles.min.css') %>" />
-		<% } else { %>
-			<link rel="stylesheet" href="/styles/styles.css?v=<%= config.hash('./.temp/styles/styles.css') %>" />
-		<% } %>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-		<!-- ClickJacking Defense begin (https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet) -->
-		<style id="antiClickjack">
-			body {
-				display: none !important;
-			}
-		</style>
+  <% if (config.environment === 'prod') { %>
+  <link rel="stylesheet" href="/styles/styles.min.css?v=<%= config.hash('./.temp/styles/styles.min.css') %>"/>
+  <% } else { %>
+  <link rel="stylesheet" href="/styles/styles.css?v=<%= config.hash('./.temp/styles/styles.css') %>"/>
+  <% } %>
 
-		<script>
-			(function (win) {
-				if (win.top === win.self) {
-					var antiClickjack = win.document.getElementById('antiClickjack');
+  <!-- ClickJacking Defense begin (https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet) -->
+  <style id="antiClickjack">
+    body {
+      display: none !important;
+    }
+  </style>
 
-					antiClickjack.parentNode.removeChild(antiClickjack);
-				} else {
-					win.top.location = win.self.location;
-				}
-			}(window));
-		</script>
-		<!-- ClickJacking Defense end -->
-		
-	</head>
-	<body ng-cloak class="ng-cloak">
-		<ng:view></ng:view>
-		
+  <script>
+    (function (win) {
+      if (win.top === win.self) {
+        var antiClickjack = win.document.getElementById('antiClickjack');
+
+        antiClickjack.parentNode.removeChild(antiClickjack);
+      } else {
+        win.top.location = win.self.location;
+      }
+    }(window));
+  </script>
+  <!-- ClickJacking Defense end -->
+
+</head>
+<body ng-cloak class="ng-cloak">
+
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
@@ -53,32 +60,22 @@
 
       <div class="nav-collapse collapse">
         <ul class="nav nav-pills">
-                          <li>
-                            <a href="../v1/twitterwall.html#/{{searchValue}}">
-                              1
-                            </a>
-                          </li>
-                          <li>
-                            <a href="../v2/twitterwall.html#/{{searchValue}}">
-                              2
-                            </a>
-                          </li>
-                          <li>
-                            <a href="../v3/twitterwall.html#/{{searchValue}}">
-                              3
-                            </a>
-                          </li>
-                          <li class="active">
-                            <a href="../v4/twitterwall.html#/{{searchValue}}">
-                              4
-                            </a>
-                          </li>
-                          <li>
-                            <a href="../vaudio/twitterwall.html#/{{searchValue}}">
-                              5
-                            </a>
-                          </li>
-                        </ul>
+          <li>
+            <a href="#/1">
+              1
+            </a>
+          </li>
+          <li>
+            <a href="#/2">
+              2
+            </a>
+          </li>
+          <li>
+            <a href="#/3">
+              3
+            </a>
+          </li>
+        </ul>
         <form class="navbar-form pull-right">
           <input class="span2" type="text" placeholder="Hashtag" ng-model="searchValue">
           <button class="btn" ng-click="doTwitterSearch()"><i class="icon-search"></i></button>
@@ -90,36 +87,19 @@
 </div>
 
 <div class="container">
-  <div id="audio"></div>
-  <div>
-    <ul>
-      <li ng-repeat="tweet in tweets">
-        <div class="well tweet-box">
-          <div class="tweet-text-and-user">
-            <div class="tweet-text pull-left" id="tweetText{{$index}}" >{{tweet.text}}</div>
-            <span class="pull-right">
-              <img src="{{tweet.profile_image_url}}" alt="avatar">
-              <br>
-              <span class=" tweet-user">{{tweet.from_user}}</span>
-            </span>
-            <div class="clearfix"></div>
-          </div>
-          <div class="tweet-text-audio pull-right">
-            <button class="btn btn-mini" ng-click="readTweet($index)"><i class="icon-play"></i></button>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
+  <ng:view></ng:view>
+  Tweets ....
+  Schicke welche ;-)
 
 </div>
 
-<script type="text/javascript" src="TweetController.js"></script>
+<!--<script type="text/javascript" src="TweetController.js"></script>-->
 
-		<% if (config.environment === 'prod') { %>
-			<script src="/scripts/scripts.min.js?v=<%= config.hash('./.temp/scripts/scripts.min.js') %>"></script>
-		<% } else { %>
-			<script data-main="/scripts/main.js" src="/scripts/libs/require.js?v=<%= config.hash('./.temp/scripts/libs/require.js') %>"></script>
-		<% } %>
-	</body>
+<% if (config.environment === 'prod') { %>
+<script src="/scripts/scripts.min.js?v=<%= config.hash('./.temp/scripts/scripts.min.js') %>"></script>
+<% } else { %>
+<script data-main="/scripts/main.js"
+        src="/scripts/libs/require.js?v=<%= config.hash('./.temp/scripts/libs/require.js') %>"></script>
+<% } %>
+</body>
 </html>
