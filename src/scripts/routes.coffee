@@ -5,6 +5,10 @@ angular.module('app').config ['$routeProvider', ($routeProvider) ->
       controller: 'tweetController'
     .when '/2',
       templateUrl: '/views/visual2.html'
+    .when '/3',
+      templateUrl: '/views/visual3.html'
+      controller: 'tweetListController'
+
 #	.when '/people/:id',
 #		controller: 'personDetailsController'
 #		reloadOnSearch: true
@@ -14,4 +18,5 @@ angular.module('app').config ['$routeProvider', ($routeProvider) ->
 #			]
 #	.otherwise
 #		redirectTo: ''
+
 ]
