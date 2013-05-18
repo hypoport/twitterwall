@@ -6,7 +6,7 @@
       <li ng-repeat="tweet in tweets">
         <div class="well tweet-box">
           <div class="tweet-text-and-user">
-            <div class="tweet-text pull-left"">{{tweet.text}}</div>
+            <div class="tweet-text pull-left">{{tweet.text}}</div>
             <span class="pull-right">
               <img ng-src="{{tweet.profile_image_url}}" alt="avatar" width="64px">
               <br>
