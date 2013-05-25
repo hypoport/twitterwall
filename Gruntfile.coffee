@@ -72,9 +72,9 @@ module.exports = (grunt) ->
 				files: [
 					cwd: './src/'
 					src: [
-            'img/**/*.png'
-            'img/**/*.ico'
-          ]
+						'img/**/*.png'
+						'img/**/*.ico'
+					]
 					dest: './.temp/'
 					expand: true
 				]
@@ -108,7 +108,7 @@ module.exports = (grunt) ->
 					src: [
 						'img/**/*.png'
 						'img/**/*.ico'
-            'css/**/*.css'
+						'css/**/*.css'
 						'scripts/libs/html5shiv-printshiv.js'
 						'scripts/libs/json2.js'
 						'scripts/scripts.min.js'
@@ -170,9 +170,9 @@ module.exports = (grunt) ->
 				files: [
 					cwd: './src/'
 					src: [
-            'img/**/*.png'
-            'img/**/*.ico'
-          ]
+						'img/**/*.png'
+						'img/**/*.ico'
+					]
 					dest: './.temp/'
 					expand: true
 				]
