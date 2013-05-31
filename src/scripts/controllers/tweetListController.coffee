@@ -1,9 +1,11 @@
-angular.module('app').controller 'tweetListController', ['$scope', 'twitterSearchServiceMock', ($scope, twitterSearchServiceMock) ->
+angular.module('app').controller 'tweetListController', ['$scope', '$routeParams', 'twitterSearchService', ($scope, $routeParams, twitterSearchService) ->
 
   $scope.tweets = []
   $scope.tweetLimit = 4;
 
-  twitterSearchServiceMock.addNewTweetCallback (tweets) ->
+  # query-string ermitteln
+
+  twitterSearchService.start $routeParams.query, (tweets) ->
     for tweet in tweets
       addNewTweet(tweet)
 

@@ -1,7 +1,7 @@
 angular.module('app').service 'twitterSearchServiceMock', ['$log', '$timeout', ($log, $timeout) ->
   self = @
 
-  addNewTweetCallback = (callback) ->
+  self.start = (query, callback) ->
     $timeout broadCastNewTweet = ->
       mockedTweets = [
         "text": "Compassion -- that's the one things no machine ever had. Maybe it's the one thing that keeps men ahead of them."
@@ -53,7 +53,4 @@ angular.module('app').service 'twitterSearchServiceMock', ['$log', '$timeout', (
       $timeout(broadCastNewTweet, 5000)
     ,
     5000
-
-  self.addNewTweetCallback = addNewTweetCallback
-
 ]
