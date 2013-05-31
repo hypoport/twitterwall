@@ -1,8 +1,8 @@
-angular.module('app').service 'twitterSearchService', ['$log', '$timeout' ($log, $timeout) ->
+angular.module('app').service 'twitterSearchService', ['$log', '$timeout', '$http', ($log, $timeout, $http) ->
   self = @
 
   self.start = (query, callback) ->
-    $http(->
+    $http(
       "method": "GET"
       "url": "http://search.twitter.com/search.json"
       "params":

@@ -5,7 +5,7 @@ require
 		'controllers/personDetailsController': deps: ['app', 'services/personService']
 		'controllers/searchHistoryController': deps: ['app', 'services/messageService']
 		'controllers/tweetController'        : deps: ['app']
-		'controllers/tweetListController'    : deps: ['app', 'services/twitterSearchServiceMock']
+		'controllers/tweetListController'    : deps: ['app']
 		'directives/ngController'            : deps: ['app']
 		'directives/tab'                     : deps: ['app']
 		'directives/tabs'                    : deps: ['app', 'directives/tab']
@@ -15,7 +15,7 @@ require
 		'services/gitHubService'             : deps: ['app', 'services/messageService']
 		'services/messageService'            : deps: ['app']
 		'services/personService'             : deps: ['app']
-		'services/twitterSearchServiceMock'  : deps: ['app']
+		'services/twitterSearchService'      : deps: ['app']
 		'app'                                : deps: ['libs/angular', 'libs/angular-resource']
 		'bootstrap'                          : deps: ['app']
 		'routes'                             : deps: ['app']
@@ -29,6 +29,7 @@ require
 		'controllers/searchHistoryController'
 		'controllers/tweetController'
 		'controllers/tweetListController'
+		'services/twitterSearchService'
 		'directives/ngController'
 		'directives/tabs'
 		'filters/twitterfy'

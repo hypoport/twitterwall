@@ -1,4 +1,5 @@
-angular.module('app').service 'twitterSearchServiceMock', ['$log', '$timeout', ($log, $timeout) ->
+require(['app'])
+angular.module('app').service 'twitterSearchService', ['$log', '$timeout', ($log, $timeout) ->
   self = @
 
   self.start = (query, callback) ->
