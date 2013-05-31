@@ -1,7 +1,7 @@
 angular.module('app').controller 'tweetListController', ['$scope', '$routeParams', 'twitterSearchService', ($scope, $routeParams, twitterSearchService) ->
 
   $scope.tweets = []
-  $scope.tweetLimit = 4;
+  $scope.tweetLimit = 37;
 
   # query-string ermitteln
 
