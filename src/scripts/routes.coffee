@@ -1,5 +1,7 @@
-angular.module('app').config ['$routeProvider', ($routeProvider) ->
-  $routeProvider
+define(type: 'config', definition: [
+  '$routeProvider',
+  ($routeProvider) ->
+    $routeProvider
     .when '/1',
       templateUrl: '/views/visual1.html'
       controller: 'tweetController'
@@ -8,15 +10,4 @@ angular.module('app').config ['$routeProvider', ($routeProvider) ->
     .when '/3/:query',
       templateUrl: '/views/visual3.html'
       controller: 'tweetListController'
-
-#	.when '/people/:id',
-#		controller: 'personDetailsController'
-#		reloadOnSearch: true
-#		resolve:
-#			changeTab: ['$rootScope', ($rootScope) ->
-#				$rootScope.$broadcast 'changeTab#people'
-#			]
-#	.otherwise
-#		redirectTo: ''
-
-]
+])

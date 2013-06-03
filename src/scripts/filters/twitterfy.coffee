@@ -1,3 +1,5 @@
-angular.module('app').filter 'twitterfy', ['$log', ($log) -> (username) ->
-	"@#{username}"
-]
+define(type: 'filter', definition: [
+  '$log'
+  ($log) ->
+    (username) -> "@#{username}"
+])
