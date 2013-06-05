@@ -273,9 +273,9 @@ module.exports = (grunt) ->
 		# In environments other than 'prod' the individual files are used and loaded with RequireJS.
 		#
 		# <% if (config.environment === 'prod') { %>
-		# 	<script src="/scripts/scripts.min.js?v=<%= config.hash('./.temp/scripts/scripts.min.js') %>"></script>
+		# 	<script src="scripts/scripts.min.js?v=<%= config.hash('./.temp/scripts/scripts.min.js') %>"></script>
 		# <% } else { %>
-		# 	<script data-main="/scripts/main.js" src="/scripts/libs/require.js"></script>
+		# 	<script data-main="scripts/main.js" src="/scripts/libs/require.js"></script>
 		# <% } %>
 		template:
 			views:
