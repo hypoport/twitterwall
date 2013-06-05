@@ -7,7 +7,7 @@
           <div class="tweet-text-and-user">
             <div class="tweet-text pull-left" id="tweetText{{$index}}">{{tweet.text}}</div>
             <span class="pull-right">
-              <img src="{{tweet.profile_image_url}}" alt="avatar" width="64px">
+              <img ng-src="{{tweet.profile_image_url}}" alt="avatar" width="64px">
               <br>
               <span class=" tweet-user">{{tweet.from_user}}</span>
             </span>
