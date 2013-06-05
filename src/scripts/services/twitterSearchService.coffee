@@ -24,6 +24,6 @@ define(type: "service", definition : [
             []
         )
       )()
-    @stop = ->
+    @.stop = ->
       running = false
 ])
