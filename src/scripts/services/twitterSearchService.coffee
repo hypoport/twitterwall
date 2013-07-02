@@ -17,11 +17,12 @@ define(type: "service", definition : [
           (data, status, headers, config) ->
 #            $timeout(repeated, 5000)
             max_id = data.max_id_str
-            callback(data.results, null)
+            callback(data.results)
         )
         .error(
           (data, status, headers, config) ->
-            callback(null, headers.status)
+#            no concret error message received; headers are empty
+            callback({error:{message : "Anfrage war fehlerhaft."}})
         )
       )()
     @.stop = ->

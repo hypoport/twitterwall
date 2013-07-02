@@ -1,7 +1,7 @@
 <div class="container">
 
-  <div ng-model="error">
-    Error-Message: {{ message }}
+  <div>
+    Fehler: {{ error.message }}
   </div>
 
   <div>
