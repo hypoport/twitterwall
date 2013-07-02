@@ -1,6 +1,6 @@
 define(type: 'controller', definition: [
-  '$scope', '$routeParams', 'twitterSearchService',
-  ($scope, $routeParams, twitterSearchService) ->
+  '$scope', '$routeParams', 'twitterSearchService', 'oauthTokenService',
+  ($scope, $routeParams, twitterSearchService, oauthTokenService) ->
     $scope.tweets = []
     $scope.tweetLimit = 7;
 
@@ -11,7 +11,7 @@ define(type: 'controller', definition: [
     showError = (error) ->
       $scope.error = error
 
-    # query-string ermitteln
+# query-string ermitteln
     twitterSearchService.start(
       $routeParams.query
       (tweets) ->

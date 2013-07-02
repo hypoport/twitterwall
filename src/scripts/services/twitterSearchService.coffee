@@ -7,6 +7,8 @@ define(type: "service", definition : [
       (repeated = ->
         $http.jsonp(
           "https://api.twitter.com/1.1/search/tweets.json"
+          'headers' :
+            'Authorization' : 'Basic xxx'
           'params':
             'q': query
             'include_entities': "true"
