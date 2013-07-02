@@ -8,11 +8,17 @@ define(type: 'controller', definition: [
       $scope.tweets.unshift(tweet)
       $scope.tweets = $scope.tweets.slice(0, $scope.tweetLimit)
 
+    showError = (error) ->
+      $scope.errors.push(error)
+
     # query-string ermitteln
     twitterSearchService.start(
       $routeParams.query
-      (tweets) ->
-        for tweet in tweets
-          addNewTweet(tweet)
+      (tweets, error) ->
+        if error
+          showError(error)
+        if tweets
+          for tweet in tweets
+            addNewTweet(tweet)
     )
 ])

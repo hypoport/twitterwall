@@ -6,7 +6,7 @@ define(type: "service", definition : [
       max_id = "0"
       (repeated = ->
         $http.jsonp(
-          "http://search.twitter.com/search.json"
+          "https://api.twitter.com/1.1/search/tweets.json"
           'params':
             'q': query
             'include_entities': "true"
@@ -15,13 +15,13 @@ define(type: "service", definition : [
         )
         .success(
           (data, status, headers, config) ->
-            $timeout(repeated, 5000)
+#            $timeout(repeated, 5000)
             max_id = data.max_id_str
-            callback(data.results)
+            callback(data.results, null)
         )
         .error(
           (data, status, headers, config) ->
-            []
+            callback(null, headers.status)
         )
       )()
     @.stop = ->

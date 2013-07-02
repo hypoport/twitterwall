@@ -1,5 +1,8 @@
-
 <div class="container">
+
+  <div ng-model="error">
+    Error-Message: {{ message }}
+  </div>
 
   <div>
     <ul>
