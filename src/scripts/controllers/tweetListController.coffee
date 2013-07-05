@@ -1,6 +1,6 @@
 define(type: 'controller', definition: [
-  '$scope', '$routeParams', 'twitterSearchService', 'oauthTokenService',
-  ($scope, $routeParams, twitterSearchService, oauthTokenService) ->
+  '$scope', '$routeParams', 'twitterSearchService',
+  ($scope, $routeParams, twitterSearchService) ->
     $scope.tweets = []
     $scope.tweetLimit = 7;
 
