@@ -2,13 +2,14 @@ define(type: "service", definition : [
   '$log','$timeout','$http',
   ($log,  $timeout,  $http) ->
     @.start = (query, callback) ->
+      $http.defaults.headers.common.Authorization = "Bearer xxxx"
       running = true
       max_id = "0"
       (repeated = ->
         $http.jsonp(
           "https://api.twitter.com/1.1/search/tweets.json"
-          'headers' :
-            'Authorization' : "Bearer xxxx"
+#          'headers' :
+#            'Authorization' :
           'params':
             'q': query
             'include_entities': "true"
@@ -26,6 +27,7 @@ define(type: "service", definition : [
 #            no concret error message received; headers are empty
             callback({error:{message : "Anfrage war fehlerhaft."}})
         )
+        $log.info($http.defaults.headers)
       )()
     @.stop = ->
       running = false
