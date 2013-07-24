@@ -14,7 +14,7 @@
               <span ng-repeat="t in tweet.text.split('')" ng-class="t{{$index}}">{{t}}</span>
             </div>
             <span class="pull-right">
-              <img ng-src="{{tweet.profile_image_url}}" alt="avatar" width="64px">
+              <img ng-src="{{tweet.user.profile_image_url}}" alt="avatar" width="64px">
               <br>
               <span class=" tweet-user">{{tweet.from_user}}</span>
             </span>

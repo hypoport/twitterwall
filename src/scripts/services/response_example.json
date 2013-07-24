@@ -1,0 +1,3045 @@
+{"statuses": [
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "en"
+    },
+    "created_at": "Wed Jul 24 18:24:13 +0000 2013",
+    "id": 360103137350123520,
+    "id_str": "360103137350123520",
+    "text": "RT @rodrigoslay: Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #\u2026",
+    "source": "\u003ca href=\"http:\/\/www.botize.com\" rel=\"nofollow\"\u003eBotize\u003c\/a\u003e",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 1611397302,
+      "id_str": "1611397302",
+      "name": "Vusco Bendo",
+      "screen_name": "VuscoBendo",
+      "location": "Chile",
+      "description": "#Informaci\u00f3n #RT #Publicidad #MKT m\u00e1s Mucho que",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 48,
+      "friends_count": 74,
+      "listed_count": 0,
+      "created_at": "Sun Jul 21 21:49:24 +0000 2013",
+      "favourites_count": 0,
+      "utc_offset": -10800,
+      "time_zone": "Atlantic Time (Canada)",
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 758,
+      "lang": "es",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/378800000029782818\/ec6b9bf233ec8851246cbdc0520d8639.jpeg",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/378800000029782818\/ec6b9bf233ec8851246cbdc0520d8639.jpeg",
+      "profile_background_tile": true,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/378800000168271305\/6216283c4f323d97122f6f9e8f385794_normal.jpeg",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/378800000168271305\/6216283c4f323d97122f6f9e8f385794_normal.jpeg",
+      "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/1611397302\/1374444089",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "metadata": {
+        "result_type": "recent",
+        "iso_language_code": "en"
+      },
+      "created_at": "Wed Jul 24 18:03:17 +0000 2013",
+      "id": 360097869342048256,
+      "id_str": "360097869342048256",
+      "text": "Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #Pymes @DonDatos RT",
+      "source": "web",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 15814088,
+        "id_str": "15814088",
+        "name": "Rodrigo Slay",
+        "screen_name": "rodrigoslay",
+        "location": "Santiago de Chile",
+        "description": "Anarquista, Productor, Bloguero, Bohemio y callejero por derecho propio, Aqu\u00ed veras links a noticias, eventos y un mont\u00f3n de locuras.. si me sigues te sigo...",
+        "url": "http:\/\/t.co\/GRzv1fxqVk",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/GRzv1fxqVk",
+                "expanded_url": "http:\/\/www.rodrigoslay.cl",
+                "display_url": "rodrigoslay.cl",
+                "indices": [0, 22]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1472,
+        "friends_count": 1825,
+        "listed_count": 4,
+        "created_at": "Mon Aug 11 21:23:15 +0000 2008",
+        "favourites_count": 50,
+        "utc_offset": -14400,
+        "time_zone": "Santiago",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 10534,
+        "lang": "es",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/15814088\/1372669717",
+        "profile_link_color": "DD5563",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DEDEDE",
+        "profile_text_color": "2B0C13",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": {
+        "id": "47a3cf27863714de",
+        "url": "https:\/\/api.twitter.com\/1.1\/geo\/id\/47a3cf27863714de.json",
+        "place_type": "country",
+        "name": "Chile",
+        "full_name": "Chile",
+        "country_code": "CL",
+        "country": "Chile",
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-75.6877144, -55.9775213],
+              [-66.3828747, -55.9775213],
+              [-66.3828747, -17.497384],
+              [-75.6877144, -17.497384]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "contributors": null,
+      "retweet_count": 25,
+      "favorite_count": 2,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "SitioWeb",
+            "indices": [8, 17]
+          },
+          {
+            "text": "hostingfree",
+            "indices": [72, 84]
+          },
+          {
+            "text": "Promo",
+            "indices": [114, 120]
+          },
+          {
+            "text": "Pymes",
+            "indices": [121, 127]
+          }
+        ],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "screen_name": "DonDatos",
+            "name": "Mercado de Datos",
+            "id": 327776933,
+            "id_str": "327776933",
+            "indices": [128, 137]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "retweet_count": 25,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "SitioWeb",
+          "indices": [25, 34]
+        },
+        {
+          "text": "hostingfree",
+          "indices": [89, 101]
+        },
+        {
+          "text": "Promo",
+          "indices": [131, 137]
+        }
+      ],
+      "symbols": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "screen_name": "rodrigoslay",
+          "name": "Rodrigo Slay",
+          "id": 15814088,
+          "id_str": "15814088",
+          "indices": [3, 15]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "en"
+    },
+    "created_at": "Wed Jul 24 18:24:09 +0000 2013",
+    "id": 360103122804281344,
+    "id_str": "360103122804281344",
+    "text": "RT @FidelityJobs: #Hiring Sr Software Engineer w\/non-native mobile dev. w\/#Java, #HTML5 &amp; #CSS3 exp #NCjobs #TriangleTuesdays http:\/\/t.co\/m\u2026",
+    "source": "\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 22523823,
+      "id_str": "22523823",
+      "name": "Tom Murry",
+      "screen_name": "Tom_Murry",
+      "location": "Morrisville, NC",
+      "description": "Husband & father (2 daughters); pharmacist, attorney, small businessman, & State Representative.",
+      "url": "http:\/\/t.co\/plxKX0amzT",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http:\/\/t.co\/plxKX0amzT",
+              "expanded_url": "http:\/\/www.mydistrict41.com",
+              "display_url": "mydistrict41.com",
+              "indices": [0, 22]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2066,
+      "friends_count": 2128,
+      "listed_count": 97,
+      "created_at": "Mon Mar 02 19:32:08 +0000 2009",
+      "favourites_count": 21,
+      "utc_offset": -14400,
+      "time_zone": "Eastern Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 4578,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "B9D1E8",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/118573099\/murry_twitter.jpg",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/118573099\/murry_twitter.jpg",
+      "profile_background_tile": false,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/1037455467\/Crop_white_coat_normal.jpg",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/1037455467\/Crop_white_coat_normal.jpg",
+      "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/22523823\/1370567506",
+      "profile_link_color": "1F33C7",
+      "profile_sidebar_border_color": "C6E2EE",
+      "profile_sidebar_fill_color": "DAECF4",
+      "profile_text_color": "191715",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "metadata": {
+        "result_type": "recent",
+        "iso_language_code": "en"
+      },
+      "created_at": "Tue Jul 23 12:35:49 +0000 2013",
+      "id": 359653073444016128,
+      "id_str": "359653073444016128",
+      "text": "#Hiring Sr Software Engineer w\/non-native mobile dev. w\/#Java, #HTML5 &amp; #CSS3 exp #NCjobs #TriangleTuesdays http:\/\/t.co\/mDu6jPIQ23",
+      "source": "\u003ca href=\"http:\/\/www.hootsuite.com\" rel=\"nofollow\"\u003eHootSuite\u003c\/a\u003e",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 395511307,
+        "id_str": "395511307",
+        "name": "FidelityJobs",
+        "screen_name": "FidelityJobs",
+        "location": "Boston, MA",
+        "description": "@FidelityJobs shares info about career opportunities & hiring events. Fidelity Investments is an equal opportunity employer. RTs do not constitute endorsement.",
+        "url": "http:\/\/t.co\/sy4a22QS53",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/sy4a22QS53",
+                "expanded_url": "http:\/\/fidelitycareers.com",
+                "display_url": "fidelitycareers.com",
+                "indices": [0, 22]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1168,
+        "friends_count": 496,
+        "listed_count": 14,
+        "created_at": "Fri Oct 21 19:40:39 +0000 2011",
+        "favourites_count": 1,
+        "utc_offset": -14400,
+        "time_zone": "Eastern Time (US & Canada)",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 1441,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "F6F7F2",
+        "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/378800000021360867\/09326e46e7aa3becc9ead52c5df3bb46.png",
+        "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/378800000021360867\/09326e46e7aa3becc9ead52c5df3bb46.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/1809137167\/FidelityJobs_logo_normal.png",
+        "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/1809137167\/FidelityJobs_logo_normal.png",
+        "profile_link_color": "50A742",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "FAFCF7",
+        "profile_text_color": "0A0A0A",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweet_count": 1,
+      "favorite_count": 0,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "Hiring",
+            "indices": [0, 7]
+          },
+          {
+            "text": "Java",
+            "indices": [56, 61]
+          },
+          {
+            "text": "HTML5",
+            "indices": [63, 69]
+          },
+          {
+            "text": "CSS3",
+            "indices": [76, 81]
+          },
+          {
+            "text": "NCjobs",
+            "indices": [86, 93]
+          },
+          {
+            "text": "TriangleTuesdays",
+            "indices": [94, 111]
+          }
+        ],
+        "symbols": [],
+        "urls": [
+          {
+            "url": "http:\/\/t.co\/mDu6jPIQ23",
+            "expanded_url": "http:\/\/go.fidelity.com\/7dxw",
+            "display_url": "go.fidelity.com\/7dxw",
+            "indices": [112, 134]
+          }
+        ],
+        "user_mentions": []
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+    "retweet_count": 1,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "Hiring",
+          "indices": [18, 25]
+        },
+        {
+          "text": "Java",
+          "indices": [74, 79]
+        },
+        {
+          "text": "HTML5",
+          "indices": [81, 87]
+        },
+        {
+          "text": "CSS3",
+          "indices": [94, 99]
+        },
+        {
+          "text": "NCjobs",
+          "indices": [104, 111]
+        },
+        {
+          "text": "TriangleTuesdays",
+          "indices": [112, 129]
+        }
+      ],
+      "symbols": [],
+      "urls": [
+        {
+          "url": "http:\/\/t.co\/m",
+          "expanded_url": "https:\/\/twitter.com\/download",
+          "display_url": "twitter.com\/download",
+          "indices": [130, 143]
+        }
+      ],
+      "user_mentions": [
+        {
+          "screen_name": "FidelityJobs",
+          "name": "FidelityJobs",
+          "id": 395511307,
+          "id_str": "395511307",
+          "indices": [3, 16]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "en"
+    },
+    "created_at": "Wed Jul 24 18:23:54 +0000 2013",
+    "id": 360103057947770880,
+    "id_str": "360103057947770880",
+    "text": "The HTML5 Vs. Native Apps Battle Broken Down http:\/\/t.co\/ZpJDWYwET7",
+    "source": "\u003ca href=\"http:\/\/itunes.apple.com\/us\/app\/feedly\/id396069556?mt=8&uo=4\" rel=\"nofollow\"\u003efeedly on iOS\u003c\/a\u003e",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 18798444,
+      "id_str": "18798444",
+      "name": "Alejandro Torres",
+      "screen_name": "atorresg",
+      "location": "Santiago, Chile",
+      "description": "Me entretiene hablar de: web, ciencia, mountain bike y la m\u00fasica; para el resto de cosas estoy muy ocupado. Soy Technical Lead en Prolam Y&R \/ Wunderman Stgo.",
+      "url": "http:\/\/t.co\/lcEMrLxkTg",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http:\/\/t.co\/lcEMrLxkTg",
+              "expanded_url": "http:\/\/atorresg.com\/",
+              "display_url": "atorresg.com",
+              "indices": [0, 22]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 490,
+      "friends_count": 323,
+      "listed_count": 12,
+      "created_at": "Fri Jan 09 10:59:39 +0000 2009",
+      "favourites_count": 22,
+      "utc_offset": -14400,
+      "time_zone": "Santiago",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 5726,
+      "lang": "es",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "1A1B1F",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/812632991\/3f4b174efc4bd40dd1493f74e8ec74c8.jpeg",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/812632991\/3f4b174efc4bd40dd1493f74e8ec74c8.jpeg",
+      "profile_background_tile": false,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3773569067\/bbbdc5327e82726c41716a65455d3a95_normal.jpeg",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3773569067\/bbbdc5327e82726c41716a65455d3a95_normal.jpeg",
+      "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/18798444\/1363079879",
+      "profile_link_color": "2FC2EF",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "252429",
+      "profile_text_color": "666666",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "urls": [
+        {
+          "url": "http:\/\/t.co\/ZpJDWYwET7",
+          "expanded_url": "http:\/\/feedproxy.google.com\/~r\/typepad\/alleyinsider\/silicon_alley_insider\/~3\/Tm6hhCjz3x4\/battle-between-html5-vs-native-apps-2013-77",
+          "display_url": "feedproxy.google.com\/~r\/typepad\/all\u2026",
+          "indices": [45, 67]
+        }
+      ],
+      "user_mentions": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "vi"
+    },
+    "created_at": "Wed Jul 24 18:23:32 +0000 2013",
+    "id": 360102969091428352,
+    "id_str": "360102969091428352",
+    "text": "Great reference for #csstransitions http:\/\/t.co\/zpIBjKbsHF\n#css3 #html5 #webdevelopment",
+    "source": "web",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 40048130,
+      "id_str": "40048130",
+      "name": "Calvin Chopp",
+      "screen_name": "calchuck",
+      "location": "Grand Rapids  MI, USA",
+      "description": "Designer. Developer. Artist. Happier outside.  Every day provides a new opportunity to inspire, and be inspired.",
+      "url": "http:\/\/t.co\/CIGow86l4w",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http:\/\/t.co\/CIGow86l4w",
+              "expanded_url": "http:\/\/www.dribbble.com\/calchuck",
+              "display_url": "dribbble.com\/calchuck",
+              "indices": [0, 22]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 91,
+      "friends_count": 201,
+      "listed_count": 0,
+      "created_at": "Thu May 14 18:01:41 +0000 2009",
+      "favourites_count": 7,
+      "utc_offset": -18000,
+      "time_zone": "Quito",
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 401,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "FFFFFF",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/344742951\/twitter-bg.jpg",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/344742951\/twitter-bg.jpg",
+      "profile_background_tile": false,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/1583803956\/run13_normal.jpg",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/1583803956\/run13_normal.jpg",
+      "profile_link_color": "C90D06",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "EBD063",
+      "profile_text_color": "3D3D3D",
+      "profile_use_background_image": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "csstransitions",
+          "indices": [20, 35]
+        },
+        {
+          "text": "css3",
+          "indices": [59, 64]
+        },
+        {
+          "text": "html5",
+          "indices": [65, 71]
+        },
+        {
+          "text": "webdevelopment",
+          "indices": [72, 87]
+        }
+      ],
+      "symbols": [],
+      "urls": [
+        {
+          "url": "http:\/\/t.co\/zpIBjKbsHF",
+          "expanded_url": "http:\/\/goo.gl\/DmTDy",
+          "display_url": "goo.gl\/DmTDy",
+          "indices": [36, 58]
+        }
+      ],
+      "user_mentions": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "vi"
+  },
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "th"
+    },
+    "created_at": "Wed Jul 24 18:23:20 +0000 2013",
+    "id": 360102917098840065,
+    "id_str": "360102917098840065",
+    "text": "@WN_Hc https:\/\/t.co\/iRkdfm2Bjm \u0e40\u0e23\u0e32\u0e0a\u0e2d\u0e1a\u0e40\u0e27\u0e2d\u0e23\u0e4c\u0e0a\u0e31\u0e48\u0e19\u0e19\u0e35\u0e49",
+    "source": "web",
+    "truncated": false,
+    "in_reply_to_status_id": 360100610189688833,
+    "in_reply_to_status_id_str": "360100610189688833",
+    "in_reply_to_user_id": 1006992572,
+    "in_reply_to_user_id_str": "1006992572",
+    "in_reply_to_screen_name": "WN_Hc",
+    "user": {
+      "id": 141875212,
+      "id_str": "141875212",
+      "name": "yyums",
+      "screen_name": "yyums",
+      "location": "",
+      "description": "\u0e01\u0e33\u0e25\u0e31\u0e07\u0e08\u0e30\u0e23\u0e31\u0e01\u0e15\u0e31\u0e27\u0e40\u0e2d\u0e07",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 162,
+      "friends_count": 124,
+      "listed_count": 1,
+      "created_at": "Sun May 09 08:25:42 +0000 2010",
+      "favourites_count": 4237,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 21704,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "EBEBEB",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/536268017\/1570.jpeg",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/536268017\/1570.jpeg",
+      "profile_background_tile": true,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/378800000138413144\/fa05191835782ab71ccbab999c28fa99_normal.jpeg",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/378800000138413144\/fa05191835782ab71ccbab999c28fa99_normal.jpeg",
+      "profile_link_color": "990000",
+      "profile_sidebar_border_color": "DFDFDF",
+      "profile_sidebar_fill_color": "F3F3F3",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "urls": [
+        {
+          "url": "https:\/\/t.co\/iRkdfm2Bjm",
+          "expanded_url": "https:\/\/www.youtube.com\/watch?v=I8tEcMjV_zE&html5=1",
+          "display_url": "youtube.com\/watch?v=I8tEcM\u2026",
+          "indices": [7, 30]
+        }
+      ],
+      "user_mentions": [
+        {
+          "screen_name": "WN_Hc",
+          "name": "\u0e04\u0e38\u0e13\u0e1b\u0e4a\u0e30\u0e23\u0e31\u0e01\u0e40\u0e0b\u0e2e\u0e38\u0e19\u0e19\u0e35\u0e48",
+          "id": 1006992572,
+          "id_str": "1006992572",
+          "indices": [0, 6]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": true,
+    "lang": "th"
+  },
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "en"
+    },
+    "created_at": "Wed Jul 24 18:23:07 +0000 2013",
+    "id": 360102863051034626,
+    "id_str": "360102863051034626",
+    "text": "RT @rodrigoslay: Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #\u2026",
+    "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003ezodiacodeamor web\u003c\/a\u003e",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 1241938730,
+      "id_str": "1241938730",
+      "name": "Zodiaco",
+      "screen_name": "zodiacodeamor",
+      "location": "En las Estrellas",
+      "description": "Lectura del taro, Zodiaco del Amor. Todo est\u00e1 escrito",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 561,
+      "friends_count": 119,
+      "listed_count": 6,
+      "created_at": "Mon Mar 04 18:31:15 +0000 2013",
+      "favourites_count": 234,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 66446,
+      "lang": "es",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3338792464\/174b6c317fede3258bbeb533190fd8ec_normal.jpeg",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3338792464\/174b6c317fede3258bbeb533190fd8ec_normal.jpeg",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "metadata": {
+        "result_type": "recent",
+        "iso_language_code": "en"
+      },
+      "created_at": "Wed Jul 24 18:03:17 +0000 2013",
+      "id": 360097869342048256,
+      "id_str": "360097869342048256",
+      "text": "Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #Pymes @DonDatos RT",
+      "source": "web",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 15814088,
+        "id_str": "15814088",
+        "name": "Rodrigo Slay",
+        "screen_name": "rodrigoslay",
+        "location": "Santiago de Chile",
+        "description": "Anarquista, Productor, Bloguero, Bohemio y callejero por derecho propio, Aqu\u00ed veras links a noticias, eventos y un mont\u00f3n de locuras.. si me sigues te sigo...",
+        "url": "http:\/\/t.co\/GRzv1fxqVk",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/GRzv1fxqVk",
+                "expanded_url": "http:\/\/www.rodrigoslay.cl",
+                "display_url": "rodrigoslay.cl",
+                "indices": [0, 22]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1472,
+        "friends_count": 1825,
+        "listed_count": 4,
+        "created_at": "Mon Aug 11 21:23:15 +0000 2008",
+        "favourites_count": 50,
+        "utc_offset": -14400,
+        "time_zone": "Santiago",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 10534,
+        "lang": "es",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/15814088\/1372669717",
+        "profile_link_color": "DD5563",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DEDEDE",
+        "profile_text_color": "2B0C13",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": {
+        "id": "47a3cf27863714de",
+        "url": "https:\/\/api.twitter.com\/1.1\/geo\/id\/47a3cf27863714de.json",
+        "place_type": "country",
+        "name": "Chile",
+        "full_name": "Chile",
+        "country_code": "CL",
+        "country": "Chile",
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-75.6877144, -55.9775213],
+              [-66.3828747, -55.9775213],
+              [-66.3828747, -17.497384],
+              [-75.6877144, -17.497384]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "contributors": null,
+      "retweet_count": 25,
+      "favorite_count": 2,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "SitioWeb",
+            "indices": [8, 17]
+          },
+          {
+            "text": "hostingfree",
+            "indices": [72, 84]
+          },
+          {
+            "text": "Promo",
+            "indices": [114, 120]
+          },
+          {
+            "text": "Pymes",
+            "indices": [121, 127]
+          }
+        ],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "screen_name": "DonDatos",
+            "name": "Mercado de Datos",
+            "id": 327776933,
+            "id_str": "327776933",
+            "indices": [128, 137]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "retweet_count": 25,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "SitioWeb",
+          "indices": [25, 34]
+        },
+        {
+          "text": "hostingfree",
+          "indices": [89, 101]
+        },
+        {
+          "text": "Promo",
+          "indices": [131, 137]
+        }
+      ],
+      "symbols": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "screen_name": "rodrigoslay",
+          "name": "Rodrigo Slay",
+          "id": 15814088,
+          "id_str": "15814088",
+          "indices": [3, 15]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "en"
+    },
+    "created_at": "Wed Jul 24 18:23:03 +0000 2013",
+    "id": 360102847649558528,
+    "id_str": "360102847649558528",
+    "text": "RT @rodrigoslay: Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #\u2026",
+    "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eobie_5 web\u003c\/a\u003e",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 1230648865,
+      "id_str": "1230648865",
+      "name": "Vicente Suarez",
+      "screen_name": "obie_5",
+      "location": "",
+      "description": "",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 765,
+      "friends_count": 122,
+      "listed_count": 5,
+      "created_at": "Fri Mar 01 17:45:49 +0000 2013",
+      "favourites_count": 234,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 66763,
+      "lang": "es",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3324723707\/f6bcf91f1501896c6cfeed797dd467c8_normal.jpeg",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3324723707\/f6bcf91f1501896c6cfeed797dd467c8_normal.jpeg",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "metadata": {
+        "result_type": "recent",
+        "iso_language_code": "en"
+      },
+      "created_at": "Wed Jul 24 18:03:17 +0000 2013",
+      "id": 360097869342048256,
+      "id_str": "360097869342048256",
+      "text": "Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #Pymes @DonDatos RT",
+      "source": "web",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 15814088,
+        "id_str": "15814088",
+        "name": "Rodrigo Slay",
+        "screen_name": "rodrigoslay",
+        "location": "Santiago de Chile",
+        "description": "Anarquista, Productor, Bloguero, Bohemio y callejero por derecho propio, Aqu\u00ed veras links a noticias, eventos y un mont\u00f3n de locuras.. si me sigues te sigo...",
+        "url": "http:\/\/t.co\/GRzv1fxqVk",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/GRzv1fxqVk",
+                "expanded_url": "http:\/\/www.rodrigoslay.cl",
+                "display_url": "rodrigoslay.cl",
+                "indices": [0, 22]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1472,
+        "friends_count": 1825,
+        "listed_count": 4,
+        "created_at": "Mon Aug 11 21:23:15 +0000 2008",
+        "favourites_count": 50,
+        "utc_offset": -14400,
+        "time_zone": "Santiago",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 10534,
+        "lang": "es",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/15814088\/1372669717",
+        "profile_link_color": "DD5563",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DEDEDE",
+        "profile_text_color": "2B0C13",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": {
+        "id": "47a3cf27863714de",
+        "url": "https:\/\/api.twitter.com\/1.1\/geo\/id\/47a3cf27863714de.json",
+        "place_type": "country",
+        "name": "Chile",
+        "full_name": "Chile",
+        "country_code": "CL",
+        "country": "Chile",
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-75.6877144, -55.9775213],
+              [-66.3828747, -55.9775213],
+              [-66.3828747, -17.497384],
+              [-75.6877144, -17.497384]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "contributors": null,
+      "retweet_count": 25,
+      "favorite_count": 2,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "SitioWeb",
+            "indices": [8, 17]
+          },
+          {
+            "text": "hostingfree",
+            "indices": [72, 84]
+          },
+          {
+            "text": "Promo",
+            "indices": [114, 120]
+          },
+          {
+            "text": "Pymes",
+            "indices": [121, 127]
+          }
+        ],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "screen_name": "DonDatos",
+            "name": "Mercado de Datos",
+            "id": 327776933,
+            "id_str": "327776933",
+            "indices": [128, 137]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "retweet_count": 25,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "SitioWeb",
+          "indices": [25, 34]
+        },
+        {
+          "text": "hostingfree",
+          "indices": [89, 101]
+        },
+        {
+          "text": "Promo",
+          "indices": [131, 137]
+        }
+      ],
+      "symbols": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "screen_name": "rodrigoslay",
+          "name": "Rodrigo Slay",
+          "id": 15814088,
+          "id_str": "15814088",
+          "indices": [3, 15]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "en"
+    },
+    "created_at": "Wed Jul 24 18:23:02 +0000 2013",
+    "id": 360102843111321600,
+    "id_str": "360102843111321600",
+    "text": "RT @rodrigoslay: Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #\u2026",
+    "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eramiro_250 web\u003c\/a\u003e",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 1230741398,
+      "id_str": "1230741398",
+      "name": "Ramiro ",
+      "screen_name": "ramiro_250",
+      "location": "Sonora, M\u00e9xico",
+      "description": "Amante del beisbol",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 432,
+      "friends_count": 125,
+      "listed_count": 4,
+      "created_at": "Fri Mar 01 18:09:30 +0000 2013",
+      "favourites_count": 233,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 66870,
+      "lang": "es",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3338086520\/d60800813a8416e41f59198c51ea694c_normal.png",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3338086520\/d60800813a8416e41f59198c51ea694c_normal.png",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "metadata": {
+        "result_type": "recent",
+        "iso_language_code": "en"
+      },
+      "created_at": "Wed Jul 24 18:03:17 +0000 2013",
+      "id": 360097869342048256,
+      "id_str": "360097869342048256",
+      "text": "Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #Pymes @DonDatos RT",
+      "source": "web",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 15814088,
+        "id_str": "15814088",
+        "name": "Rodrigo Slay",
+        "screen_name": "rodrigoslay",
+        "location": "Santiago de Chile",
+        "description": "Anarquista, Productor, Bloguero, Bohemio y callejero por derecho propio, Aqu\u00ed veras links a noticias, eventos y un mont\u00f3n de locuras.. si me sigues te sigo...",
+        "url": "http:\/\/t.co\/GRzv1fxqVk",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/GRzv1fxqVk",
+                "expanded_url": "http:\/\/www.rodrigoslay.cl",
+                "display_url": "rodrigoslay.cl",
+                "indices": [0, 22]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1472,
+        "friends_count": 1825,
+        "listed_count": 4,
+        "created_at": "Mon Aug 11 21:23:15 +0000 2008",
+        "favourites_count": 50,
+        "utc_offset": -14400,
+        "time_zone": "Santiago",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 10534,
+        "lang": "es",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/15814088\/1372669717",
+        "profile_link_color": "DD5563",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DEDEDE",
+        "profile_text_color": "2B0C13",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": {
+        "id": "47a3cf27863714de",
+        "url": "https:\/\/api.twitter.com\/1.1\/geo\/id\/47a3cf27863714de.json",
+        "place_type": "country",
+        "name": "Chile",
+        "full_name": "Chile",
+        "country_code": "CL",
+        "country": "Chile",
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-75.6877144, -55.9775213],
+              [-66.3828747, -55.9775213],
+              [-66.3828747, -17.497384],
+              [-75.6877144, -17.497384]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "contributors": null,
+      "retweet_count": 25,
+      "favorite_count": 2,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "SitioWeb",
+            "indices": [8, 17]
+          },
+          {
+            "text": "hostingfree",
+            "indices": [72, 84]
+          },
+          {
+            "text": "Promo",
+            "indices": [114, 120]
+          },
+          {
+            "text": "Pymes",
+            "indices": [121, 127]
+          }
+        ],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "screen_name": "DonDatos",
+            "name": "Mercado de Datos",
+            "id": 327776933,
+            "id_str": "327776933",
+            "indices": [128, 137]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "retweet_count": 25,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "SitioWeb",
+          "indices": [25, 34]
+        },
+        {
+          "text": "hostingfree",
+          "indices": [89, 101]
+        },
+        {
+          "text": "Promo",
+          "indices": [131, 137]
+        }
+      ],
+      "symbols": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "screen_name": "rodrigoslay",
+          "name": "Rodrigo Slay",
+          "id": 15814088,
+          "id_str": "15814088",
+          "indices": [3, 15]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "en"
+    },
+    "created_at": "Wed Jul 24 18:23:01 +0000 2013",
+    "id": 360102838669545473,
+    "id_str": "360102838669545473",
+    "text": "RT @rodrigoslay: Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #\u2026",
+    "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eremedio_casero1 web\u003c\/a\u003e",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 1230793268,
+      "id_str": "1230793268",
+      "name": "Remedios Caseros",
+      "screen_name": "remedio_casero1",
+      "location": "",
+      "description": "",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 1030,
+      "friends_count": 112,
+      "listed_count": 4,
+      "created_at": "Fri Mar 01 18:22:02 +0000 2013",
+      "favourites_count": 234,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 66559,
+      "lang": "es",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3324846337\/824a2283b50bc97e20801dc13b96dffd_normal.jpeg",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3324846337\/824a2283b50bc97e20801dc13b96dffd_normal.jpeg",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "metadata": {
+        "result_type": "recent",
+        "iso_language_code": "en"
+      },
+      "created_at": "Wed Jul 24 18:03:17 +0000 2013",
+      "id": 360097869342048256,
+      "id_str": "360097869342048256",
+      "text": "Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #Pymes @DonDatos RT",
+      "source": "web",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 15814088,
+        "id_str": "15814088",
+        "name": "Rodrigo Slay",
+        "screen_name": "rodrigoslay",
+        "location": "Santiago de Chile",
+        "description": "Anarquista, Productor, Bloguero, Bohemio y callejero por derecho propio, Aqu\u00ed veras links a noticias, eventos y un mont\u00f3n de locuras.. si me sigues te sigo...",
+        "url": "http:\/\/t.co\/GRzv1fxqVk",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/GRzv1fxqVk",
+                "expanded_url": "http:\/\/www.rodrigoslay.cl",
+                "display_url": "rodrigoslay.cl",
+                "indices": [0, 22]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1472,
+        "friends_count": 1825,
+        "listed_count": 4,
+        "created_at": "Mon Aug 11 21:23:15 +0000 2008",
+        "favourites_count": 50,
+        "utc_offset": -14400,
+        "time_zone": "Santiago",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 10534,
+        "lang": "es",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/15814088\/1372669717",
+        "profile_link_color": "DD5563",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DEDEDE",
+        "profile_text_color": "2B0C13",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": {
+        "id": "47a3cf27863714de",
+        "url": "https:\/\/api.twitter.com\/1.1\/geo\/id\/47a3cf27863714de.json",
+        "place_type": "country",
+        "name": "Chile",
+        "full_name": "Chile",
+        "country_code": "CL",
+        "country": "Chile",
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-75.6877144, -55.9775213],
+              [-66.3828747, -55.9775213],
+              [-66.3828747, -17.497384],
+              [-75.6877144, -17.497384]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "contributors": null,
+      "retweet_count": 25,
+      "favorite_count": 2,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "SitioWeb",
+            "indices": [8, 17]
+          },
+          {
+            "text": "hostingfree",
+            "indices": [72, 84]
+          },
+          {
+            "text": "Promo",
+            "indices": [114, 120]
+          },
+          {
+            "text": "Pymes",
+            "indices": [121, 127]
+          }
+        ],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "screen_name": "DonDatos",
+            "name": "Mercado de Datos",
+            "id": 327776933,
+            "id_str": "327776933",
+            "indices": [128, 137]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "retweet_count": 25,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "SitioWeb",
+          "indices": [25, 34]
+        },
+        {
+          "text": "hostingfree",
+          "indices": [89, 101]
+        },
+        {
+          "text": "Promo",
+          "indices": [131, 137]
+        }
+      ],
+      "symbols": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "screen_name": "rodrigoslay",
+          "name": "Rodrigo Slay",
+          "id": 15814088,
+          "id_str": "15814088",
+          "indices": [3, 15]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "en"
+    },
+    "created_at": "Wed Jul 24 18:23:00 +0000 2013",
+    "id": 360102833904828417,
+    "id_str": "360102833904828417",
+    "text": "RT @rodrigoslay: Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #\u2026",
+    "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003ePura_Vid web\u003c\/a\u003e",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 1230872395,
+      "id_str": "1230872395",
+      "name": "Pura Vida",
+      "screen_name": "Pura_Vid",
+      "location": "",
+      "description": "",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 937,
+      "friends_count": 132,
+      "listed_count": 4,
+      "created_at": "Fri Mar 01 18:39:48 +0000 2013",
+      "favourites_count": 234,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 66752,
+      "lang": "es",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3324886011\/c805c74d80cf7af6116e0ff808cec6c8_normal.png",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3324886011\/c805c74d80cf7af6116e0ff808cec6c8_normal.png",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "metadata": {
+        "result_type": "recent",
+        "iso_language_code": "en"
+      },
+      "created_at": "Wed Jul 24 18:03:17 +0000 2013",
+      "id": 360097869342048256,
+      "id_str": "360097869342048256",
+      "text": "Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #Pymes @DonDatos RT",
+      "source": "web",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 15814088,
+        "id_str": "15814088",
+        "name": "Rodrigo Slay",
+        "screen_name": "rodrigoslay",
+        "location": "Santiago de Chile",
+        "description": "Anarquista, Productor, Bloguero, Bohemio y callejero por derecho propio, Aqu\u00ed veras links a noticias, eventos y un mont\u00f3n de locuras.. si me sigues te sigo...",
+        "url": "http:\/\/t.co\/GRzv1fxqVk",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/GRzv1fxqVk",
+                "expanded_url": "http:\/\/www.rodrigoslay.cl",
+                "display_url": "rodrigoslay.cl",
+                "indices": [0, 22]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1472,
+        "friends_count": 1825,
+        "listed_count": 4,
+        "created_at": "Mon Aug 11 21:23:15 +0000 2008",
+        "favourites_count": 50,
+        "utc_offset": -14400,
+        "time_zone": "Santiago",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 10534,
+        "lang": "es",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/15814088\/1372669717",
+        "profile_link_color": "DD5563",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DEDEDE",
+        "profile_text_color": "2B0C13",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": {
+        "id": "47a3cf27863714de",
+        "url": "https:\/\/api.twitter.com\/1.1\/geo\/id\/47a3cf27863714de.json",
+        "place_type": "country",
+        "name": "Chile",
+        "full_name": "Chile",
+        "country_code": "CL",
+        "country": "Chile",
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-75.6877144, -55.9775213],
+              [-66.3828747, -55.9775213],
+              [-66.3828747, -17.497384],
+              [-75.6877144, -17.497384]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "contributors": null,
+      "retweet_count": 25,
+      "favorite_count": 2,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "SitioWeb",
+            "indices": [8, 17]
+          },
+          {
+            "text": "hostingfree",
+            "indices": [72, 84]
+          },
+          {
+            "text": "Promo",
+            "indices": [114, 120]
+          },
+          {
+            "text": "Pymes",
+            "indices": [121, 127]
+          }
+        ],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "screen_name": "DonDatos",
+            "name": "Mercado de Datos",
+            "id": 327776933,
+            "id_str": "327776933",
+            "indices": [128, 137]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "retweet_count": 25,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "SitioWeb",
+          "indices": [25, 34]
+        },
+        {
+          "text": "hostingfree",
+          "indices": [89, 101]
+        },
+        {
+          "text": "Promo",
+          "indices": [131, 137]
+        }
+      ],
+      "symbols": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "screen_name": "rodrigoslay",
+          "name": "Rodrigo Slay",
+          "id": 15814088,
+          "id_str": "15814088",
+          "indices": [3, 15]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "en"
+    },
+    "created_at": "Wed Jul 24 18:23:00 +0000 2013",
+    "id": 360102833846095874,
+    "id_str": "360102833846095874",
+    "text": "RT @businessinsider: The HTML5 Vs. Native Apps Battle Broken Down http:\/\/t.co\/RvD21AuEC4",
+    "source": "web",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 612840231,
+      "id_str": "612840231",
+      "name": "Mike S. Boyle",
+      "screen_name": "heyboyle",
+      "location": "Brooklyn",
+      "description": "Co-author of American English File, Smart Choice, Skillful, and other textbooks for learners of English. I tweet about #EFL #grammar #China #art #tacos & #pie",
+      "url": "http:\/\/t.co\/XsOITdt7qy",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http:\/\/t.co\/XsOITdt7qy",
+              "expanded_url": "http:\/\/www.mikesboyle.com",
+              "display_url": "mikesboyle.com",
+              "indices": [0, 22]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 458,
+      "friends_count": 1024,
+      "listed_count": 13,
+      "created_at": "Tue Jun 19 18:32:46 +0000 2012",
+      "favourites_count": 41,
+      "utc_offset": -14400,
+      "time_zone": "Eastern Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 789,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "9AE6D9",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/images\/themes\/theme16\/bg.gif",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/images\/themes\/theme16\/bg.gif",
+      "profile_background_tile": false,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3600114022\/c44c2e28c1605b84e65576eec998e84a_normal.jpeg",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3600114022\/c44c2e28c1605b84e65576eec998e84a_normal.jpeg",
+      "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/612840231\/1370450882",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "DDFFCC",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "metadata": {
+        "result_type": "recent",
+        "iso_language_code": "en"
+      },
+      "created_at": "Wed Jul 24 18:15:25 +0000 2013",
+      "id": 360100925559414784,
+      "id_str": "360100925559414784",
+      "text": "The HTML5 Vs. Native Apps Battle Broken Down http:\/\/t.co\/RvD21AuEC4",
+      "source": "\u003ca href=\"http:\/\/www.businessinsider.com\" rel=\"nofollow\"\u003eBusiness Insider\u003c\/a\u003e",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 20562637,
+        "id_str": "20562637",
+        "name": "Business Insider",
+        "screen_name": "businessinsider",
+        "location": "New York, NY",
+        "description": "The latest business news and analysis.",
+        "url": "http:\/\/t.co\/pSnoEesoaV",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/pSnoEesoaV",
+                "expanded_url": "http:\/\/businessinsider.com\/",
+                "display_url": "businessinsider.com",
+                "indices": [0, 22]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 267690,
+        "friends_count": 84,
+        "listed_count": 9767,
+        "created_at": "Wed Feb 11 01:18:18 +0000 2009",
+        "favourites_count": 4,
+        "utc_offset": -14400,
+        "time_zone": "Eastern Time (US & Canada)",
+        "geo_enabled": false,
+        "verified": true,
+        "statuses_count": 118760,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "131516",
+        "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/450331951\/WDF4918_TwitterBG.jpg",
+        "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/450331951\/WDF4918_TwitterBG.jpg",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/715773334\/BI-icon-twitter2_normal.png",
+        "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/715773334\/BI-icon-twitter2_normal.png",
+        "profile_link_color": "009999",
+        "profile_sidebar_border_color": "EEEEEE",
+        "profile_sidebar_fill_color": "EFEFEF",
+        "profile_text_color": "333333",
+        "profile_use_background_image": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweet_count": 2,
+      "favorite_count": 2,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [
+          {
+            "url": "http:\/\/t.co\/RvD21AuEC4",
+            "expanded_url": "http:\/\/read.bi\/13aOaRI",
+            "display_url": "read.bi\/13aOaRI",
+            "indices": [45, 67]
+          }
+        ],
+        "user_mentions": []
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+    "retweet_count": 2,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "urls": [
+        {
+          "url": "http:\/\/t.co\/RvD21AuEC4",
+          "expanded_url": "http:\/\/read.bi\/13aOaRI",
+          "display_url": "read.bi\/13aOaRI",
+          "indices": [66, 88]
+        }
+      ],
+      "user_mentions": [
+        {
+          "screen_name": "businessinsider",
+          "name": "Business Insider",
+          "id": 20562637,
+          "id_str": "20562637",
+          "indices": [3, 19]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "en"
+    },
+    "created_at": "Wed Jul 24 18:22:59 +0000 2013",
+    "id": 360102829408522240,
+    "id_str": "360102829408522240",
+    "text": "RT @rodrigoslay: Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #\u2026",
+    "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eLuis_Ma35 web\u003c\/a\u003e",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 1230869406,
+      "id_str": "1230869406",
+      "name": "LuisMa ",
+      "screen_name": "luis_ma35",
+      "location": "Puebla, M\u00e9xico",
+      "description": "En la tierra de los \u00c1ngeles soy un demonio, con\u00f3ceme antes de juzgarme",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 438,
+      "friends_count": 131,
+      "listed_count": 3,
+      "created_at": "Fri Mar 01 18:44:36 +0000 2013",
+      "favourites_count": 234,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 66653,
+      "lang": "es",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3338104710\/47f900bac54a1b7f69d57394148e20ed_normal.jpeg",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3338104710\/47f900bac54a1b7f69d57394148e20ed_normal.jpeg",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "metadata": {
+        "result_type": "recent",
+        "iso_language_code": "en"
+      },
+      "created_at": "Wed Jul 24 18:03:17 +0000 2013",
+      "id": 360097869342048256,
+      "id_str": "360097869342048256",
+      "text": "Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #Pymes @DonDatos RT",
+      "source": "web",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 15814088,
+        "id_str": "15814088",
+        "name": "Rodrigo Slay",
+        "screen_name": "rodrigoslay",
+        "location": "Santiago de Chile",
+        "description": "Anarquista, Productor, Bloguero, Bohemio y callejero por derecho propio, Aqu\u00ed veras links a noticias, eventos y un mont\u00f3n de locuras.. si me sigues te sigo...",
+        "url": "http:\/\/t.co\/GRzv1fxqVk",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/GRzv1fxqVk",
+                "expanded_url": "http:\/\/www.rodrigoslay.cl",
+                "display_url": "rodrigoslay.cl",
+                "indices": [0, 22]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1472,
+        "friends_count": 1825,
+        "listed_count": 4,
+        "created_at": "Mon Aug 11 21:23:15 +0000 2008",
+        "favourites_count": 50,
+        "utc_offset": -14400,
+        "time_zone": "Santiago",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 10534,
+        "lang": "es",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/15814088\/1372669717",
+        "profile_link_color": "DD5563",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DEDEDE",
+        "profile_text_color": "2B0C13",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": {
+        "id": "47a3cf27863714de",
+        "url": "https:\/\/api.twitter.com\/1.1\/geo\/id\/47a3cf27863714de.json",
+        "place_type": "country",
+        "name": "Chile",
+        "full_name": "Chile",
+        "country_code": "CL",
+        "country": "Chile",
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-75.6877144, -55.9775213],
+              [-66.3828747, -55.9775213],
+              [-66.3828747, -17.497384],
+              [-75.6877144, -17.497384]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "contributors": null,
+      "retweet_count": 25,
+      "favorite_count": 2,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "SitioWeb",
+            "indices": [8, 17]
+          },
+          {
+            "text": "hostingfree",
+            "indices": [72, 84]
+          },
+          {
+            "text": "Promo",
+            "indices": [114, 120]
+          },
+          {
+            "text": "Pymes",
+            "indices": [121, 127]
+          }
+        ],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "screen_name": "DonDatos",
+            "name": "Mercado de Datos",
+            "id": 327776933,
+            "id_str": "327776933",
+            "indices": [128, 137]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "retweet_count": 25,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "SitioWeb",
+          "indices": [25, 34]
+        },
+        {
+          "text": "hostingfree",
+          "indices": [89, 101]
+        },
+        {
+          "text": "Promo",
+          "indices": [131, 137]
+        }
+      ],
+      "symbols": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "screen_name": "rodrigoslay",
+          "name": "Rodrigo Slay",
+          "id": 15814088,
+          "id_str": "15814088",
+          "indices": [3, 15]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "en"
+    },
+    "created_at": "Wed Jul 24 18:22:58 +0000 2013",
+    "id": 360102825075814401,
+    "id_str": "360102825075814401",
+    "text": "RT @rodrigoslay: Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #\u2026",
+    "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eLlano_Verde35 web\u003c\/a\u003e",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 1230879390,
+      "id_str": "1230879390",
+      "name": "Llano Verde",
+      "screen_name": "Llano_Verde35",
+      "location": "",
+      "description": "",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 792,
+      "friends_count": 129,
+      "listed_count": 4,
+      "created_at": "Fri Mar 01 18:47:07 +0000 2013",
+      "favourites_count": 234,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 66801,
+      "lang": "es",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3324908600\/bb114c91a26d5ef8b70fae9038cbe5ae_normal.jpeg",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3324908600\/bb114c91a26d5ef8b70fae9038cbe5ae_normal.jpeg",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "metadata": {
+        "result_type": "recent",
+        "iso_language_code": "en"
+      },
+      "created_at": "Wed Jul 24 18:03:17 +0000 2013",
+      "id": 360097869342048256,
+      "id_str": "360097869342048256",
+      "text": "Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #Pymes @DonDatos RT",
+      "source": "web",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 15814088,
+        "id_str": "15814088",
+        "name": "Rodrigo Slay",
+        "screen_name": "rodrigoslay",
+        "location": "Santiago de Chile",
+        "description": "Anarquista, Productor, Bloguero, Bohemio y callejero por derecho propio, Aqu\u00ed veras links a noticias, eventos y un mont\u00f3n de locuras.. si me sigues te sigo...",
+        "url": "http:\/\/t.co\/GRzv1fxqVk",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/GRzv1fxqVk",
+                "expanded_url": "http:\/\/www.rodrigoslay.cl",
+                "display_url": "rodrigoslay.cl",
+                "indices": [0, 22]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1472,
+        "friends_count": 1825,
+        "listed_count": 4,
+        "created_at": "Mon Aug 11 21:23:15 +0000 2008",
+        "favourites_count": 50,
+        "utc_offset": -14400,
+        "time_zone": "Santiago",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 10534,
+        "lang": "es",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/15814088\/1372669717",
+        "profile_link_color": "DD5563",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DEDEDE",
+        "profile_text_color": "2B0C13",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": {
+        "id": "47a3cf27863714de",
+        "url": "https:\/\/api.twitter.com\/1.1\/geo\/id\/47a3cf27863714de.json",
+        "place_type": "country",
+        "name": "Chile",
+        "full_name": "Chile",
+        "country_code": "CL",
+        "country": "Chile",
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-75.6877144, -55.9775213],
+              [-66.3828747, -55.9775213],
+              [-66.3828747, -17.497384],
+              [-75.6877144, -17.497384]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "contributors": null,
+      "retweet_count": 25,
+      "favorite_count": 2,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "SitioWeb",
+            "indices": [8, 17]
+          },
+          {
+            "text": "hostingfree",
+            "indices": [72, 84]
+          },
+          {
+            "text": "Promo",
+            "indices": [114, 120]
+          },
+          {
+            "text": "Pymes",
+            "indices": [121, 127]
+          }
+        ],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "screen_name": "DonDatos",
+            "name": "Mercado de Datos",
+            "id": 327776933,
+            "id_str": "327776933",
+            "indices": [128, 137]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "retweet_count": 25,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "SitioWeb",
+          "indices": [25, 34]
+        },
+        {
+          "text": "hostingfree",
+          "indices": [89, 101]
+        },
+        {
+          "text": "Promo",
+          "indices": [131, 137]
+        }
+      ],
+      "symbols": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "screen_name": "rodrigoslay",
+          "name": "Rodrigo Slay",
+          "id": 15814088,
+          "id_str": "15814088",
+          "indices": [3, 15]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "en"
+    },
+    "created_at": "Wed Jul 24 18:22:57 +0000 2013",
+    "id": 360102819627417602,
+    "id_str": "360102819627417602",
+    "text": "RT @rodrigoslay: Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #\u2026",
+    "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eblanca_esthela3 web\u003c\/a\u003e",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 1230919646,
+      "id_str": "1230919646",
+      "name": "Blanca Esthela",
+      "screen_name": "blanca_esthela3",
+      "location": "",
+      "description": "",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 503,
+      "friends_count": 130,
+      "listed_count": 3,
+      "created_at": "Fri Mar 01 18:52:45 +0000 2013",
+      "favourites_count": 236,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 66726,
+      "lang": "es",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3324922323\/4dedd6580b8aab6ef2c80c2e03878b90_normal.jpeg",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3324922323\/4dedd6580b8aab6ef2c80c2e03878b90_normal.jpeg",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "metadata": {
+        "result_type": "recent",
+        "iso_language_code": "en"
+      },
+      "created_at": "Wed Jul 24 18:03:17 +0000 2013",
+      "id": 360097869342048256,
+      "id_str": "360097869342048256",
+      "text": "Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #Pymes @DonDatos RT",
+      "source": "web",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 15814088,
+        "id_str": "15814088",
+        "name": "Rodrigo Slay",
+        "screen_name": "rodrigoslay",
+        "location": "Santiago de Chile",
+        "description": "Anarquista, Productor, Bloguero, Bohemio y callejero por derecho propio, Aqu\u00ed veras links a noticias, eventos y un mont\u00f3n de locuras.. si me sigues te sigo...",
+        "url": "http:\/\/t.co\/GRzv1fxqVk",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/GRzv1fxqVk",
+                "expanded_url": "http:\/\/www.rodrigoslay.cl",
+                "display_url": "rodrigoslay.cl",
+                "indices": [0, 22]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1472,
+        "friends_count": 1825,
+        "listed_count": 4,
+        "created_at": "Mon Aug 11 21:23:15 +0000 2008",
+        "favourites_count": 50,
+        "utc_offset": -14400,
+        "time_zone": "Santiago",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 10534,
+        "lang": "es",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/15814088\/1372669717",
+        "profile_link_color": "DD5563",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DEDEDE",
+        "profile_text_color": "2B0C13",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": {
+        "id": "47a3cf27863714de",
+        "url": "https:\/\/api.twitter.com\/1.1\/geo\/id\/47a3cf27863714de.json",
+        "place_type": "country",
+        "name": "Chile",
+        "full_name": "Chile",
+        "country_code": "CL",
+        "country": "Chile",
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-75.6877144, -55.9775213],
+              [-66.3828747, -55.9775213],
+              [-66.3828747, -17.497384],
+              [-75.6877144, -17.497384]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "contributors": null,
+      "retweet_count": 25,
+      "favorite_count": 2,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "SitioWeb",
+            "indices": [8, 17]
+          },
+          {
+            "text": "hostingfree",
+            "indices": [72, 84]
+          },
+          {
+            "text": "Promo",
+            "indices": [114, 120]
+          },
+          {
+            "text": "Pymes",
+            "indices": [121, 127]
+          }
+        ],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "screen_name": "DonDatos",
+            "name": "Mercado de Datos",
+            "id": 327776933,
+            "id_str": "327776933",
+            "indices": [128, 137]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "retweet_count": 25,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "SitioWeb",
+          "indices": [25, 34]
+        },
+        {
+          "text": "hostingfree",
+          "indices": [89, 101]
+        },
+        {
+          "text": "Promo",
+          "indices": [131, 137]
+        }
+      ],
+      "symbols": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "screen_name": "rodrigoslay",
+          "name": "Rodrigo Slay",
+          "id": 15814088,
+          "id_str": "15814088",
+          "indices": [3, 15]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "metadata": {
+      "result_type": "recent",
+      "iso_language_code": "en"
+    },
+    "created_at": "Wed Jul 24 18:22:56 +0000 2013",
+    "id": 360102815579910145,
+    "id_str": "360102815579910145",
+    "text": "RT @rodrigoslay: Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #\u2026",
+    "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003etripto_coco web\u003c\/a\u003e",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 1230923640,
+      "id_str": "1230923640",
+      "name": "Tripto",
+      "screen_name": "tripto_coco",
+      "location": "M\u00e9xico",
+      "description": "Cocodrilo",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 723,
+      "friends_count": 113,
+      "listed_count": 3,
+      "created_at": "Fri Mar 01 18:57:33 +0000 2013",
+      "favourites_count": 234,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 66709,
+      "lang": "es",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http:\/\/a0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_image_url_https": "https:\/\/si0.twimg.com\/images\/themes\/theme1\/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3324937402\/64411771db9c93f1e3cb8cb0947be49f_normal.jpeg",
+      "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3324937402\/64411771db9c93f1e3cb8cb0947be49f_normal.jpeg",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "metadata": {
+        "result_type": "recent",
+        "iso_language_code": "en"
+      },
+      "created_at": "Wed Jul 24 18:03:17 +0000 2013",
+      "id": 360097869342048256,
+      "id_str": "360097869342048256",
+      "text": "Creo tu #SitioWeb HTML5, CSS, 4 a 6 secciones, formulario de contacto + #hostingfree y dominio.cl por $80.000 CLP #Promo #Pymes @DonDatos RT",
+      "source": "web",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 15814088,
+        "id_str": "15814088",
+        "name": "Rodrigo Slay",
+        "screen_name": "rodrigoslay",
+        "location": "Santiago de Chile",
+        "description": "Anarquista, Productor, Bloguero, Bohemio y callejero por derecho propio, Aqu\u00ed veras links a noticias, eventos y un mont\u00f3n de locuras.. si me sigues te sigo...",
+        "url": "http:\/\/t.co\/GRzv1fxqVk",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/GRzv1fxqVk",
+                "expanded_url": "http:\/\/www.rodrigoslay.cl",
+                "display_url": "rodrigoslay.cl",
+                "indices": [0, 22]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1472,
+        "friends_count": 1825,
+        "listed_count": 4,
+        "created_at": "Mon Aug 11 21:23:15 +0000 2008",
+        "favourites_count": 50,
+        "utc_offset": -14400,
+        "time_zone": "Santiago",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 10534,
+        "lang": "es",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http:\/\/a0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_image_url_https": "https:\/\/si0.twimg.com\/profile_background_images\/861655617\/8671ba3e06b5c16004c71f1320c7817f.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/a0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_image_url_https": "https:\/\/si0.twimg.com\/profile_images\/3731165610\/9d137cb8ab3d879414f452ab084e9115_normal.png",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/15814088\/1372669717",
+        "profile_link_color": "DD5563",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DEDEDE",
+        "profile_text_color": "2B0C13",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": {
+        "id": "47a3cf27863714de",
+        "url": "https:\/\/api.twitter.com\/1.1\/geo\/id\/47a3cf27863714de.json",
+        "place_type": "country",
+        "name": "Chile",
+        "full_name": "Chile",
+        "country_code": "CL",
+        "country": "Chile",
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-75.6877144, -55.9775213],
+              [-66.3828747, -55.9775213],
+              [-66.3828747, -17.497384],
+              [-75.6877144, -17.497384]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "contributors": null,
+      "retweet_count": 25,
+      "favorite_count": 2,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "SitioWeb",
+            "indices": [8, 17]
+          },
+          {
+            "text": "hostingfree",
+            "indices": [72, 84]
+          },
+          {
+            "text": "Promo",
+            "indices": [114, 120]
+          },
+          {
+            "text": "Pymes",
+            "indices": [121, 127]
+          }
+        ],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "screen_name": "DonDatos",
+            "name": "Mercado de Datos",
+            "id": 327776933,
+            "id_str": "327776933",
+            "indices": [128, 137]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "retweet_count": 25,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "SitioWeb",
+          "indices": [25, 34]
+        },
+        {
+          "text": "hostingfree",
+          "indices": [89, 101]
+        },
+        {
+          "text": "Promo",
+          "indices": [131, 137]
+        }
+      ],
+      "symbols": [],
+      "urls": [],
+      "user_mentions": [
+        {
+          "screen_name": "rodrigoslay",
+          "name": "Rodrigo Slay",
+          "id": 15814088,
+          "id_str": "15814088",
+          "indices": [3, 15]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  }
+], "search_metadata": {
+  "completed_in": 0.039,
+  "max_id": 360103137350123520,
+  "max_id_str": "360103137350123520",
+  "next_results": "?max_id=360102815579910144&q=html5&include_entities=1",
+  "query": "html5",
+  "refresh_url": "?since_id=360103137350123520&q=html5&include_entities=1",
+  "count": 15,
+  "since_id": 0,
+  "since_id_str": "0"
+}}
