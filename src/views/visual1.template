@@ -7,9 +7,9 @@
           <div class="tweet-text-and-user">
             <div class="tweet-text pull-left" id="tweetText{{$index}}">{{tweet.text}}</div>
             <span class="pull-right">
-              <img ng-src="{{tweet.profile_image_url}}" alt="avatar" width="64px">
+              <img ng-src="{{tweet.user.originalProfileImageURL}}" alt="avatar" width="64px">
               <br>
-              <span class=" tweet-user">{{tweet.from_user}}</span>
+              <span class=" tweet-user">{{tweet.user.screenName}}</span>
             </span>
 
             <div class="clearfix"></div>
