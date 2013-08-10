@@ -8,7 +8,7 @@
             <div class="tweet-text pull-left" id="tweetText{{$index}}">{{tweet.text}}</div>
             <span class="pull-right">
               <img ng-src="{{tweet.user.originalProfileImageURL}}" alt="avatar" width="64px">
-              <br>
+              <br style="clear:both">
               <span class=" tweet-user">{{tweet.user.screenName}}</span>
             </span>
 
