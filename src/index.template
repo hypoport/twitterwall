@@ -101,5 +101,11 @@
 <script data-main="scripts/main.js"
         src="scripts/libs/require.js?v=<%= config.hash('./.temp/scripts/libs/require.js') %>"></script>
 <% } %>
+
+<script type="text/javascript">
+  var appConfiguration = appConfiguration || {};
+  appConfiguration.searchUrl = 'http://localhost:8080/search';
+</script>
+<script type="text/javascript" src="appConfiguration.js"><!-- will be provided during deployment and will override configuration --></script>
 </body>
 </html>

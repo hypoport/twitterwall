@@ -1,12 +1,12 @@
 define(type: "service", definition : [
-  '$log','$timeout','$http',
-  ($log,  $timeout,  $http) ->
+  '$log','$timeout','$http','$window',
+  ($log,  $timeout,  $http, $window) ->
     @.start = (query, callback) ->
       running = true
       max_id = "0"
       (repeated = ->
         $http.get(
-          "http://localhost:8080/search"
+          $window.appConfiguration.searchUrl
           'params':
             'q': query
             'include_entities': "true"
