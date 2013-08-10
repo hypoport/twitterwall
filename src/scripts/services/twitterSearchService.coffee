@@ -5,19 +5,18 @@ define(type: "service", definition : [
       running = true
       max_id = "0"
       (repeated = ->
-        $http.jsonp(
-          "http://search.twitter.com/search.json"
+        $http.get(
+          "http://localhost:8080/search"
           'params':
             'q': query
             'include_entities': "true"
             'since_id': max_id
-            'callback': "JSON_CALLBACK"
         )
         .success(
           (data, status, headers, config) ->
             $timeout(repeated, 5000)
-            max_id = data.max_id_str
-            callback(data.results)
+            max_id = data.max_id
+            callback(data.tweets)
         )
         .error(
           (data, status, headers, config) ->
