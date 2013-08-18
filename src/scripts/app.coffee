@@ -23,6 +23,7 @@
   setupModule('app'
     tweetController: 'controllers/tweetController'
     tweetListController: 'controllers/tweetListController'
+    menuBarController: 'controllers/menuBarController'
     twitterfy: 'filters/twitterfy'
     dispatcher: 'responseInterceptors/dispatcher'
     twitterSearchService: 'services/twitterSearchService'
