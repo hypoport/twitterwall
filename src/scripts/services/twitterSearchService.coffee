@@ -2,9 +2,11 @@ define(type: "service", definition : [
   '$log','$timeout','$http','$window',
   ($log,  $timeout,  $http, $window) ->
     @.start = (query, callback) ->
-      running = true
+      $log.info("start timer")
       max_id = "0"
+      running = true
       (repeated = ->
+        $log.info("request for twitter with: " + query)
         $http.get(
           $window.appConfiguration.searchUrl
           'params':
@@ -21,8 +23,10 @@ define(type: "service", definition : [
         .error(
           (data, status, headers, config) ->
             []
+            $log.info("error")
         )
       )()
-    @.stop = ->
+    @.stop = () ->
+      $log.info("stop timer")
       running = false
 ])

@@ -9,10 +9,17 @@ define(type: 'controller', definition: [
       $scope.tweets = $scope.tweets.slice(0, $scope.tweetLimit)
 
     # query-string ermitteln
-    twitterSearchService.start(
-      $routeParams.query
-      (tweets) ->
-        for tweet in tweets
-          addNewTweet(tweet)
-    )
+    $scope.doTwitterSearch = (query) ->
+      console.log("doTwitterSearch")
+
+      if ($scope.search != undefined)
+        $scope.search.stop();
+
+      $scope.search = twitterSearchService.start(
+        query
+        (tweets) ->
+          console.log("found tweets: " + tweets.length)
+          for tweet in tweets
+            addNewTweet(tweet)
+      )
 ])

@@ -7,7 +7,7 @@ define(type: 'config', definition: [
       controller: 'tweetController'
     .when '/2',
       templateUrl: 'views/visual2.html'
-    .when '/3/:query',
+    .when '/3',
       templateUrl: 'views/visual3.html'
       controller: 'tweetListController'
 ])

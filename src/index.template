@@ -77,9 +77,9 @@
             </a>
           </li>
         </ul>
-        <form class="navbar-form pull-right">
+        <form class="navbar-form pull-right" ng-controller="tweetListController">
           <input class="span2" type="text" placeholder="Hashtag" ng-model="searchValue">
-          <button class="btn" ng-click="doTwitterSearch()"><i class="icon-search"></i></button>
+          <button class="btn" ng-click="doTwitterSearch(searchValue)"><i class="icon-search"></i></button>
         </form>
       </div>
       <!--/.nav-collapse -->
