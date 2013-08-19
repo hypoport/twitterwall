@@ -27,6 +27,7 @@
     twitterfy: 'filters/twitterfy'
     dispatcher: 'responseInterceptors/dispatcher'
     twitterSearchService: 'services/twitterSearchService'
+    twitterwallModelHolder: 'services/twitterwallModelHolder'
     routes: 'routes'
   )
 )()

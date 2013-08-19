@@ -78,7 +78,7 @@
           </li>
         </ul>
         <form class="navbar-form pull-right" ng-controller="menuBarController">
-          <input class="span2" type="text" placeholder="Hashtag" ng-model="searchValue">
+          <input class="span2" type="text" placeholder="Hashtag" ng-model="searchValue" ng-submit="doTwitterSearch()">
           <button class="btn" ng-click="doTwitterSearch()"><i class="icon-search"></i></button>
         </form>
       </div>

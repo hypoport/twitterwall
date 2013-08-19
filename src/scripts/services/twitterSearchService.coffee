@@ -2,6 +2,7 @@ define(type: "service", definition : [
   '$log','$timeout','$http','$window',
   ($log,  $timeout,  $http, $window) ->
     @.start = (query, callback) ->
+      $log.info("starting new Twitter search. Query=" + query)
       running = true
       max_id = "0"
       (repeated = ->

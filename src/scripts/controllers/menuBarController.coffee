@@ -1,8 +1,15 @@
 define(type: 'controller', definition: [
-  '$scope',
-  ($scope) ->
+  '$scope', 'twitterwallModelHolder',
+  ($scope, twitterwallModelHolder) ->
     $scope.searchValue = ""
+
     $scope.doTwitterSearch = ->
+      twitterwallModelHolder.setSearchValue($scope.searchValue)
       return false
+
+    twitterwallModelHolder.onSearchValueChanged (newSearchValue) ->
+      $scope.searchValue = newSearchValue
+      return
+
     return
 ])
