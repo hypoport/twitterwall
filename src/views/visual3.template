@@ -2,7 +2,7 @@
 
   <div>
     <ul>
-      <li ng-repeat="tweet in tweets" ng-class="tweet{{$index}}">
+      <li ng-repeat="tweet in tweets" ng-class="tweet{{$index}}" class="phone-listing">
         <div class="well tweet-box">
           <div class="tweet-text-and-user">
             <div class="tweet-text pull-left">
