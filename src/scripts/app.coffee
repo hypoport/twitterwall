@@ -1,9 +1,9 @@
 (->
   setupModule = (moduleName, components) ->
     define(
-      (path for name,path of components).concat(['libs/angular'])
+      (path for name,path of components).concat(['libs/angular', 'libs/angular-loader', 'libs/angular-route'])
       () ->
-        app = angular.module(moduleName, [])
+        app = angular.module(moduleName, ['ngRoute'])
         setup(app, (name for name of components), arguments)
         return app
     )
@@ -21,6 +21,7 @@
       when 'run' then module.run(component.definition)
 
   setupModule('app'
+#    ngRoute: 'libs/angular-route'
     tweetController: 'controllers/tweetController'
     tweetListController: 'controllers/tweetListController'
     menuBarController: 'controllers/menuBarController'
