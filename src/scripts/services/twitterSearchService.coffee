@@ -27,4 +27,6 @@ define(type: "service", definition : [
 
     @.stop = ->
       return
+
+    return @
 ])
