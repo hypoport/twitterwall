@@ -22,7 +22,7 @@ app.configure(function() {
   app.use(express.errorHandler());
   app.use(express["static"](dir));
   app.use(app.router);
-  return routes(app, dir);
+  routes(app, dir);
 });
 
 module.exports = server;

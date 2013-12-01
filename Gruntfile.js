@@ -280,5 +280,5 @@ module.exports = function(grunt) {
   grunt.registerTask('server', ['livereload-start', 'express', 'regarde']);
   grunt.registerTask('default', ['clean:working', 'copy:js', 'less', 'template:views', 'copy:img', 'copy:css', 'template:dev', 'copy:dev']);
   grunt.registerTask('dev', ['default', 'watch']);
-  return grunt.registerTask('prod', ['clean:working', 'copy:js', 'less', 'template:views', 'imagemin', 'ngTemplateCache', 'requirejs', 'template:prod', 'minifyHtml', 'copy:prod']);
+  grunt.registerTask('prod', ['clean:working', 'copy:js', 'less', 'template:views', 'imagemin', 'ngTemplateCache', 'requirejs', 'template:prod', 'minifyHtml', 'copy:prod']);
 };

@@ -1,38 +1,36 @@
-(function() {
-  var register, setup, setupModule;
-  setupModule = function(moduleName, components) {
+(function () {
+
+  var setupModule = function (moduleName, components) {
     var name, path;
-    return define(((function() {
-      var _results;
-      _results = [];
+    return define(((function () {
+      var _results = [];
       for (name in components) {
         path = components[name];
         _results.push(path);
       }
       return _results;
-    })()).concat(['libs/angular', 'libs/angular-loader', 'libs/angular-route', 'libs/angular-animate']), function() {
-      var app;
-      app = angular.module(moduleName, ['ngRoute', 'ngAnimate']);
-      setup(app, (function() {
-        var _results;
-        _results = [];
+    })()).concat(['libs/angular', 'libs/angular-loader', 'libs/angular-route', 'libs/angular-animate']), function () {
+
+      var app = angular.module(moduleName, ['ngRoute', 'ngAnimate']);
+      var names = (function () {
+        var _results = [];
         for (name in components) {
           _results.push(name);
         }
         return _results;
-      })(), arguments);
+      })();
+      setup(app, names, arguments);
       return app;
     });
   };
-  setup = function(module, names, components) {
-    var i, _i, _ref, _results;
-    _results = [];
-    for (i = _i = 0, _ref = names.length - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; i = 0 <= _ref ? ++_i : --_i) {
-      _results.push(register(angular.module('app'), names[i], components[i]));
+
+  var setup = function (module, names, components) {
+    for (var i = 0, len = names.length; i < len; i++) {
+      register(angular.module('app'), names[i], components[i]);
     }
-    return _results;
   };
-  register = function(module, name, component) {
+
+  var register = function (module, name, component) {
     switch (component.type) {
       case 'config':
         return module.config(component.definition);
@@ -46,7 +44,8 @@
         return module.run(component.definition);
     }
   };
-  return setupModule('app', {
+
+  setupModule('app', {
     tweetController: 'controllers/tweetController',
     tweetListController: 'controllers/tweetListController',
     menuBarController: 'controllers/menuBarController',
@@ -56,4 +55,5 @@
     twitterwallModelHolder: 'services/twitterwallModelHolder',
     routes: 'routes'
   });
+
 })();
