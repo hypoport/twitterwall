@@ -1,24 +1,25 @@
 <div class="container">
-  <h2>Demo Data!</h2>
-  <div>
-    <ul>
-      <li ng-repeat="tweet in tweets" ng-class="tweet{{$index}}" class="phone-listing">
-        <div class="well tweet-box">
-          <div class="tweet-text-and-user">
-            <div class="tweet-text pull-left">
-              <!-- {{tweet.text}} -->
-              <span ng-repeat="t in tweet.text.split('') track by $index" ng-class="t{{$index}}">{{t}}</span>
-            </div>
-            <span class="pull-right">
-              <a class="tweet-user" href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank"><img title="@{{tweet.user.screen_name}}" class="pull-right img-rounded" ng-src="{{tweet.user.profile_image_url_https}}" alt="avatar" width="64px"></a>
-              <br class="clearfix">
-              <a class="tweet-user" href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank" title="@{{tweet.user.screen_name}}">{{tweet.user.name}}</a>
-            </span>
-            <div class="clearfix"></div>
-          </div>
+  <h2>Beamer optimized View</h2>
+
+  <div ng-model="tweet" class="singletweet">
+    <div class="well tweet-box">
+      <div class="tweet-text-and-user">
+        <div class="tweet-text pull-left">
+          <!-- {{tweet.text}} -->
+          <span ng-repeat="t in tweet.text.split('') track by $index" ng-class="t{{$index}}">{{t}}</span>
         </div>
-      </li>
-    </ul>
+        <span class="pull-right">
+          <a class="tweet-user tweet-user-avatar" href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank"><img
+              title="@{{tweet.user.screen_name}}" class="pull-right img-rounded"
+              ng-src="{{tweet.user.profile_image_url_https}}" alt="avatar" width="128px"></a>
+          <br class="clearfix">
+          <a class="tweet-user" href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank"
+             title="@{{tweet.user.screen_name}}">{{tweet.user.name}}</a>
+        </span>
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
   </div>
 
 </div>
