@@ -17,13 +17,23 @@ define({
         $scope.tweet = tweets[nextTweet];
       }
 
-      twitterSearchService.start("test", function (result) {
-        currentTweet = 0;
-        tweets = result;
-        rotateTweets();
+      twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
+        $location.path('/1/' + newSearchValue);
       });
+      twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
+        if (newSearchValue && newSearchValue.length > 0) {
+          twitterSearchService.start(newSearchValue, function (result) {
+            currentTweet = 0;
+            tweets = result;
+            rotateTweets();
+          });
 
-      twitterSearchService.stop();
+          twitterSearchService.stop();
+        }
+      });
+      if ($routeParams.query && $routeParams.query.length > 0) {
+        twitterwallModelHolder.setSearchValue($routeParams.query);
+      }
     }
   ]
 });
