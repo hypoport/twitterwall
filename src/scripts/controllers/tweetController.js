@@ -10,11 +10,16 @@ define({
 
       var rotateTweets = function () {
         var nextTweet = currentTweet++;
+        var nextTweet2 = nextTweet + 1;
         if (nextTweet >= tweets.length) {
           nextTweet = currentTweet = 0;
+          if (nextTweet >= tweets.length) {
+            nextTweet2 = currentTweet = 0;
+          }
         }
         $timeout(rotateTweets, 5000)
         $scope.tweet = tweets[nextTweet];
+        $scope.tweet2 = tweets[nextTweet2];
       }
 
       twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
