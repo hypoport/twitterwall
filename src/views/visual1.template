@@ -1,51 +1,73 @@
 <div class="container">
   <h2>Beamer optimized View</h2>
 
-  <div class="singletweet">
-    <div class="well tweet-box">
+  <div class="singletweet current">
+    <div class="tweet-box">
       <div class="tweet-text-and-user">
-        <div class="tweet-text pull-left">
-          <!-- {{tweetCurrent.text}} -->
-          <span ng-repeat="t in tweetCurrent.text.split('') track by $index" class="letter">{{t}}</span>
-        </div>
-        <div class="tweet-user pull-right">
+        <div class="tweet-user">
           <div class="tweet-user-avatar">
-            <a href="https://twitter.com/{{tweetCurrent.user.screen_name}}" target="_blank"><img
-                    title="@{{tweetCurrent.user.screen_name}}" class="pull-right img-rounded"
-                    ng-src="{{tweetCurrent.user.profile_image_url_https}}" alt="avatar" width="128px"></a>
+            <table>
+              <tr>
+                <td>
+                  <a href="https://twitter.com/{{tweetCurrent.user.screen_name}}" target="_blank"><img
+                        title="@{{tweetCurrent.user.screen_name}}" class="img-rounded"
+                        ng-src="{{tweetCurrent.user.profile_image_url_https}}" alt="avatar" width="80px"></a>
+                </td>
+                <td>
+                  <div>
+                    <a class="tweet-user-name" href="https://twitter.com/{{tweetCurrent.user.screen_name}}" target="_blank"
+                       title="@{{tweetCurrent.user.screen_name}}">{{tweetCurrent.user.name}}</a>
+                  </div>
+                  <div>
+                    <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetCurrent.user.screen_name}}" target="_blank"
+                       title="@{{tweetCurrent.user.screen_name}}">@{{tweetCurrent.user.screen_name}}</a>
+                  </div>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
-        <div class="clearfix"></div>
-        <div class="tweet-user-name">
-          <a class="tweet-user-avatar-text" href="https://twitter.com/{{tweetCurrent.user.screen_name}}" target="_blank"
-             title="@{{tweetCurrent.user.screen_name}}">{{tweetCurrent.user.name}}</a>
+        <div class="tweet-text">
+          <!-- {{tweetCurrent.text}} -->
+          <span ng-repeat="t in tweetCurrent.text.split('') track by $index" class="letter">{{t}}</span>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="singletweet">
-    <div class="well tweet-box">
+  <div class="singletweet next">
+    <div class="tweet-box">
       <div class="tweet-text-and-user">
-        <div class="tweet-text pull-left">
+        <div class="tweet-text">
           <!-- {{tweetNext.text}} -->
-          <!--<span ng-repeat="t in tweetNext.text.split('') track by $index" ng-class="t{{$index}}">{{t}}</span>-->
-          <span ng-repeat="t in tweetCurrent.text.split('') track by $index" class="letter">{{t}}</span>
+          <span ng-repeat="t in tweetNext.text.split('') track by $index" class="letter">{{t}}</span>
         </div>
-        <div class="tweet-user pull-right">
+        <div class="tweet-user">
           <div class="tweet-user-avatar">
-            <a href="https://twitter.com/{{tweetNext.user.screen_name}}" target="_blank"><img
-                    title="@{{tweetNext.user.screen_name}}" class="pull-right img-rounded"
-                    ng-src="{{tweetNext.user.profile_image_url_https}}" alt="avatar" width="128px"></a>
+            <table>
+              <tr>
+                <td>
+                  <a href="https://twitter.com/{{tweetNext.user.screen_name}}" target="_blank"><img
+                        title="@{{tweetNext.user.screen_name}}" class="img-rounded"
+                        ng-src="{{tweetNext.user.profile_image_url_https}}" alt="avatar" width="80px"></a>
+                </td>
+                <td>
+                  <div>
+                    <a class="tweet-user-name" href="https://twitter.com/{{tweetNext.user.screen_name}}" target="_blank"
+                       title="@{{tweetNext.user.screen_name}}">{{tweetNext.user.name}}</a>
+                  </div>
+                  <div>
+                    <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetNext.user.screen_name}}" target="_blank"
+                       title="@{{tweetNext.user.screen_name}}">@{{tweetNext.user.screen_name}}</a>
+                  </div>
+                </td>
+              </tr>
+            </table>
           </div>
-        </div>
-        <div class="clearfix"></div>
-        <div class="tweet-user-name">
-          <a class="tweet-user-avatar-text" href="https://twitter.com/{{tweetNext.user.screen_name}}" target="_blank"
-             title="@{{tweetNext.user.screen_name}}">{{tweetNext.user.name}}</a>
         </div>
       </div>
     </div>
   </div>
+
 
 </div>
