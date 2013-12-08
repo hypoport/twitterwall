@@ -1,7 +1,7 @@
 <div class="container">
   <h2>Beamer optimized View</h2>
 
-  <div ng-model="tweet" class="singletweet">
+  <div ng-model="tweet" class="dualtweets">
     <div class="well tweet-box">
       <div class="tweet-text-and-user">
         <div class="tweet-text pull-left">
@@ -22,7 +22,7 @@
     </div>
   </div>
 
-  <div ng-model="tweet2" class="singletweet">
+  <div ng-model="tweet2" class="dualtweets">
     <div class="well tweet-box">
       <div class="tweet-text-and-user">
         <div class="tweet-text pull-left">

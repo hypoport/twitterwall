@@ -48,7 +48,7 @@
   setupModule('app', {
     movingElementsService: 'services/movingElementsService',
     singleTweetController: 'controllers/singleTweetController',
-    tweetController2: 'controllers/dualTweetController',
+    dualTweetController: 'controllers/dualTweetController',
     tweetListController: 'controllers/tweetListController',
     menuBarController: 'controllers/menuBarController',
     twitterfy: 'filters/twitterfy',
