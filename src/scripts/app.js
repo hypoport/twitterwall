@@ -46,6 +46,7 @@
   };
 
   setupModule('app', {
+    movingTextService : 'services/movingTextService',
     singleTweetController: 'controllers/singleTweetController',
     tweetListController: 'controllers/tweetListController',
     menuBarController: 'controllers/menuBarController',

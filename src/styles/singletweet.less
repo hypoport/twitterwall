@@ -1,21 +1,37 @@
 .singletweet {
-  div.tweet-box {
+
+  .tweet-box {
     margin-top: 10%;
     margin-left: 5%;
     margin-right: 5%;
   }
 
-  div.tweet-text {
-    font-size: 36px;
-    width: 70%;
+  .tweet-text-and-user {
+    .tweet-text {
+      width: 80%;
+      font-size: 36px;
+    }
+    .tweet-user {
+      width: 20%;
+      text-align: right;
+    }
   }
 
-  a.tweet-user {
-    font-size: 20px;
+  a.tweet-user-avatar-text {
+    margin-top: 5px;
+
+    color: dimgrey;
+    font-size: 18px;
+    text-decoration: none;
   }
 
   .tweet-user-avatar {
     margin-bottom: 5px;
+  }
+
+  .tweet-user-name {
+    text-align: right;
+    padding-top: 5px;
   }
 
 }

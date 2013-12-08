@@ -1,20 +1,33 @@
 define({
   type: 'controller',
   definition: [
-    '$scope', '$location', '$routeParams', 'twitterSearchService', 'twitterwallModelHolder', '$timeout',
-    function ($scope, $location, $routeParams, twitterSearchService, twitterwallModelHolder, $timeout) {
-      $scope.tweet = [];
+    '$scope', '$location', '$routeParams', 'twitterSearchService', 'twitterwallModelHolder', 'movingTextService', '$timeout',
+    function ($scope, $location, $routeParams, twitterSearchService, twitterwallModelHolder, movingTextService, $timeout) {
+      $scope.tweetCurrent = {};
+      $scope.tweetNext = {};
       $scope.tweetTime = 5000;
 
       var tweets, currentTweet;
 
+      function safeApply(scope, fn) {
+        (scope.$$phase || scope.$root.$$phase) ? fn() : scope.$apply(fn);
+      }
+
+      function startAnimationDeferred() {
+        $timeout(function () {
+          var src = document.getElementsByClassName("singletweet")[0].getElementsByClassName("letter");
+          var dst = document.getElementsByClassName("singletweet")[1].getElementsByClassName("letter");
+          movingTextService.addSourceElements(src);
+          movingTextService.addDestinationElements(dst);
+          movingTextService.prepare();
+          movingTextService.animate();
+        }, 1);
+      }
+
       var rotateTweets = function () {
-        var nextTweet = currentTweet++;
-        if (nextTweet >= tweets.length) {
-          nextTweet = currentTweet = 0;
-        }
-        $timeout(rotateTweets, 5000)
-        $scope.tweet = tweets[nextTweet];
+        $scope.tweetCurrent = tweets[0];
+        $scope.tweetNext = tweets[1];
+        startAnimationDeferred();
       }
 
       twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
