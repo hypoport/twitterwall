@@ -1,8 +1,8 @@
 define({
   type: 'controller',
   definition: [
-    '$scope', '$location', '$routeParams', 'twitterSearchService', 'twitterwallModelHolder', 'movingTextService', '$timeout',
-    function ($scope, $location, $routeParams, twitterSearchService, twitterwallModelHolder, movingTextService, $timeout) {
+    '$scope', '$location', '$routeParams', 'twitterSearchService', 'twitterwallModelHolder', 'movingElementsService', '$timeout',
+    function ($scope, $location, $routeParams, twitterSearchService, twitterwallModelHolder, movingElementsService, $timeout) {
       $scope.tweetCurrent = {};
       $scope.tweetNext = {};
       $scope.tweetTime = 5000;
@@ -17,10 +17,10 @@ define({
         $timeout(function () {
           var src = document.getElementsByClassName("singletweet")[0].getElementsByClassName("letter");
           var dst = document.getElementsByClassName("singletweet")[1].getElementsByClassName("letter");
-          movingTextService.addSourceElements(src);
-          movingTextService.addDestinationElements(dst);
-          movingTextService.prepare();
-          movingTextService.animate();
+          movingElementsService.addSourceElements(src);
+          movingElementsService.addDestinationElements(dst);
+          movingElementsService.prepare();
+          movingElementsService.animate();
         }, 1);
       }
 
