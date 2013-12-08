@@ -3,6 +3,9 @@ var httpProxy = require('http-proxy');
 
 /*
  A simple HTTP server, serving static files from ./dist folder and forwarding /search?* request to another Tomcat server.
+
+ Usage (run in project root folder):
+ $> node "node tools/development-server.js"
  */
 
 // configure your running tomcat instance here
