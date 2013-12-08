@@ -1,0 +1,57 @@
+.tweetlist {
+
+  .tweet-box {
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: white;
+    min-height: 65px;
+  }
+
+  .tweet-text-and-user {
+    width: 100%;
+  }
+
+  .tweet-user {
+    font-size: 90%;
+    color: #333333;
+    float: right;
+  }
+
+  .tweet-text {
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 150%;
+    line-height: 120%;
+  }
+
+  .tweet-text-audio {
+    width: 100%;
+  }
+
+}
+
+.tweetlist-animation.ng-enter,
+.tweetlist-animation.ng-leave,
+.tweetlist-animation.ng-move {
+  transition: 0.7s linear all;
+}
+
+.tweetlist-animation.ng-enter,
+.tweetlist-animation.ng-move {
+  opacity: 0;
+  //  height: 0;
+}
+
+.tweetlist-animation.ng-move.ng-move-active,
+.tweetlist-animation.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.tweetlist-animation.ng-leave {
+  opacity: 1;
+}
+
+.tweetlist-animation.ng-leave.ng-leave-active {
+  opacity: 0;
+}

@@ -1,8 +1,8 @@
 <div class="container">
 
-  <div>
+  <div class="tweetlist">
     <ul>
-      <li ng-repeat="tweet in tweets" ng-class="tweet{{$index}}" class="phone-listing">
+      <li ng-repeat="tweet in tweets" ng-class="tweet{{$index}}" class="tweetlist-animation">
         <div class="well tweet-box">
           <div class="tweet-text-and-user">
             <div class="tweet-text pull-left">
