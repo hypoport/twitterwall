@@ -47,6 +47,7 @@
 
   setupModule('app', {
     tweetController: 'controllers/tweetController',
+    tweetController2: 'controllers/tweetController2',
     tweetListController: 'controllers/tweetListController',
     menuBarController: 'controllers/menuBarController',
     twitterfy: 'filters/twitterfy',

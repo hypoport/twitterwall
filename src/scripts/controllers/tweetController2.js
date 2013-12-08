@@ -9,16 +9,22 @@ define({
       var tweets, currentTweet;
 
       var rotateTweets = function () {
-        var nextTweet = currentTweet++;
-        if (nextTweet >= tweets.length) {
-          nextTweet = currentTweet = 0;
+        var secTweet = currentTweet;
+        var firstTweet = secTweet + 1;
+        if (secTweet >= tweets.length) {
+          secTweet = currentTweet = 0;
+          if (secTweet >= tweets.length) {
+            firstTweet = currentTweet = 0;
+          }
         }
+        ++currentTweet;
         $timeout(rotateTweets, 5000)
-        $scope.tweet = tweets[nextTweet];
+        $scope.tweet = tweets[firstTweet];
+        $scope.tweet2 = tweets[secTweet];
       }
 
       twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
-        $location.path('/1/' + newSearchValue);
+        $location.path('/2/' + newSearchValue);
       });
       twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
         if (newSearchValue && newSearchValue.length > 0) {
