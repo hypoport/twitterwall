@@ -46,8 +46,9 @@
   };
 
   setupModule('app', {
-    movingElementsService : 'services/movingElementsService',
+    movingElementsService: 'services/movingElementsService',
     singleTweetController: 'controllers/singleTweetController',
+    tweetController2: 'controllers/dualTweetController',
     tweetListController: 'controllers/tweetListController',
     menuBarController: 'controllers/menuBarController',
     twitterfy: 'filters/twitterfy',
