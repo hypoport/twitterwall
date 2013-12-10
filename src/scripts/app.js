@@ -36,6 +36,8 @@
         return module.config(component.definition);
       case 'controller':
         return module.controller(name, component.definition);
+      case 'directive':
+        return module.directive(name, component.definition);
       case 'filter':
         return module.filter(name, component.definition);
       case 'service':
@@ -51,6 +53,7 @@
     dualTweetController: 'controllers/dualTweetController',
     tweetListController: 'controllers/tweetListController',
     menuBarController: 'controllers/menuBarController',
+    tweetDirective: 'directives/tweetDirective',
     twitterfy: 'filters/twitterfy',
     dispatcher: 'responseInterceptors/dispatcher',
     twitterSearchService: 'services/twitterSearchService',

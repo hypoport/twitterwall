@@ -1,47 +1,9 @@
 <div class="container">
   <h2>Beamer optimized View</h2>
 
-  <div ng-model="tweet" class="dualtweets">
-    <div class="well tweet-box">
-      <div class="tweet-text-and-user">
-        <div class="tweet-text pull-left">
-          <!-- {{tweet.text}} -->
-          <span ng-repeat="t in tweet.text.split('') track by $index" ng-class="t{{$index}}">{{t}}</span>
-        </div>
-        <span class="pull-right">
-          <a class="tweet-user tweet-user-avatar" href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank"><img
-              title="@{{tweet.user.screen_name}}" class="pull-right img-rounded"
-              ng-src="{{tweet.user.profile_image_url_https}}" alt="avatar" width="128px"></a>
-          <br class="clearfix">
-          <a class="tweet-user" href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank"
-             title="@{{tweet.user.screen_name}}">{{tweet.user.name}}</a>
-        </span>
-
-        <div class="clearfix"></div>
-      </div>
-    </div>
-  </div>
-
-  <div ng-model="tweet2" class="dualtweets">
-    <div class="well tweet-box">
-      <div class="tweet-text-and-user">
-        <div class="tweet-text pull-left">
-          <!-- {{tweet.text}} -->
-          <span ng-repeat="t in tweet2.text.split('') track by $index" ng-class="t{{$index}}">{{t}}</span>
-        </div>
-        <span class="pull-right">
-          <a class="tweet-user tweet-user-avatar" href="https://twitter.com/{{tweet2.user.screen_name}}"
-             target="_blank"><img
-              title="@{{tweet2.user.screen_name}}" class="pull-right img-rounded"
-              ng-src="{{tweet2.user.profile_image_url_https}}" alt="avatar" width="128px"></a>
-          <br class="clearfix">
-          <a class="tweet-user" href="https://twitter.com/{{tweet2.user.screen_name}}" target="_blank"
-             title="@{{tweet2.user.screen_name}}">{{tweet2.user.name}}</a>
-        </span>
-
-        <div class="clearfix"></div>
-      </div>
-    </div>
-  </div>
+  <!--tweetDirective for tweet1-->
+  <tweet-directive data="tweet" class="dualtweets"></tweet-directive>
+  <!--tweetDirective for tweet2-->
+  <tweet-directive data="tweet2" class="dualtweets"></tweet-directive>
 
 </div>
