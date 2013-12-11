@@ -1,9 +1,11 @@
 <div class="container">
   <h2>Beamer optimized View</h2>
 
-  <!--tweetDirective for tweet1-->
-  <tweet-directive data="tweet" class="dualtweets"></tweet-directive>
-  <!--tweetDirective for tweet2-->
-  <tweet-directive data="tweet2" class="dualtweets"></tweet-directive>
+  <div ng-hide="noTweets">
+    <!--tweetDirective for tweet1-->
+    <tweet-directive data="tweet" class="dualtweets"></tweet-directive>
+    <!--tweetDirective for tweet2-->
+    <tweet-directive data="tweet2" class="dualtweets"></tweet-directive>
+  </div>
 
 </div>
