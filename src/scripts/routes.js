@@ -7,6 +7,10 @@ define({
             templateUrl: 'views/visual1.html',
             controller: 'singleTweetController'
           })
+          .when('/2', {
+            templateUrl: 'views/visual2.html',
+            controller: 'dualTweetController'
+          })
           .when('/2/:query', {
             templateUrl: 'views/visual2.html',
             controller: 'dualTweetController'

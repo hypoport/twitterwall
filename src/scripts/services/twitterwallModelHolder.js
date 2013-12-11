@@ -1,19 +1,20 @@
 define({
   type: "service",
   definition: [
-    '$log', function($log) {
+    '$log', function ($log) {
       this._searchValue = "";
       this._valueChangeListeners = [];
-      this.setSearchValue = function(newSearchValue) {
+      this.setSearchValue = function (newSearchValue) {
         if (this._searchValue !== newSearchValue) {
+          $log.debug("twitterModelHolder: value change, oldValue: " + this._searchValue + ", newValue: " + newSearchValue);
           this._searchValue = newSearchValue;
           this.fireValueChange(newSearchValue);
         }
       };
-      this.onSearchValueChanged = function(valueChangeListener) {
+      this.onSearchValueChanged = function (valueChangeListener) {
         this._valueChangeListeners.push(valueChangeListener);
       };
-      this.fireValueChange = function(newSearchValue) {
+      this.fireValueChange = function (newSearchValue) {
         var error, listener, _i, _len, _ref;
         _ref = this._valueChangeListeners;
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
