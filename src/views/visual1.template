@@ -11,7 +11,7 @@
                 <td>
                   <a href="https://twitter.com/{{tweetCurrent.user.screen_name}}" target="_blank"><img
                         title="@{{tweetCurrent.user.screen_name}}" class="img-rounded"
-                        ng-src="{{tweetCurrent.user.profile_image_url_https}}" alt="avatar" height="80px"></a>
+                        ng-src="{{tweetCurrent.user.profile_image_url_https}}" alt="avatar" style="height: 80px"></a>
                 </td>
                 <td>
                   <div>
@@ -40,7 +40,7 @@
       <div class="tweet-text-and-user">
         <div class="tweet-text">
           <!-- {{tweetNext.text}} -->
-          <span ng-repeat="t in tweetNext.text.split('') track by $index" class="letter">{{t}}</span>
+          <span ng-repeat="t in tweetNext.text.split('') track by $index" class="letter" style="opacity: 0">{{t}}</span>
         </div>
         <div class="tweet-user">
           <div class="tweet-user-avatar">
@@ -49,7 +49,7 @@
                 <td>
                   <a href="https://twitter.com/{{tweetNext.user.screen_name}}" target="_blank"><img
                         title="@{{tweetNext.user.screen_name}}" class="img-rounded"
-                        ng-src="{{tweetNext.user.profile_image_url_https}}" alt="avatar" height="80px"></a>
+                        ng-src="{{tweetNext.user.profile_image_url_https}}" alt="avatar" style="height: 80px"></a>
                 </td>
                 <td>
                   <div>

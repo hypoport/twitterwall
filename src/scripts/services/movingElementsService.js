@@ -10,7 +10,8 @@ define({
         srcElements: [],
         dstElements: [],
         src: [],
-        dst: []
+        dst: [],
+        doneCallback: function() {}
       };
 
       var requestAnimFrame = (function () {
@@ -104,8 +105,10 @@ define({
       var _animate = function () {
         _anim.step += _anim.dir;
         if (!(0 < _anim.step && _anim.step < (30 + _anim.elements.length / 4))) {
-          _anim.dir *= -1;
+//          _anim.dir *= -1;
           updateElementPositions();
+          _anim.doneCallback();
+          return;
         }
         animateSingleFrame();
         requestAnimFrame(_animate);
@@ -123,6 +126,9 @@ define({
       };
 
       this.animate = _animate;
+      this.setDoneCallback = function(doneCallback) {
+        _anim.doneCallback = doneCallback;
+      }
 
       return this;
     }
