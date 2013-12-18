@@ -1,6 +1,25 @@
 # Interactive Twitterwall
 
- Work in progress ...
+## Development
+
+### requirements
+
+* node.js 0.10.x (or newer)
+* grunt 0.4.x (or newer)
+
+### Building
+
+````$> grunt````
+
+### Run automatic build (watcher)
+
+````$> grunt watch````
+
+### Run development server (reverse proxy for backend)
+
+Assuming, Twitterwall-server is running on port 8000.
+
+````$> node tools\development-server.js````
 
 ## Live Demo
 
