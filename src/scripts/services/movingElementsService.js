@@ -7,6 +7,7 @@ define({
         step: 0,
         dir: 1,
         elements: [],
+        srcElements: [],
         dstElements: [],
         src: [],
         dst: []
@@ -14,13 +15,13 @@ define({
 
       var requestAnimFrame = (function () {
         return  window.requestAnimationFrame ||
-           window.webkitRequestAnimationFrame ||
-           window.mozRequestAnimationFrame ||
-           window.oRequestAnimationFrame ||
-           window.msRequestAnimationFrame ||
-           function (callback) {
-             window.setTimeout(callback, 1000 / 60);
-           };
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            function (callback) {
+              window.setTimeout(callback, 1000 / 60);
+            };
       })();
 
       function getCoordinates(element) {
@@ -33,11 +34,15 @@ define({
         return {x: -1, y: -1};
       }
 
-      function convertToAbsolute(element, x, y) {
+      function cloneAbsoluteAndHide(element, x, y) {
         if (element) {
-          element.style.position = 'absolute';
-          element.style.left = x + 'px';
-          element.style.top = y + 'px';
+          var clone = element.cloneNode(true);
+          clone.style.position = 'absolute';
+          clone.style.left = x + 'px';
+          clone.style.top = y + 'px';
+          element.style.opacity = 0;
+          element.parentNode.appendChild(clone);
+          return clone;
         }
       }
 
@@ -83,8 +88,8 @@ define({
       this.addSourceElements = function (elements) {
         for (var i = 0; i < elements.length; i++) {
           var item = elements[i];
-          _anim.elements.push(item);
           _anim.src.push(getCoordinates(item));
+          _anim.srcElements.push(item);
         }
       };
 
@@ -107,11 +112,13 @@ define({
       };
 
       this.prepare = function () {
-        for (var i = 0; i < _anim.elements.length; i++) {
-          var e = _anim.elements[i];
+        for (var i = 0; i < _anim.srcElements.length; i++) {
           var x = _anim.src[i].x;
           var y = _anim.src[i].y;
-          convertToAbsolute(e, x, y);
+          _anim.elements[i] = cloneAbsoluteAndHide(_anim.srcElements[i], x, y);
+        }
+        for (var i = 0; i < _anim.dstElements.length; i++) {
+          _anim.dstElements[i].style.opacity = 0;
         }
       };
 

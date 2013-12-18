@@ -11,7 +11,7 @@
                 <td>
                   <a href="https://twitter.com/{{tweetCurrent.user.screen_name}}" target="_blank"><img
                         title="@{{tweetCurrent.user.screen_name}}" class="img-rounded"
-                        ng-src="{{tweetCurrent.user.profile_image_url_https}}" alt="avatar" width="80px"></a>
+                        ng-src="{{tweetCurrent.user.profile_image_url_https}}" alt="avatar" height="80px"></a>
                 </td>
                 <td>
                   <div>
@@ -49,7 +49,7 @@
                 <td>
                   <a href="https://twitter.com/{{tweetNext.user.screen_name}}" target="_blank"><img
                         title="@{{tweetNext.user.screen_name}}" class="img-rounded"
-                        ng-src="{{tweetNext.user.profile_image_url_https}}" alt="avatar" width="80px"></a>
+                        ng-src="{{tweetNext.user.profile_image_url_https}}" alt="avatar" height="80px"></a>
                 </td>
                 <td>
                   <div>

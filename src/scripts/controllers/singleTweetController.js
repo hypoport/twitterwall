@@ -13,12 +13,40 @@ define({
         (scope.$$phase || scope.$root.$$phase) ? fn() : scope.$apply(fn);
       }
 
+      function toArray(obj) {
+        var array = [];
+        // iterate backwards ensuring that length is an UInt32
+        for (var i = obj.length >>> 0; i--;) {
+          array[i] = obj[i];
+        }
+        return array;
+      }
+
       function startAnimationDeferred() {
         $timeout(function () {
-          var src = document.getElementsByClassName("singletweet")[0].getElementsByClassName("letter");
-          var dst = document.getElementsByClassName("singletweet")[1].getElementsByClassName("letter");
-          movingElementsService.addSourceElements(src);
-          movingElementsService.addDestinationElements(dst);
+          var src = toArray(document.getElementsByClassName("singletweet")[0].getElementsByClassName("letter"));
+          var dst = toArray(document.getElementsByClassName("singletweet")[1].getElementsByClassName("letter"));
+
+          elementMap = [];
+
+          for (var i in src) {
+            for (var j in dst) {
+              if (dst[j] && src[i].textContent == dst[j].textContent) {
+                elementMap.push({src: src[i], dst: dst[j]});
+                delete dst[j];
+                delete src[i];
+                break;
+              }
+            }
+          }
+
+          console.log(elementMap);
+
+
+
+          // DEBUG --- todo : wieder einkommentieren
+          movingElementsService.addSourceElements(elementMap.map(function (e){return e.src}));
+          movingElementsService.addDestinationElements(elementMap.map(function (e){return e.dst}));
           movingElementsService.prepare();
           movingElementsService.animate();
         }, 1);
