@@ -1,6 +1,4 @@
 <div class="container">
-  <h2>Beamer optimized View</h2>
-
   <div class="singletweet current">
     <div class="tweet-box">
       <div class="tweet-text-and-user">
