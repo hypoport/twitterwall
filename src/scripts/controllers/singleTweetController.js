@@ -51,21 +51,28 @@ define({
             }
           }
 
-          function makeAllDstElementsVisible() {
-            var runOnlyOnceGuard = false;
-            // blurring
-            $({blur: 5}).animate({blur: 0}, {
-              duration: 1000,
-              easing: 'swing', // or "linear"
-              step: createBlurTweening(dstDelta)
-            });
-            // fading
-            $(dst).animate({opacity: 1}, 1000, "swing", function (x) {
-              if (!runOnlyOnceGuard) {
-                runOnlyOnceGuard = true;
-                movingElementsService.cleanup();
-              }
-            });
+          function finalizeTweetAnimation() {
+            function hideTwitterNameAvatar() {
+              $('.tweet-user-avatar:first').animate({opacity: 0}, 1000, "swing");
+            }
+
+            (function makeAllDstElementsVisible() {
+              var runOnlyOnceGuard = false;
+              // blurring
+              $({blur: 5}).animate({blur: 0}, {
+                duration: 1000,
+                easing: 'swing', // or "linear"
+                step: createBlurTweening(dstDelta)
+              });
+              // fading
+              $(dst).animate({opacity: 1}, 1000, "swing", function () {
+                if (!runOnlyOnceGuard) {
+                  runOnlyOnceGuard = true;
+                  movingElementsService.cleanup();
+                  hideTwitterNameAvatar()
+                }
+              });
+            })();
           }
 
           movingElementsService.addSourceElements(elementMap.map(function (e) {
@@ -75,7 +82,7 @@ define({
             return e.dst
           }));
           movingElementsService.prepare();
-          movingElementsService.setDoneCallback(makeAllDstElementsVisible);
+          movingElementsService.setDoneCallback(finalizeTweetAnimation);
 
           var runOnlyOnceGuard = false;
           if (src.length) {
@@ -86,7 +93,7 @@ define({
               step: createBlurTweening(src)
             });
             // fading
-            $(src).animate({opacity: 0}, 1000, "swing", function (x) {
+            $(src).animate({opacity: 0}, 1000, "swing", function () {
               if (!runOnlyOnceGuard) {
                 runOnlyOnceGuard = true;
                 movingElementsService.animate();
