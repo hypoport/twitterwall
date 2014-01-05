@@ -9,7 +9,7 @@
         _results.push(path);
       }
       return _results;
-    })()).concat(['libs/angular', 'libs/angular-loader', 'libs/angular-route', 'libs/angular-animate', 'libs/jquery-2.0.3.min']), function () {
+    })()).concat(['libs/rAF', 'libs/angular', 'libs/angular-loader', 'libs/angular-route', 'libs/angular-animate', 'libs/jquery-2.0.3.min']), function () {
 
       var app = angular.module(moduleName, ['ngRoute', 'ngAnimate']);
       var names = (function () {
