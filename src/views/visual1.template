@@ -41,7 +41,7 @@
           <span ng-repeat="t in tweetNext.text.split('') track by $index" class="letter" style="opacity: 0">{{t}}</span>
         </div>
         <div class="tweet-user">
-          <div class="tweet-user-avatar">
+          <div class="tweet-user-avatar" style="opacity: 0">
             <table>
               <tr>
                 <td>

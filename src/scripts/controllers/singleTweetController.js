@@ -52,11 +52,16 @@ define({
           }
 
           function finalizeTweetAnimation() {
-            function hideTwitterNameAvatar() {
+            function hideOldTwitterNameAvatar() {
               $('.tweet-user-avatar:first').animate({opacity: 0}, 1000, "swing");
             }
 
+            function showNewTwitterNameAvatar() {
+              $('.tweet-user-avatar:last').animate({opacity: 1}, 1000, "swing");
+            }
+
             (function makeAllDstElementsVisible() {
+              hideOldTwitterNameAvatar()
               var runOnlyOnceGuard = false;
               // blurring
               $({blur: 5}).animate({blur: 0}, {
@@ -69,7 +74,7 @@ define({
                 if (!runOnlyOnceGuard) {
                   runOnlyOnceGuard = true;
                   movingElementsService.cleanup();
-                  hideTwitterNameAvatar()
+                  showNewTwitterNameAvatar();
                 }
               });
             })();
