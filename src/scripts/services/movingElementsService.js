@@ -34,6 +34,7 @@ define({
           element.parentNode.appendChild(clone);
           return clone;
         }
+        return element;
       }
 
       function shiftElementPosition(elementIndex, animStep) {
@@ -113,6 +114,14 @@ define({
           _anim.dstElements[i].style.opacity = 0;
         }
       };
+
+      this.cleanup = function () {
+        for (var i = 0; i < _anim.elements.length; i++) {
+          var parent = _anim.elements[i].parentNode;
+          parent.removeChild(_anim.elements[i]);
+        }
+        _anim.elements = [];
+      }
 
       this.animate = _animate;
       this.setDoneCallback = function(doneCallback) {
