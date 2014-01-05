@@ -58,6 +58,7 @@
     dispatcher: 'responseInterceptors/dispatcher',
     twitterSearchService: 'services/twitterSearchService',
     twitterwallModelHolder: 'services/twitterwallModelHolder',
+    tweetListHolder: 'services/tweetListHolder',
     routes: 'routes'
   });
 

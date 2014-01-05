@@ -106,15 +106,8 @@
   var appConfiguration = appConfiguration || {};
   appConfiguration.searchUrl = 'http://localhost:8080/search';
 </script>
-<script type="text/javascript" src="appConfiguration.js"><!--
-will
-be
-provided
-during
-deployment
-and
-will
-override
-configuration --></script>
+<script type="text/javascript" src="appConfiguration.js">
+  //will be provided during deployment and will override configuration
+</script>
 </body>
 </html>
