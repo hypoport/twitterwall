@@ -1,23 +1,23 @@
 <div class="container">
 
-  <div class="singletweet">
+  <div class="singletweet" id="tweetTop">
 
-    <div class="tweet-user-avatar">
+    <div class="tweet-user-avatar" style="opacity: 0">
       <table>
         <tr>
           <td>
-            <a href="https://twitter.com/{{tweetCurrent.user.screen_name}}" target="_blank"><img
-                    title="@{{tweetCurrent.user.screen_name}}" class="img-rounded"
-                    ng-src="{{tweetCurrent.user.profile_image_url_https}}" alt="avatar" style="height: 80px"></a>
+            <a href="https://twitter.com/{{tweetTop.user.screen_name}}" target="_blank"><img
+                    title="@{{tweetTop.user.screen_name}}" class="img-rounded"
+                    ng-src="{{tweetTop.user.profile_image_url_https}}" alt="avatar" style="height: 80px"></a>
           </td>
           <td>
             <div>
-              <a class="tweet-user-name" href="https://twitter.com/{{tweetCurrent.user.screen_name}}" target="_blank"
-                 title="@{{tweetCurrent.user.screen_name}}">{{tweetCurrent.user.name}}</a>
+              <a class="tweet-user-name" href="https://twitter.com/{{tweetTop.user.screen_name}}" target="_blank"
+                 title="@{{tweetTop.user.screen_name}}">{{tweetTop.user.name}}</a>
             </div>
             <div>
-              <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetCurrent.user.screen_name}}" target="_blank"
-                 title="@{{tweetCurrent.user.screen_name}}">@{{tweetCurrent.user.screen_name}}</a>
+              <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetTop.user.screen_name}}" target="_blank"
+                 title="@{{tweetTop.user.screen_name}}">@{{tweetTop.user.screen_name}}</a>
             </div>
           </td>
         </tr>
@@ -25,36 +25,36 @@
     </div>
 
     <div class="tweet-text">
-      <!-- {{tweetCurrent.text}} -->
-      <span ng-repeat="t in tweetCurrent.text.split('') track by $index" class="letter">{{t}}</span>
+      <!-- {{tweetTop.text}} -->
+      <span ng-repeat="t in tweetTop.text.split('') track by $index" class="letter" style="opacity: 0">{{t}}</span>
     </div>
 
   </div>
 
 
-  <div class="singletweet">
+  <div class="singletweet" id="tweetBottom">
 
     <div class="tweet-text">
-      <!-- {{tweetNext.text}} -->
-      <span ng-repeat="t in tweetNext.text.split('') track by $index" class="letter" style="opacity: 0">{{t}}</span>
+      <!-- {{tweetBottom.text}} -->
+      <span ng-repeat="t in tweetBottom.text.split('') track by $index" class="letter">{{t}}</span>
     </div>
 
-    <div class="tweet-user-avatar" style="opacity: 0">
+    <div class="tweet-user-avatar">
       <table>
         <tr>
           <td>
-            <a href="https://twitter.com/{{tweetNext.user.screen_name}}" target="_blank"><img
-                    title="@{{tweetNext.user.screen_name}}" class="img-rounded"
-                    ng-src="{{tweetNext.user.profile_image_url_https}}" alt="avatar" style="height: 80px"></a>
+            <a href="https://twitter.com/{{tweetBottom.user.screen_name}}" target="_blank"><img
+                    title="@{{tweetBottom.user.screen_name}}" class="img-rounded"
+                    ng-src="{{tweetBottom.user.profile_image_url_https}}" alt="avatar" style="height: 80px"></a>
           </td>
           <td>
             <div>
-              <a class="tweet-user-name" href="https://twitter.com/{{tweetNext.user.screen_name}}" target="_blank"
-                 title="@{{tweetNext.user.screen_name}}">{{tweetNext.user.name}}</a>
+              <a class="tweet-user-name" href="https://twitter.com/{{tweetBottom.user.screen_name}}" target="_blank"
+                 title="@{{tweetBottom.user.screen_name}}">{{tweetBottom.user.name}}</a>
             </div>
             <div>
-              <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetNext.user.screen_name}}" target="_blank"
-                 title="@{{tweetNext.user.screen_name}}">@{{tweetNext.user.screen_name}}</a>
+              <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetBottom.user.screen_name}}" target="_blank"
+                 title="@{{tweetBottom.user.screen_name}}">@{{tweetBottom.user.screen_name}}</a>
             </div>
           </td>
         </tr>

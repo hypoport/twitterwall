@@ -3,16 +3,19 @@ define({
   definition: [
     function () {
 
-      var _anim = {
-        step: 0,
-        dir: 1,
-        elements: [],
-        srcElements: [],
-        dstElements: [],
-        src: [],
-        dst: [],
-        doneCallback: function() {}
-      };
+      function _Anim() {
+        this.step = 0;
+        this.dir = 1;
+        this.elements = [];
+        this.srcElements = [];
+        this.dstElements = [];
+        this.src = [];
+        this.dst = [];
+        this.doneCallback = function () {
+        };
+      }
+
+      var _anim = new _Anim();
 
       function getCoordinates(element) {
         if (element) {
@@ -120,11 +123,12 @@ define({
           var parent = _anim.elements[i].parentNode;
           parent.removeChild(_anim.elements[i]);
         }
-        _anim.elements = [];
+        _anim = new _Anim();
       }
 
+
       this.animate = _animate;
-      this.setDoneCallback = function(doneCallback) {
+      this.setDoneCallback = function (doneCallback) {
         _anim.doneCallback = doneCallback;
       }
 
