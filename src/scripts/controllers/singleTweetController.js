@@ -3,8 +3,8 @@ define({
   definition: [
     '$scope', '$location', '$routeParams', 'twitterSearchService', 'twitterwallModelHolder', 'movingElementsService', '$timeout',
     function ($scope, $location, $routeParams, twitterSearchService, twitterwallModelHolder, movingElementsService, $timeout) {
-      $scope.tweetCurrent = {};
-      $scope.tweetNext = {};
+      $scope.tweetTop = {};
+      $scope.tweetBottom = {};
       $scope.tweetTime = 5000;
 
       var tweets, currentTweet;
@@ -18,10 +18,107 @@ define({
         return array;
       }
 
-      function startAnimationDeferred() {
+      function startAnimationDeferred_A_B() {
         $timeout(function () {
-          var src = toArray(document.getElementsByClassName("tweet-text")[0].getElementsByClassName("letter"));
-          var dst = toArray(document.getElementsByClassName("tweet-text")[1].getElementsByClassName("letter"));
+          function createBlurTweening(elements) {
+            return function () {
+              $(elements).css({
+                "-webkit-filter": "blur(" + this.blur + "px)",
+                "-moz-filter": "blur(" + this.blur + "px)",
+                "filter": "blur(" + this.blur + "px)"
+              });
+            }
+          }
+
+          function finalizeTweetAnimation() {
+            function hideOldTwitterNameAvatar() {
+              $('#tweetTop').find('.tweet-user-avatar').animate({opacity: 0}, 1000, 'swing');
+            }
+
+            function showNewTwitterNameAvatar() {
+              $('#tweetBottom').find('.tweet-user-avatar').animate({opacity: 1}, 1000, 'swing');
+            }
+
+            function triggerTimerForNextTweet() {
+              startAnimationDeferred_B_A();
+            }
+
+            (function makeAllDstElementsVisible() {
+              hideOldTwitterNameAvatar()
+              var runOnlyOnceGuard = false;
+              // blurring
+              $({blur: 5}).animate({blur: 0}, {
+                duration: 1000,
+                easing: 'swing', // or "linear"
+                step: createBlurTweening(dstDelta)
+              });
+              // fading
+              $(dst).animate({opacity: 1}, 1000, 'swing', function () {
+                if (!runOnlyOnceGuard) {
+                  runOnlyOnceGuard = true;
+                  movingElementsService.cleanup();
+                  showNewTwitterNameAvatar();
+                  triggerTimerForNextTweet();
+                }
+              });
+            })();
+          }
+
+          var src = toArray(document.getElementById("tweetTop").getElementsByClassName("letter"));
+          var dst = toArray(document.getElementById("tweetBottom").getElementsByClassName("letter"));
+          var dstDelta = toArray(dst);
+
+          (function findMatchingLettersAndFilterThemOut() {
+            elementMap = [];
+            for (var i in src) {
+              for (var j in dstDelta) {
+                if (dstDelta[j] && src[i].textContent == dstDelta[j].textContent) {
+                  elementMap.push({src: src[i], dst: dstDelta[j]});
+                  delete dstDelta[j];
+                  delete src[i];
+                  break;
+                }
+              }
+            }
+            src = src.filter(function (x) {
+              return x != undefined;
+            });
+          })();
+
+          movingElementsService.addSourceElements(elementMap.map(function (e) {
+            return e.src
+          }));
+          movingElementsService.addDestinationElements(elementMap.map(function (e) {
+            return e.dst
+          }));
+          movingElementsService.prepare();
+          movingElementsService.setDoneCallback(finalizeTweetAnimation);
+
+          var runOnlyOnceGuard = false;
+          if (src.length) {
+            // blurring
+            $({blur: 0}).animate({blur: 5}, {
+              duration: 1000,
+              easing: 'swing', // or "linear"
+              step: createBlurTweening(src)
+            });
+            // fading
+            $(src).animate({opacity: 0}, 1000, "swing", function () {
+              if (!runOnlyOnceGuard) {
+                runOnlyOnceGuard = true;
+                movingElementsService.animate();
+              }
+            });
+          } else {
+            movingElementsService.animate();
+          }
+        }, 1);
+      }
+
+      function startAnimationDeferred_B_A() {
+        $timeout(function () {
+          var src = toArray(document.getElementById("tweetBottom").getElementsByClassName("letter"));
+          var dst = toArray(document.getElementById("tweetTop").getElementsByClassName("letter"));
           var dstDelta = toArray(dst);
 
           (function findMatchingLettersAndFilterThemOut() {
@@ -53,11 +150,15 @@ define({
 
           function finalizeTweetAnimation() {
             function hideOldTwitterNameAvatar() {
-              $('.tweet-user-avatar:first').animate({opacity: 0}, 1000, 'swing');
+              $('#tweetBottom').find('.tweet-user-avatar').animate({opacity: 0}, 1000, 'swing');
             }
 
             function showNewTwitterNameAvatar() {
-              $('.tweet-user-avatar:last').animate({opacity: 1}, 1000, 'swing');
+              $('#tweetTop').find('.tweet-user-avatar').animate({opacity: 1}, 1000, 'swing');
+            }
+
+            function triggerTimerForNextTweet() {
+              $timeout(startAnimationDeferred_A_B(), 1);
             }
 
             (function makeAllDstElementsVisible() {
@@ -75,6 +176,7 @@ define({
                   runOnlyOnceGuard = true;
                   movingElementsService.cleanup();
                   showNewTwitterNameAvatar();
+                  triggerTimerForNextTweet();
                 }
               });
             })();
@@ -110,10 +212,11 @@ define({
         }, 1);
       }
 
+
       var rotateTweets = function () {
-        $scope.tweetCurrent = tweets[0];
-        $scope.tweetNext = tweets[1];
-        startAnimationDeferred();
+        $scope.tweetTop = tweets[0];
+        $scope.tweetBottom = tweets[1];
+        startAnimationDeferred_B_A();
       }
 
       twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
