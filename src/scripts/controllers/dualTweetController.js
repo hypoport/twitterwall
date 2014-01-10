@@ -6,11 +6,11 @@ define({
       $scope.tweetTime = 5000;
       $scope.noTweets = true;
       var _secondTweet, rotateTweets;
-      this._listenerRegistered = false;
+      _listenerRegistered = false;
 
-      if (!this._listenerRegistered) {
-        this._listenerRegistered = true;
-        this._rotate = false;
+      if (!_listenerRegistered) {
+        _listenerRegistered = true;
+        _rotate = false;
         $log.debug("register SearchStartListener");
         tweetListHolder.registerSearchStartListener(function () {
           $log.debug("dualTweetController SearchListener started");
@@ -29,7 +29,8 @@ define({
         }
         $scope.tweet2 = _secondTweet;
         $scope.noTweets = $scope.tweet == null && $scope.tweet2 == null;
-        $timeout(rotateTweets, 5000);
+        if($scope.noTweets)
+          $timeout(rotateTweets, 5000);
       })();
     }
   ]

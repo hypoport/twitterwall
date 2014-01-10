@@ -1,18 +1,22 @@
-<div class="well tweet-box">
-  <div class="tweet-text-and-user">
-    <div class="tweet-text pull-left">
-      <span ng-repeat="t in tweetData.text.split('') track by $index" ng-class="t{{$index}}">{{t}}</span>
+<div class="tweet-box">
+  <div class="tweet-text-and-avatar">
+      <div class="tweet-text pull-left">
+        {{tweetData.text}}
+      </div>
+      <a class="tweet-user tweet-user-avatar pull-right" href="https://twitter.com/{{tweetData.user.screen_name}}"
+         target="_blank"><img
+          title="@{{tweetData.user.screen_name}}" class="pull-right tweet-box-avatar"
+          ng-src="{{tweetData.user.profile_image_url_https}}" alt="avatar" width="128px"></a>
     </div>
-        <span class="pull-right">
-          <a class="tweet-user tweet-user-avatar" href="https://twitter.com/{{tweetData.user.screen_name}}"
-             target="_blank"><img
-              title="@{{tweetData.user.screen_name}}" class="pull-right img-rounded"
-              ng-src="{{tweetData.user.profile_image_url_https}}" alt="avatar" width="128px"></a>
-          <br class="clearfix">
-          <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetData.user.screen_name}}" target="_blank"
-             title="@{{tweetData.user.screen_name}}">{{tweetData.user.name}}</a>
-        </span>
 
-    <div class="clearfix"></div>
-  </div>
+    <div class="tweet-time-and-name">
+      <div class="tweet-time  pull-left">
+        {{tweetData.created_at | date: 'dd MMM yy  HH:mm:ss'}}
+      </div>
+      <div class="pull-right">
+        <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetData.user.screen_name}}" target="_blank"
+           title="@{{tweetData.user.screen_name}}">{{tweetData.user.name}}</a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
 </div>
