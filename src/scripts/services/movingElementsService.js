@@ -46,8 +46,8 @@ define({
           var dst = _anim.dst;
           var a = (Math.cos(Math.PI * animStep / 30) + 1) / 2;
           var z = 1 - a;
-          var x = src[elementIndex].x * a + dst[elementIndex].x * z;
-          var y = src[elementIndex].y * a + dst[elementIndex].y * z;
+          var x = src[elementIndex].x * a + (dst[elementIndex].x + _anim.dstElements[elementIndex].offsetParent.offsetLeft - _anim.srcElements[elementIndex].offsetParent.offsetLeft) * z;
+          var y = src[elementIndex].y * a + (dst[elementIndex].y + _anim.dstElements[elementIndex].offsetParent.offsetTop - _anim.srcElements[elementIndex].offsetParent.offsetTop) * z;
           var e = _anim.elements[elementIndex];
           e.style.left = x + 'px';
           e.style.top = y + 'px';
