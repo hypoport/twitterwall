@@ -3,8 +3,8 @@ define({
   definition: [
     '$scope', '$location', '$routeParams', '$log', 'tweetListHolder', '$timeout', '$filter',
     function ($scope, $location, $routeParams, $log, tweetListHolder, $timeout, $filter) {
-      $scope.tweet == null;
-      $scope.tweet2 == null;
+      $scope.tweet = null;
+      $scope.tweet2 = null;
       var _rotator;
       _listenerRegistered = false;
 
