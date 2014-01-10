@@ -36,10 +36,10 @@
 
     <div class="tweet-text">
       <!-- {{tweetBottom.text}} -->
-      <span ng-repeat="t in tweetBottom.text.split('') track by $index" class="letter">{{t}}</span>
+      <span ng-repeat="t in tweetBottom.text.split('') track by $index" class="letter" style="opacity: 0">{{t}}</span>
     </div>
 
-    <div class="tweet-user-avatar">
+    <div class="tweet-user-avatar" style="opacity: 0">
       <table>
         <tr>
           <td>

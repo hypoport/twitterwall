@@ -1,8 +1,8 @@
 define({
   type: 'controller',
   definition: [
-    '$scope', '$location', '$routeParams', 'twitterSearchService', 'twitterwallModelHolder', 'movingElementsService', '$timeout',
-    function ($scope, $location, $routeParams, twitterSearchService, twitterwallModelHolder, movingElementsService, $timeout) {
+    '$scope', '$location', '$routeParams', 'tweetListHolder', 'movingElementsService', '$timeout',
+    function ($scope, $location, $routeParams, tweetListHolder, movingElementsService, $timeout) {
       $scope.tweetTop = {};
       $scope.tweetBottom = {};
       $scope.tweetTime = 5000;
@@ -34,15 +34,24 @@ define({
 
           function finalizeTweetAnimation() {
             function hideOldTwitterNameAvatar() {
-              $('#'+ srcId).find('.tweet-user-avatar').animate({opacity: 0}, 1000, 'swing');
+              $('#' + srcId).find('.tweet-user-avatar').animate({opacity: 0}, 1000, 'swing');
             }
 
             function showNewTwitterNameAvatar() {
-              $('#'+ dstId).find('.tweet-user-avatar').animate({opacity: 1}, 1000, 'swing');
+              $('#' + dstId).find('.tweet-user-avatar').animate({opacity: 1}, 1000, 'swing');
+            }
+
+            function resetBlurEffectOnSources() {
+              $(src).css({
+                opacity: 0,
+                "-webkit-filter": "none",
+                "-moz-filter": "none",
+                "filter": "none"
+              });
             }
 
             function triggerTimerForNextTweet() {
-              startAnimationDeferred(dstId, srcId);
+              $timeout(rotateTweets.bind(undefined, dstId, srcId), 2000);
             }
 
             (function makeAllDstElementsVisible() {
@@ -60,14 +69,15 @@ define({
                   runOnlyOnceGuard = true;
                   movingElementsService.cleanup();
                   showNewTwitterNameAvatar();
+                  resetBlurEffectOnSources();
                   triggerTimerForNextTweet();
                 }
               });
             })();
           }
 
-          var src = toArray($('#'+srcId).find(".letter"));
-          var dst = toArray($('#'+dstId).find(".letter"));
+          var src = toArray($('#' + srcId).find(".letter"));
+          var dst = toArray($('#' + dstId).find(".letter"));
           var dstDelta = toArray(dst);
 
           (function findMatchingLettersAndFilterThemOut() {
@@ -117,29 +127,49 @@ define({
         }, 2000);
       }
 
-      var rotateTweets = function () {
-        $scope.tweetTop = tweets[0];
-        $scope.tweetBottom = tweets[1];
-        startAnimationDeferred("tweetBottom", "tweetTop");
+      _listenerRegistered = false;
+
+      if (!_listenerRegistered) {
+        _listenerRegistered = true;
+//        _rotate = false;
+//        $log.debug("register SearchStartListener");
+        tweetListHolder.registerSearchStartListener(function () {
+//          $scope.tweetTop = ??;
+//          $scope.tweetBottom = ??;
+        });
       }
 
-      twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
-        $location.path('/1/' + newSearchValue);
-      });
-      twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
-        if (newSearchValue && newSearchValue.length > 0) {
-          twitterSearchService.start(newSearchValue, function (result) {
-            currentTweet = 0;
-            tweets = result;
-            rotateTweets();
-          });
-
-          twitterSearchService.stop();
+      var rotateTweets = function (srcId, dstId) {
+        dstId = dstId || "tweetTop";
+        srcId = srcId || "tweetBottom";
+        var nextTweet = tweetListHolder.getNextTweet();
+        if (nextTweet) {
+          $scope[dstId] = nextTweet;
+          startAnimationDeferred(srcId, dstId);
         }
-      });
-      if ($routeParams.query && $routeParams.query.length > 0) {
-        twitterwallModelHolder.setSearchValue($routeParams.query);
+        else
+          $timeout(rotateTweets, 1000);
       }
+
+      $timeout(rotateTweets, 1);
+
+//      twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
+//        $location.path('/1/' + newSearchValue);
+//      });
+//      twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
+//        if (newSearchValue && newSearchValue.length > 0) {
+//          twitterSearchService.start(newSearchValue, function (result) {
+//            currentTweet = 0;
+//            tweets = result;
+//            rotateTweets();
+//          });
+//
+//          twitterSearchService.stop();
+//        }
+//      });
+//      if ($routeParams.query && $routeParams.query.length > 0) {
+//        twitterwallModelHolder.setSearchValue($routeParams.query);
+//      }
     }
   ]
 });
