@@ -53,11 +53,11 @@ define({
 
           function finalizeTweetAnimation() {
             function hideOldTwitterNameAvatar() {
-              $('.tweet-user-avatar:first').animate({opacity: 0}, 1000, "swing");
+              $('.tweet-user-avatar:first').animate({opacity: 0}, 1000, 'swing');
             }
 
             function showNewTwitterNameAvatar() {
-              $('.tweet-user-avatar:last').animate({opacity: 1}, 1000, "swing");
+              $('.tweet-user-avatar:last').animate({opacity: 1}, 1000, 'swing');
             }
 
             (function makeAllDstElementsVisible() {
@@ -70,7 +70,7 @@ define({
                 step: createBlurTweening(dstDelta)
               });
               // fading
-              $(dst).animate({opacity: 1}, 1000, "swing", function () {
+              $(dst).animate({opacity: 1}, 1000, 'swing', function () {
                 if (!runOnlyOnceGuard) {
                   runOnlyOnceGuard = true;
                   movingElementsService.cleanup();
