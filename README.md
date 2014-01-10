@@ -19,7 +19,7 @@
 
 Assuming, Twitterwall-server is running on port 8000.
 
-````$> node tools\development-server.js````
+````$> node tools/development-server.js````
 
 ## Live Demo
 

@@ -1,5 +1,4 @@
 <div class="container">
-  <h2>Beamer optimized View</h2>
 
   <div ng-hide="noTweets">
     <!--tweetDirective for tweet1-->
