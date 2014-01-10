@@ -16,11 +16,11 @@ define({
 
       if (!_listenerRegistered) {
         _listenerRegistered = true;
-        if (_rotator) {
-          _rotator.stop();
-        }
         $log.debug("register SearchStartListener");
         tweetListHolder.registerSearchStartListener(function () {
+          if (_rotator) {
+            _rotator.stop();
+          }
           $log.debug("dualTweetController SearchListener started");
           $scope.tweet = null;
           $scope.tweet2 = null;
