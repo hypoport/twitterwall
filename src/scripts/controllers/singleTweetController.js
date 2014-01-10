@@ -136,7 +136,7 @@ define({
       if (!_listenerRegistered) {
         _listenerRegistered = true;
         tweetListHolder.registerSearchStartListener(function () {
-          rotateTweets();
+//          rotateTweets(); --> nice, but will create a leak
         });
       }
 
@@ -147,8 +147,12 @@ define({
         if (nextTweet) {
           $scope[dstId] = nextTweet;
           startAnimationDeferred(srcId, dstId);
+        } else {
+          $timeout(rotateTweets, 1000);
         }
       }
+
+      $timeout(rotateTweets, 1);
 
     }
   ]
