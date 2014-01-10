@@ -60,23 +60,23 @@
       <a class="brand ueberschrift" href="#">Hypoport Twitterwall</a>
 
       <div class="nav-collapse collapse">
-        <ul class="nav nav-pills">
-          <li>
-            <a href="#/1">
-              1
-            </a>
-          </li>
-          <li>
-            <a href="#/2">
-              2
-            </a>
-          </li>
-          <li>
-            <a href="#/3">
-              3
-            </a>
-          </li>
-        </ul>
+        <!--<ul class="nav nav-pills">-->
+        <!--<li>-->
+        <!--<a href="#/1">-->
+        <!--1-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="#/2">-->
+        <!--2-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="#/3">-->
+        <!--3-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--</ul>-->
         <form class="navbar-form pull-right" ng-controller="menuBarController">
           <input class="span2" type="text" placeholder="Hashtag" ng-model="searchValue" ng-submit="doTwitterSearch()">
           <button class="btn" ng-click="doTwitterSearch()"><i class="icon-search"></i></button>
