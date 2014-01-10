@@ -42,8 +42,10 @@ define({
             }
 
             function resetBlurEffectOnSources() {
-              $(src).css({
+              $('#' + srcId).find('.letter').css({
                 opacity: 0,
+                top: 0,
+                left: 0,
                 "-webkit-filter": "none",
                 "-moz-filter": "none",
                 "filter": "none"
@@ -64,12 +66,13 @@ define({
                 step: createBlurTweening(dstDelta)
               });
               // fading
-              $(dst).animate({opacity: 1}, 1000, 'swing', function () {
+              $(dstDelta).animate({opacity: 1}, 1000, 'swing', function () {
                 if (!runOnlyOnceGuard) {
                   runOnlyOnceGuard = true;
                   movingElementsService.cleanup();
                   showNewTwitterNameAvatar();
                   resetBlurEffectOnSources();
+                  $(dst).css({opacity: 1});
                   triggerTimerForNextTweet();
                 }
               });
