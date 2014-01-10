@@ -9,7 +9,7 @@
               title="@{{tweetData.user.screen_name}}" class="pull-right img-rounded"
               ng-src="{{tweetData.user.profile_image_url_https}}" alt="avatar" width="128px"></a>
           <br class="clearfix">
-          <a class="tweet-user" href="https://twitter.com/{{tweetData.user.screen_name}}" target="_blank"
+          <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetData.user.screen_name}}" target="_blank"
              title="@{{tweetData.user.screen_name}}">{{tweetData.user.name}}</a>
         </span>
 
