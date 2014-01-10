@@ -1,18 +1,21 @@
 define({
   type: "service",
   definition: [
-    '$log', '$routeParams', '$location', 'twitterSearchService', 'twitterwallModelHolder', function ($log, $routeParams, $location, twitterSearchService, twitterwallModelHolder) {
+    '$log', '$routeParams', '$location', 'twitterSearchService', 'twitterwallModelHolder',
+    function ($log, $routeParams, $location, twitterSearchService, twitterwallModelHolder) {
       var _tweets = new Array();
       var _maxTweetCount = 30;
       var _currentTweetNumber = 0;
       var _tweetSearchStartListener = []
       var _activeSearchService;
+      var _searchWasStarted = false;
 
       twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
         if (_activeSearchService) {
           _activeSearchService.stop();
         }
-        this._tweets = new Array();
+        _tweets = new Array();
+        // [Daniel Ranke]: Update path, seams to create a new controller instance that registered another tweetSearchListener
 //        $log.debug("update location with path: " + '/2/' + newSearchValue);
 //        $location.path('/2/' + newSearchValue);
         startSearch();
@@ -35,6 +38,7 @@ define({
             $log.error(error);
           }
         }
+        _searchWasStarted = true;
       }
 
       startRequest = function (newSearchValue) {
@@ -47,26 +51,28 @@ define({
 
         if (newSearchValue && newSearchValue.length > 0) {
           _activeSearchService = twitterSearchService.provideNewService();
-          fireSearchStartEvent();
           $log.debug("activeSearchService" + _activeSearchService);
           _activeSearchService.start(newSearchValue, function (tweets) {
-            // http://stackoverflow.com/questions/1232040/how-to-empty-an-array-in-javascript
-            if (tweets.length > 0) {
-              $log.debug("search results received and inserted: " + tweets.length);
-              _currentTweetNumber = 0; // move pointer to first entry
-              var tweet, _i, _len;
-              for (_i = 0, _len = tweets.length; _i < _len; _i++) {
-                tweet = tweets[_i];
-                addNewTweet(tweet);
+                // http://stackoverflow.com/questions/1232040/how-to-empty-an-array-in-javascript
+                if (tweets.length > 0) {
+                  $log.debug("search results received and inserted: " + tweets.length);
+                  _currentTweetNumber = 0; // move pointer to first entry
+                  var tweet, _i, _len;
+                  for (_i = 0, _len = tweets.length; _i < _len; _i++) {
+                    tweet = tweets[_i];
+                    addNewTweet(tweet);
+                  }
+                  $log.debug("current tweet length: " + _tweets.length);
+                  if (!_searchWasStarted) {
+                    fireSearchStartEvent();
+                  }
+                }
+                else {
+                  $log.debug("no new tweets received");
+                }
               }
-              $log.debug("current tweet length: " + _tweets.length);
-            }
-            else {
-              $log.debug("no new tweets received");
-            }
-          });
+          );
 
-//          twitterSearchService.stop();
         }
       };
 
@@ -85,7 +91,7 @@ define({
         if (_currentTweetNumber >= _tweets.length) {
           _currentTweetNumber = 0;
         }
-        $log.debug("getNextTweet: " + _currentTweetNumber)
+//        $log.debug("getNextTweet: " + _currentTweetNumber)
         return _tweets[(_currentTweetNumber++)];
       }
 
