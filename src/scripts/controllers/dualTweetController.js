@@ -29,7 +29,8 @@ define({
         }
         $scope.tweet2 = _secondTweet;
         $scope.noTweets = $scope.tweet == null && $scope.tweet2 == null;
-        $timeout(rotateTweets, 5000);
+        if($scope.noTweets)
+          $timeout(rotateTweets, 5000);
       })();
     }
   ]
