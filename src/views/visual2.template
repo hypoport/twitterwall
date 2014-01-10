@@ -1,10 +1,10 @@
 <div class="container">
 
-  <div ng-hide="noTweets">
+  <div>
     <!--tweetDirective for tweet1-->
-    <tweet-directive data="tweet" class="dualtweets"></tweet-directive>
+    <tweet-directive data="tweet" class="dualtweets" ng-hide="noTweet1"></tweet-directive>
     <!--tweetDirective for tweet2-->
-    <tweet-directive data="tweet2" class="dualtweets"></tweet-directive>
+    <tweet-directive data="tweet2" class="dualtweets" ng-hide="noTweet2"></tweet-directive>
   </div>
 
 </div>
