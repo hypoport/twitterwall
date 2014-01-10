@@ -3,11 +3,12 @@ define({
   definition: [
     '$scope', '$location', '$routeParams', 'tweetListHolder', 'movingElementsService', '$timeout',
     function ($scope, $location, $routeParams, tweetListHolder, movingElementsService, $timeout) {
+
+      'use strict';
+
       $scope.tweetTop = {};
       $scope.tweetBottom = {};
       $scope.tweetTime = 5000;
-
-      var tweets, currentTweet;
 
       function toArray(obj) {
         var array = [];
@@ -82,9 +83,9 @@ define({
           var src = toArray($('#' + srcId).find(".letter"));
           var dst = toArray($('#' + dstId).find(".letter"));
           var dstDelta = toArray(dst);
+          var elementMap = [];
 
           (function findMatchingLettersAndFilterThemOut() {
-            elementMap = [];
             for (var i in src) {
               for (var j in dstDelta) {
                 if (dstDelta[j] && src[i].textContent == dstDelta[j].textContent) {
@@ -130,15 +131,12 @@ define({
         }, 2000);
       }
 
-      _listenerRegistered = false;
+      var _listenerRegistered = false;
 
       if (!_listenerRegistered) {
         _listenerRegistered = true;
-//        _rotate = false;
-//        $log.debug("register SearchStartListener");
         tweetListHolder.registerSearchStartListener(function () {
-//          $scope.tweetTop = ??;
-//          $scope.tweetBottom = ??;
+          rotateTweets();
         });
       }
 
@@ -150,29 +148,8 @@ define({
           $scope[dstId] = nextTweet;
           startAnimationDeferred(srcId, dstId);
         }
-        else
-          $timeout(rotateTweets, 1000);
       }
 
-      $timeout(rotateTweets, 1);
-
-//      twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
-//        $location.path('/1/' + newSearchValue);
-//      });
-//      twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
-//        if (newSearchValue && newSearchValue.length > 0) {
-//          twitterSearchService.start(newSearchValue, function (result) {
-//            currentTweet = 0;
-//            tweets = result;
-//            rotateTweets();
-//          });
-//
-//          twitterSearchService.stop();
-//        }
-//      });
-//      if ($routeParams.query && $routeParams.query.length > 0) {
-//        twitterwallModelHolder.setSearchValue($routeParams.query);
-//      }
     }
   ]
 });
