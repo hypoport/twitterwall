@@ -78,8 +78,8 @@
         <!--</li>-->
         <!--</ul>-->
         <form class="navbar-form pull-right" ng-controller="menuBarController">
-          <span style="display: inline; font-size: 18pt; margin-right: 5px; vertical-align: middle">#</span><input
-            class="span2" type="text" placeholder="Hashtag" ng-model="searchValue" ng-submit="doTwitterSearch()">
+          <span class="brand" style="padding: 10px 0 0 0">#</span>
+          <input class="span2" type="text" placeholder="Hashtag" ng-model="searchValue" ng-submit="doTwitterSearch()">
           <button class="btn" ng-click="doTwitterSearch()"><i class="icon-search"></i></button>
         </form>
       </div>
