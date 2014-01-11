@@ -50,6 +50,36 @@
   </script>
   <!-- ClickJacking Defense end -->
 
+  <style type="text/css">
+    /* Sticky footer styles
+    -------------------------------------------------- */
+
+    html,
+    body {
+      height: 100%;
+      /* The html and body elements cannot have any padding or margin. */
+    }
+
+    /* Wrapper for page content to push down footer */
+    #wrap {
+      min-height: 100%;
+      height: auto !important;
+      height: 100%;
+      /* Negative indent footer by it's height */
+      margin: 0 auto -60px;
+    }
+
+    /* Set the fixed height of the footer here */
+    #push,
+    #footer {
+      height: 60px;
+    }
+    #footer {
+      background-color: #f5f5f5;
+    }
+
+  </style>
+
 </head>
 <body ng-cloak class="ng-cloak">
 
@@ -88,14 +118,18 @@
   </div>
 </div>
 
-<div class="container">
-  <ng:view></ng:view>
+<div id="wrap">
+  <div class="container">
+    <ng:view></ng:view>
+  </div>
+</div>
 
-  <div id="footer">
-    <div id="gitHub">GitHub: <a href="https://github.com/hypoport/twitterwall">github.com/hypoport/twitterwall</a></div>
-    <div id="author">Authors: Martin W. Kirst, Daniel Ranke, Oliver Otzen, Erik Karge, Alexander Grünewald, Timmo
-      Gierke
-    </div>
+<div id="footer" style="height: 20px;">
+  <div class="container">
+    <p class="muted credit">
+      <span class="pull-left">Sources: http://github.com/hypoport/twitterwall</span>
+      <span class="pull-right">Authors: Martin, Daniel, Oliver, Erik, Alexander, Timmo, Rene</span>
+    </p>
   </div>
 </div>
 
