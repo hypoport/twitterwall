@@ -17,7 +17,7 @@ define({
             if (!_stopped) {
               $log.debug("search with: " + query)
               $http
-                  .get($window.appConfiguration.searchUrl, {
+                  .get('/search', {
                     'params': {
                       'q': query,
                       'include_entities': "true",
