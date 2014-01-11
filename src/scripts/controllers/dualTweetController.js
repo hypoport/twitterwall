@@ -3,10 +3,12 @@ define({
   definition: [
     '$scope', '$location', '$routeParams', '$log', 'tweetListHolder', '$timeout', '$filter',
     function ($scope, $location, $routeParams, $log, tweetListHolder, $timeout, $filter) {
+      'use strict';
+      
       $scope.tweet = null;
       $scope.tweet2 = null;
       var _rotator;
-      _listenerRegistered = false;
+      var _listenerRegistered = false;
 
       var _setTweetVisibility = function () {
         $scope.noTweet1 = $scope.tweet == null;
