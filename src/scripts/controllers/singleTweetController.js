@@ -1,8 +1,8 @@
 define({
   type: 'controller',
   definition: [
-    '$scope', '$location', '$routeParams', 'tweetListHolder', 'movingElementsService', '$timeout',
-    function ($scope, $location, $routeParams, tweetListHolder, movingElementsService, $timeout) {
+    '$scope', '$location', '$routeParams', 'tweetListHolder', 'movingElementsService', '$timeout','$log',
+    function ($scope, $location, $routeParams, tweetListHolder, movingElementsService, $timeout, $log) {
 
       'use strict';
 
@@ -144,6 +144,7 @@ define({
         dstId = dstId || "tweetTop";
         srcId = srcId || "tweetBottom";
         var nextTweet = tweetListHolder.getNextTweet();
+        $log.debug("SingleTweetController: getNextTweet()=" + nextTweet);
         if (nextTweet) {
           $scope[dstId] = nextTweet;
           startAnimationDeferred(srcId, dstId);
