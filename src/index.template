@@ -78,7 +78,8 @@
         <!--</li>-->
         <!--</ul>-->
         <form class="navbar-form pull-right" ng-controller="menuBarController">
-          <input class="span2" type="text" placeholder="Hashtag" ng-model="searchValue" ng-submit="doTwitterSearch()">
+          <span style="display: inline; font-size: 18pt; margin-right: 5px; vertical-align: middle">#</span><input
+            class="span2" type="text" placeholder="Hashtag" ng-model="searchValue" ng-submit="doTwitterSearch()">
           <button class="btn" ng-click="doTwitterSearch()"><i class="icon-search"></i></button>
         </form>
       </div>
@@ -90,7 +91,12 @@
 <div class="container">
   <ng:view></ng:view>
 
-
+  <div id="footer">
+    <div id="gitHub">GitHub: <a href="https://github.com/hypoport/twitterwall">github.com/hypoport/twitterwall</a></div>
+    <div id="author">Authors: Martin W. Kirst, Daniel Ranke, Oliver Otzen, Erik Karge, Alexander Grünewald, Timmo
+      Gierke
+    </div>
+  </div>
 </div>
 
 <!--<script type="text/javascript" src="TweetController.js"></script>-->

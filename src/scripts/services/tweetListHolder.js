@@ -3,6 +3,8 @@ define({
   definition: [
     '$log', '$routeParams', '$location', 'twitterSearchService', 'twitterwallModelHolder',
     function ($log, $routeParams, $location, twitterSearchService, twitterwallModelHolder) {
+      'use strict';
+
       var _tweets = new Array();
       var _maxTweetCount = 30;
       var _currentTweetNumber = 0;
@@ -21,12 +23,12 @@ define({
         startSearch();
       });
 
-      addNewTweet = function (tweet) {
+      var _addNewTweet = function (tweet) {
         _tweets.unshift(tweet);
         _tweets = _tweets.slice(0, _maxTweetCount);
       };
 
-      fireSearchStartEvent = function () {
+      var _fireSearchStartEvent = function () {
         var _i, _len, _ref, listener, error;
         _ref = _tweetSearchStartListener;
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
@@ -41,7 +43,7 @@ define({
         _searchWasStarted = true;
       }
 
-      startRequest = function (newSearchValue) {
+      var _startRequest = function (newSearchValue) {
         $log.debug("tweets before dropping: " + _tweets.length);
         $log.debug("start new search on search value:" + newSearchValue);
         while (_tweets.length > 0) {
@@ -60,11 +62,11 @@ define({
                   var tweet, _i, _len;
                   for (_i = 0, _len = tweets.length; _i < _len; _i++) {
                     tweet = tweets[_i];
-                    addNewTweet(tweet);
+                    _addNewTweet(tweet);
                   }
                   $log.debug("current tweet length: " + _tweets.length);
                   if (!_searchWasStarted) {
-                    fireSearchStartEvent();
+                    _fireSearchStartEvent();
                   }
                 }
                 else {
@@ -79,7 +81,7 @@ define({
       var startSearch = function () {
         if (twitterwallModelHolder._searchValue && twitterwallModelHolder._searchValue.length > 0) {
 //          $log.debug("update search value through route parameter");
-          startRequest(twitterwallModelHolder._searchValue)
+          _startRequest(twitterwallModelHolder._searchValue)
         }
       };
 
