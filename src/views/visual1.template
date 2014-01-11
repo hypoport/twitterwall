@@ -43,13 +43,8 @@
     </div>
 
     <div class="tweet-user-avatar" style="opacity: 0">
-      <table>
+      <table class="pull-right">
         <tr>
-          <td>
-            <a href="https://twitter.com/{{tweetBottom.user.screen_name}}" target="_blank"><img
-                    title="@{{tweetBottom.user.screen_name}}" class="img-rounded"
-                    ng-src="{{tweetBottom.user.profile_image_url_https}}" alt="avatar" style="height: 80px"></a>
-          </td>
           <td>
             <div>
               <a class="tweet-user-name" href="https://twitter.com/{{tweetBottom.user.screen_name}}" target="_blank"
@@ -62,6 +57,11 @@
             <div class="tweet-time">
               {{tweetBottom.created_at | date: 'dd MMM yy  HH:mm:ss'}}
             </div>
+          </td>
+          <td>
+            <a href="https://twitter.com/{{tweetBottom.user.screen_name}}" target="_blank"><img
+                    title="@{{tweetBottom.user.screen_name}}" class="img-rounded"
+                    ng-src="{{tweetBottom.user.profile_image_url_https}}" alt="avatar" style="height: 80px"></a>
           </td>
         </tr>
       </table>
