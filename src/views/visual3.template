@@ -2,23 +2,31 @@
 
   <div class="tweetlist">
     <ul>
-      <li ng-repeat="tweet in tweets" ng-class="tweet{{$index}}" class="tweetlist-animation">
-        <div class="well tweet-box">
-          <div class="tweet-text-and-user">
+      <li ng-repeat="tweet in tweets" class="animate">
+        <div class="tweet-box">
+          <div class="tweet-text-and-avatar">
             <div class="tweet-text pull-left">
-              <!-- {{tweet.text}} -->
-              <span ng-repeat="t in tweet.text.split('') track by $index" ng-class="t{{$index}}">{{t}}</span>
+              {{tweet.text}}
             </div>
-            <span class="pull-right">
-              <a class="tweet-user" href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank"><img title="@{{tweet.user.screen_name}}" class="pull-right img-rounded" ng-src="{{tweet.user.profile_image_url_https}}" alt="avatar" width="64px"></a>
-              <br class="clearfix">
-              <a class="tweet-user" href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank" title="@{{tweet.user.screen_name}}">{{tweet.user.name}}</a>
-            </span>
+            <a class="tweet-user tweet-user-avatar pull-right" href="https://twitter.com/{{tweet.user.screen_name}}"
+               target="_blank"><img
+                title="@{{tweet.user.screen_name}}" class="pull-right tweet-box-avatar"
+                ng-src="{{tweet.user.profile_image_url_https}}" alt="avatar" width="128px"></a>
+          </div>
+
+          <div class="tweet-time-and-name">
+            <div class="tweet-time  pull-left">
+              {{tweet.created_at | date: 'dd MMM yy  HH:mm:ss'}}
+            </div>
+            <div class="pull-right">
+              <a class="tweet-user-screen-name" href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank"
+                 title="@{{tweet.user.screen_name}}">{{tweet.user.name}}</a>
+            </div>
             <div class="clearfix"></div>
           </div>
         </div>
       </li>
     </ul>
   </div>
-
 </div>
+

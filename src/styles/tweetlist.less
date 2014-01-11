@@ -1,11 +1,23 @@
 .tweetlist {
+  position: relative;
 
   .tweet-box {
-    margin-top: 3%;
-    margin-left: 15%;
-    margin-right: 15%;
+    //    position: absolute;
+    //    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
     background-color: white;
-    min-height: 65px;
+    height: 120px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #d0d0d0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
   }
 
   .tweet-text-and-user {
@@ -29,29 +41,86 @@
     width: 100%;
   }
 
-}
+/*
+  .animate {
+    position: absolute;
+    display: block;
+  }
+*/
 
-.tweetlist-animation.ng-enter,
-.tweetlist-animation.ng-leave,
-.tweetlist-animation.ng-move {
-  transition: 0.7s linear all;
-}
+  .animate.ng-enter,
+  .animate.ng-leave {
+    -webkit-transition: 1800ms cubic-bezier(0.40, 0, 0.60, 1) all;
+    -moz-transition: 1800ms cubic-bezier(0.40, 0, 0.60, 1) all;
+    -ms-transition: 1800ms cubic-bezier(0.40, 0, 0.60, 1) all;
+    -o-transition: 1800ms cubic-bezier(0.40, 0, 0.60, 1) all;
+    transition: 1800ms cubic-bezier(0.40, 0, 0.60, 1) all;
+    display: block;
 
-.tweetlist-animation.ng-enter,
-.tweetlist-animation.ng-move {
-  opacity: 0;
-  //  height: 0;
-}
+    //  position: relative;
+    //  display: block;
+  }
 
-.tweetlist-animation.ng-move.ng-move-active,
-.tweetlist-animation.ng-enter.ng-enter-active {
-  opacity: 1;
-}
+//  .animate.ng-move {
+//    top: -600px;
+//  }
 
-.tweetlist-animation.ng-leave {
-  opacity: 1;
-}
+  .animate.ng-enter{
+    opacity: 1;
+    overflow: hidden;
+//    top: -100px;
+        height: 0px;
+    //  position: relative; display: block;
+  }
 
-.tweetlist-animation.ng-leave.ng-leave-active {
-  opacity: 0;
+  .animate.ng-enter.ng-enter-active{
+      opacity: 1;
+        height: 150px;
+  }
+
+  .animate.ng-leave{
+    overflow: hidden;
+    opacity: 1;
+    height: 150px;
+  }
+
+  .animate.ng-leave.ng-leave-active{
+    opacity: 0;
+    height: 0px;
+  }
+
+//  .animate.ng-leave,
+//  .animate.ng-enter.ng-enter-active {
+//    opacity: 1;
+//    top: 200px;
+//    //    bottom: 0;
+//    //    height: 100px;
+//    //  position: relative; display: block;
+//  }
+//
+
+
+
+/*
+  .animate-enter, .animate-leave {
+        -webkit-transition: 800ms cubic-bezier(0.40, 0, 0.60, 1) all;
+        -moz-transition: 800ms cubic-bezier(0.40, 0, 0.60, 1) all;
+        -ms-transition: 800ms cubic-bezier(0.40, 0, 0.60, 1) all;
+        -o-transition: 800ms cubic-bezier(0.40, 0, 0.60, 1) all;
+        transition: 800ms cubic-bezier(0.40, 0, 0.60, 1) all;
+    position: relative;
+    display: block;
+  }
+  .animate-enter.animate-enter-active, .animate-leave {
+    opacity: 1;
+    top: 0;
+    height: 30px;
+  }
+  .animate-leave.animate-leave-active, .animate-enter {
+    opacity: 0;
+    top: -50px;
+    height: 0px;
+  }
+*/
+
 }
