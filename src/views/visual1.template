@@ -19,6 +19,9 @@
               <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetTop.user.screen_name}}" target="_blank"
                  title="@{{tweetTop.user.screen_name}}">@{{tweetTop.user.screen_name}}</a>
             </div>
+            <div class="tweet-time">
+              {{tweetTop.created_at | date: 'dd MMM yy  HH:mm:ss'}}
+            </div>
           </td>
         </tr>
       </table>
@@ -55,6 +58,9 @@
             <div>
               <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetBottom.user.screen_name}}" target="_blank"
                  title="@{{tweetBottom.user.screen_name}}">@{{tweetBottom.user.screen_name}}</a>
+            </div>
+            <div class="tweet-time">
+              {{tweetBottom.created_at | date: 'dd MMM yy  HH:mm:ss'}}
             </div>
           </td>
         </tr>
