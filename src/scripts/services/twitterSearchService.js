@@ -26,7 +26,7 @@ define({
                   })
                   .success(function (data, status, headers, config) {
                     if (!_stopped) {
-                      $timeout(repeated, 60000);
+                      $timeout(repeated, 15000);
                     }
                     max_id = data.max_id;
                     callback(data.tweets);
