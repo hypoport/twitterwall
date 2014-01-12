@@ -98,7 +98,6 @@ define({
       var _animate = function () {
         _anim.step += _anim.dir;
         if (!(0 < _anim.step && _anim.step < (30 + _anim.elements.length / 4))) {
-//          _anim.dir *= -1;
           updateElementPositions();
           _anim.doneCallback();
           return;
@@ -115,13 +114,9 @@ define({
       };
 
       this.cleanup = function () {
-//        for (var i = 0; i < _anim.elements.length; i++) {
-//          var parent = _anim.elements[i].parentNode;
-//          parent.removeChild(_anim.elements[i]);
-//        }
+        _anim.doneCallback = undefined;
         _anim = new _Anim();
       }
-
 
       this.animate = _animate;
       this.setDoneCallback = function (doneCallback) {
