@@ -8,7 +8,7 @@ define({
 
       $scope.tweetTop = {};
       $scope.tweetBottom = {};
-      $scope.tweetSwitchTime = 5000;
+      $scope.tweetSwitchTime = 7000;
       $scope.isAnimationActive = false;
 
       function toArray(obj) {
@@ -24,7 +24,7 @@ define({
         $scope.isAnimationActive = true;
         $timeout(function () {
           $log.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : startAnimationDeferred-callback START");
-          function createBlurTweening(elements) {
+          function createBlurTweeningStepFunction(elements) {
             return function () {
               $(elements).css({
                 "-webkit-filter": "blur(" + this.blur + "px)",
@@ -71,19 +71,18 @@ define({
               $({blur: 5}).animate({blur: 0}, {
                 duration: 1000,
                 easing: 'swing', // or "linear"
-                step: createBlurTweening(dstDelta)
+                step: createBlurTweeningStepFunction(dstDelta)
               });
               // fading
-              $(dstDelta).animate({opacity: 1}, 1000, 'swing', function () {
-                if (!runOnlyOnceGuard) {
-                  runOnlyOnceGuard = true;
-                  movingElementsService.cleanup();
-                  showNewTwitterNameAvatar();
-                  resetBlurEffectOnSources();
-                  resetEffectsOnDestination();
-                  triggerTimerForNextTweet();
-                }
-              });
+              $(dstDelta).animate({opacity: 1}, 1000, 'swing');
+              //
+              $timeout(function cleanupAndTriggerNextTweet() {
+                movingElementsService.cleanup();
+                showNewTwitterNameAvatar();
+                resetBlurEffectOnSources();
+                resetEffectsOnDestination();
+                triggerTimerForNextTweet();
+              }, 1100);
             })();
           }
 
@@ -123,7 +122,7 @@ define({
             $({blur: 0}).animate({blur: 5}, {
               duration: 1000,
               easing: 'swing', // or "linear"
-              step: createBlurTweening(src)
+              step: createBlurTweeningStepFunction(src)
             });
             // fading
             $(src).animate({opacity: 0}, 1000, "swing", function () {
@@ -151,12 +150,13 @@ define({
         dstId = dstId || "tweetTop";
         srcId = srcId || "tweetBottom";
         var nextTweet = tweetListHolder.getNextTweet();
-        var tweetLogMsg = ((nextTweet) ? JSON.stringify({'id': nextTweet.id, 'created_at': nextTweet.created_at, 'text': nextTweet.text}) : 'null');
-        $log.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : nextTweet=" + tweetLogMsg);
         if (nextTweet) {
+          var tweetLogMsg = JSON.stringify({'id': nextTweet.id, 'created_at': nextTweet.created_at, 'text': nextTweet.text, 'srcId': srcId, 'dstId': dstId});
+          $log.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : nextTweet=" + tweetLogMsg);
           $scope[dstId] = nextTweet;
           startAnimationDeferred(srcId, dstId);
         } else {
+          $log.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : nextTweet=undefined");
           $timeout(rotateTweets.bind(undefined, srcId, dstId), 1000);
         }
       }
