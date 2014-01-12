@@ -102,7 +102,15 @@ define({
           _anim.doneCallback();
           return;
         }
-        animateSingleFrame();
+        try {
+          animateSingleFrame();
+        } catch (e) {
+          if (window.console) {
+            window.console.log("ERROR: movingElementService - " + e);
+            _anim.doneCallback();
+            return;
+          }
+        }
         requestAnimationFrame(_animate);
       };
 
