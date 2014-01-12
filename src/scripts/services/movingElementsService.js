@@ -11,6 +11,7 @@ define({
         this.dstElements = [];
         this.src = [];
         this.dst = [];
+        this.offsets = [];
         this.doneCallback = function () {
         };
       }
@@ -46,8 +47,8 @@ define({
           var dst = _anim.dst;
           var a = (Math.cos(Math.PI * animStep / 30) + 1) / 2;
           var z = 1 - a;
-          var x =  (dst[elementIndex].x - src[elementIndex].x + _anim.dstElements[elementIndex].offsetParent.offsetLeft - _anim.srcElements[elementIndex].offsetParent.offsetLeft) * z;
-          var y =  (dst[elementIndex].y - src[elementIndex].y + _anim.dstElements[elementIndex].offsetParent.offsetTop - _anim.srcElements[elementIndex].offsetParent.offsetTop) * z;
+          var x = (dst[elementIndex].x - src[elementIndex].x + _anim.offsets[elementIndex].x) * z;
+          var y = (dst[elementIndex].y - src[elementIndex].y + _anim.offsets[elementIndex].y) * z;
           var e = _anim.elements[elementIndex];
           e.style.left = x + 'px';
           e.style.top = y + 'px';
@@ -118,6 +119,12 @@ define({
         _anim.elements = _anim.srcElements;
         for (var i = 0; i < _anim.dstElements.length; i++) {
           _anim.dstElements[i].style.opacity = 0;
+        }
+        for (var i = 0; i < _anim.srcElements.length; i++) {
+          _anim.offsets[i] = {
+            x: _anim.dstElements[i].offsetParent.offsetLeft - _anim.srcElements[i].offsetParent.offsetLeft,
+            y: _anim.dstElements[i].offsetParent.offsetTop - _anim.srcElements[i].offsetParent.offsetTop
+          };
         }
       };
 
