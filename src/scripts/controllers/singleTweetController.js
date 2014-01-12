@@ -8,7 +8,8 @@ define({
 
       $scope.tweetTop = {};
       $scope.tweetBottom = {};
-      $scope.tweetTime = 5000;
+      $scope.tweetSwitchTime = 5000;
+      $scope.isAnimationActive = false;
 
       function toArray(obj) {
         var array = [];
@@ -20,9 +21,11 @@ define({
       }
 
       function startAnimationDeferred(srcId, dstId) {
+        $scope.isAnimationActive = true;
         dstId = dstId || 'tweetBottom';
         srcId = srcId || 'tweetTop';
         $timeout(function () {
+          $log.debug("SingleTweetController [" + new Date().toLocaleTimeString() + "] : startAnimationDeferred-callback START");
           function createBlurTweening(elements) {
             return function () {
               $(elements).css({
@@ -53,8 +56,14 @@ define({
               });
             }
 
+            function resetEffectsOnDestination() {
+              $(dst).css({opacity: 1});
+            }
+
             function triggerTimerForNextTweet() {
-              $timeout(rotateTweets.bind(undefined, dstId, srcId), 2000);
+              $log.debug("SingleTweetController [" + new Date().toLocaleTimeString() + "] : Animation END, triggerTimerForNextTweet");
+              $scope.isAnimationActive = false;
+              $timeout(rotateTweets.bind(undefined, dstId, srcId), $scope.tweetSwitchTime);
             }
 
             (function makeAllDstElementsVisible() {
@@ -73,7 +82,7 @@ define({
                   movingElementsService.cleanup();
                   showNewTwitterNameAvatar();
                   resetBlurEffectOnSources();
-                  $(dst).css({opacity: 1});
+                  resetEffectsOnDestination();
                   triggerTimerForNextTweet();
                 }
               });
@@ -128,7 +137,7 @@ define({
           } else {
             movingElementsService.animate();
           }
-        }, 2000);
+        }, 1);
       }
 
       var _listenerRegistered = false;
@@ -145,7 +154,7 @@ define({
         srcId = srcId || "tweetBottom";
         var nextTweet = tweetListHolder.getNextTweet();
         var tweetLogMsg = ((nextTweet) ? JSON.stringify({'id': nextTweet.id, 'created_at': nextTweet.created_at, 'text': nextTweet.text}) : 'null');
-        $log.debug("SingleTweetController [" + new Date().toUTCString() + "] : nextTweet=" + tweetLogMsg);
+        $log.debug("SingleTweetController [" + new Date().toLocaleTimeString() + "] : nextTweet=" + tweetLogMsg);
         if (nextTweet) {
           $scope[dstId] = nextTweet;
           startAnimationDeferred(srcId, dstId);
