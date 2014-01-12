@@ -57,20 +57,20 @@ define({
           _activeSearchService.start(newSearchValue, function (tweets) {
                 // http://stackoverflow.com/questions/1232040/how-to-empty-an-array-in-javascript
                 if (tweets.length > 0) {
-                  $log.debug("search results received and inserted: " + tweets.length);
+                  $log.debug("[" + new Date().toLocaleTimeString() + "] tweetListHolder : search results received and inserted: " + tweets.length);
                   _currentTweetNumber = 0; // move pointer to first entry
                   var tweet, _i, _len;
                   for (_i = 0, _len = tweets.length; _i < _len; _i++) {
                     tweet = tweets[_i];
                     _addNewTweet(tweet);
                   }
-                  $log.debug("current tweet length: " + _tweets.length);
+                  $log.debug("[" + new Date().toLocaleTimeString() + "] tweetListHolder : current tweet length: " + _tweets.length);
                   if (!_searchWasStarted) {
                     _fireSearchStartEvent();
                   }
                 }
                 else {
-                  $log.debug("no new tweets received");
+                  $log.debug("[" + new Date().toLocaleTimeString() + "] tweetListHolder : no new tweets received");
                 }
               }
           );

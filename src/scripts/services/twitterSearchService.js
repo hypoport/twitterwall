@@ -10,12 +10,12 @@ define({
 
         this.start = function (query, callback) {
           _query = query;
-          $log.info("starting new Twitter search. Query=" + query);
+          $log.debug("[" + new Date().toLocaleTimeString() + "] twitterSearchService : starting new Twitter search. Query=" + query);
           var max_id = "0";
           var repeated;
           (repeated = function () {
             if (!_stopped) {
-              $log.debug("search with: " + query)
+              $log.debug("[" + new Date().toLocaleTimeString() + "] twitterSearchService : search with: " + query)
               $http
                   .get('/search', {
                     'params': {
@@ -32,7 +32,7 @@ define({
                     callback(data.tweets);
                   })
                   .error(function (data, status, headers, config) {
-                    $log.info("Error calling search service ..." + status);
+                   $log.debug("[" + new Date().toLocaleTimeString() + "] twitterSearchService : Error calling search service ..." + status);
                   });
             }
           })();
@@ -40,7 +40,7 @@ define({
 
         this.stop = function () {
           _stopped = true
-          $log.info("stopping Twitter search for '" + _query);
+          $log.debug("[" + new Date().toLocaleTimeString() + "] twitterSearchService : stopping Twitter search for '" + _query);
         };
 
       }

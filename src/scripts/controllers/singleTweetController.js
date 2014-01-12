@@ -22,10 +22,8 @@ define({
 
       function startAnimationDeferred(srcId, dstId) {
         $scope.isAnimationActive = true;
-        dstId = dstId || 'tweetBottom';
-        srcId = srcId || 'tweetTop';
         $timeout(function () {
-          $log.debug("SingleTweetController [" + new Date().toLocaleTimeString() + "] : startAnimationDeferred-callback START");
+          $log.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : startAnimationDeferred-callback START");
           function createBlurTweening(elements) {
             return function () {
               $(elements).css({
@@ -61,7 +59,7 @@ define({
             }
 
             function triggerTimerForNextTweet() {
-              $log.debug("SingleTweetController [" + new Date().toLocaleTimeString() + "] : Animation END, triggerTimerForNextTweet");
+              $log.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : Animation END, triggerTimerForNextTweet");
               $scope.isAnimationActive = false;
               $timeout(rotateTweets.bind(undefined, dstId, srcId), $scope.tweetSwitchTime);
             }
@@ -154,12 +152,12 @@ define({
         srcId = srcId || "tweetBottom";
         var nextTweet = tweetListHolder.getNextTweet();
         var tweetLogMsg = ((nextTweet) ? JSON.stringify({'id': nextTweet.id, 'created_at': nextTweet.created_at, 'text': nextTweet.text}) : 'null');
-        $log.debug("SingleTweetController [" + new Date().toLocaleTimeString() + "] : nextTweet=" + tweetLogMsg);
+        $log.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : nextTweet=" + tweetLogMsg);
         if (nextTweet) {
           $scope[dstId] = nextTweet;
           startAnimationDeferred(srcId, dstId);
         } else {
-          $timeout(rotateTweets, 1000);
+          $timeout(rotateTweets.bind(undefined, srcId, dstId), 1000);
         }
       }
 
