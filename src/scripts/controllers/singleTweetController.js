@@ -8,7 +8,7 @@ define({
 
       $scope.tweetTop = {};
       $scope.tweetBottom = {};
-      $scope.tweetSwitchTime = 7000;
+      $scope.tweetSwitchTime = 8000;
       $scope.isAnimationActive = false;
 
       function toArray(obj) {
