@@ -17,11 +17,9 @@ define({
                 }
 
 //                if($scope.tweets.length < 2) {
-                    $timeout(rotateTweets, 3000);
+                    $timeout(rotateTweets, 4000);
 //                }
-
             };
-
             rotateTweets();
         }
     ]

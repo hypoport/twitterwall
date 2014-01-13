@@ -1,32 +1,27 @@
 <div class="container">
-
   <div class="tweetlist">
-    <ul>
-      <li ng-repeat="tweet in tweets" class="animate">
-        <div class="tweet-box">
-          <div class="tweet-text-and-avatar">
-            <div class="tweet-text pull-left">
-              {{tweet.text}}
-            </div>
-            <a class="tweet-user tweet-user-avatar pull-right" href="https://twitter.com/{{tweet.user.screen_name}}"
-               target="_blank"><img
-                title="@{{tweet.user.screen_name}}" class="pull-right tweet-box-avatar"
-                ng-src="{{tweet.user.profile_image_url_https}}" alt="avatar" width="128px"></a>
-          </div>
-
-          <div class="tweet-time-and-name">
-            <div class="tweet-time  pull-left">
-              {{tweet.created_at | date: 'dd MMM yy  HH:mm:ss'}}
-            </div>
-            <div class="pull-right">
-              <a class="tweet-user-screen-name" href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank"
-                 title="@{{tweet.user.screen_name}}">{{tweet.user.name}}</a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
+    <div ng-repeat="tweet in tweets" class="animate tweet-box">
+      <div class="tweet-text-and-avatar">
+        <div class="tweet-text pull-left">
+          {{tweet.text}}
         </div>
-      </li>
-    </ul>
+        <a class="tweet-user tweet-user-avatar pull-right" href="https://twitter.com/{{tweet.user.screen_name}}"
+           target="_blank"><img
+            title="@{{tweet.user.screen_name}}" class="pull-right tweet-box-avatar"
+            ng-src="{{tweet.user.profile_image_url_https}}" alt="avatar" width="128px"></a>
+      </div>
+
+      <div class="tweet-time-and-name">
+        <div class="tweet-time  pull-left">
+          {{tweet.created_at | date: 'dd MMM yy HH:mm:ss'}}
+        </div>
+        <div class="pull-right">
+          <a class="tweet-user-screen-name" href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank"
+             title="@{{tweet.user.screen_name}}">{{tweet.user.name}}</a>
+        </div>
+        <!--<div class="clearfix"></div>-->
+      </div>
+    </div>
   </div>
 </div>
 
