@@ -11,6 +11,7 @@ define({
         this.dstElements = [];
         this.src = [];
         this.dst = [];
+        this.offsets = [];
         this.doneCallback = function () {
         };
       }
@@ -46,8 +47,8 @@ define({
           var dst = _anim.dst;
           var a = (Math.cos(Math.PI * animStep / 30) + 1) / 2;
           var z = 1 - a;
-          var x = src[elementIndex].x * a + dst[elementIndex].x * z;
-          var y = src[elementIndex].y * a + dst[elementIndex].y * z;
+          var x = (dst[elementIndex].x - src[elementIndex].x + _anim.offsets[elementIndex].x) * z;
+          var y = (dst[elementIndex].y - src[elementIndex].y + _anim.offsets[elementIndex].y) * z;
           var e = _anim.elements[elementIndex];
           e.style.left = x + 'px';
           e.style.top = y + 'px';
@@ -98,34 +99,39 @@ define({
       var _animate = function () {
         _anim.step += _anim.dir;
         if (!(0 < _anim.step && _anim.step < (30 + _anim.elements.length / 4))) {
-//          _anim.dir *= -1;
           updateElementPositions();
           _anim.doneCallback();
           return;
         }
-        animateSingleFrame();
+        try {
+          animateSingleFrame();
+        } catch (e) {
+          if (window.console) {
+            window.console.log("ERROR: movingElementService - " + e);
+            _anim.doneCallback();
+            return;
+          }
+        }
         requestAnimationFrame(_animate);
       };
 
       this.prepare = function () {
-        for (var i = 0; i < _anim.srcElements.length; i++) {
-          var x = _anim.src[i].x;
-          var y = _anim.src[i].y;
-          _anim.elements[i] = cloneAbsoluteAndHide(_anim.srcElements[i], x, y);
-        }
+        _anim.elements = _anim.srcElements;
         for (var i = 0; i < _anim.dstElements.length; i++) {
           _anim.dstElements[i].style.opacity = 0;
+        }
+        for (var i = 0; i < _anim.srcElements.length; i++) {
+          _anim.offsets[i] = {
+            x: _anim.dstElements[i].offsetParent.offsetLeft - _anim.srcElements[i].offsetParent.offsetLeft,
+            y: _anim.dstElements[i].offsetParent.offsetTop - _anim.srcElements[i].offsetParent.offsetTop
+          };
         }
       };
 
       this.cleanup = function () {
-        for (var i = 0; i < _anim.elements.length; i++) {
-          var parent = _anim.elements[i].parentNode;
-          parent.removeChild(_anim.elements[i]);
-        }
+        _anim.doneCallback = undefined;
         _anim = new _Anim();
       }
-
 
       this.animate = _animate;
       this.setDoneCallback = function (doneCallback) {

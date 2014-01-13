@@ -19,6 +19,9 @@
               <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetTop.user.screen_name}}" target="_blank"
                  title="@{{tweetTop.user.screen_name}}">@{{tweetTop.user.screen_name}}</a>
             </div>
+            <div class="tweet-time">
+              {{tweetTop.created_at | date: 'dd MMM yy  HH:mm:ss'}}
+            </div>
           </td>
         </tr>
       </table>
@@ -36,17 +39,12 @@
 
     <div class="tweet-text">
       <!-- {{tweetBottom.text}} -->
-      <span ng-repeat="t in tweetBottom.text.split('') track by $index" class="letter">{{t}}</span>
+      <span ng-repeat="t in tweetBottom.text.split('') track by $index" class="letter" style="opacity: 0">{{t}}</span>
     </div>
 
-    <div class="tweet-user-avatar">
-      <table>
+    <div class="tweet-user-avatar" style="opacity: 0">
+      <table class="pull-right">
         <tr>
-          <td>
-            <a href="https://twitter.com/{{tweetBottom.user.screen_name}}" target="_blank"><img
-                    title="@{{tweetBottom.user.screen_name}}" class="img-rounded"
-                    ng-src="{{tweetBottom.user.profile_image_url_https}}" alt="avatar" style="height: 80px"></a>
-          </td>
           <td>
             <div>
               <a class="tweet-user-name" href="https://twitter.com/{{tweetBottom.user.screen_name}}" target="_blank"
@@ -56,6 +54,14 @@
               <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetBottom.user.screen_name}}" target="_blank"
                  title="@{{tweetBottom.user.screen_name}}">@{{tweetBottom.user.screen_name}}</a>
             </div>
+            <div class="tweet-time">
+              {{tweetBottom.created_at | date: 'dd MMM yy  HH:mm:ss'}}
+            </div>
+          </td>
+          <td>
+            <a href="https://twitter.com/{{tweetBottom.user.screen_name}}" target="_blank"><img
+                    title="@{{tweetBottom.user.screen_name}}" class="img-rounded"
+                    ng-src="{{tweetBottom.user.profile_image_url_https}}" alt="avatar" style="height: 80px"></a>
           </td>
         </tr>
       </table>
