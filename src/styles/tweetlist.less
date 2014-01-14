@@ -5,16 +5,16 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 40px;
-    height: 180px;
+    height: 250px;
     padding: 10px 20px;
     background-color: #EEEEEE;
     border: 1px solid #BBBBBB;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.50);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.50);
   }
 
   .tweet-box-avatar {
@@ -25,7 +25,7 @@
   }
 
   .tweet-time {
-    font-size: 12px;
+    font-size: 16pt;
     bottom: 0;
     color: #8c8c8c;
   }
@@ -36,12 +36,16 @@
 
   .tweet-time-and-name {
     overflow: hidden;
+    padding-top: 20px;
   }
 
   .tweet-text {
-    font-size: 22pt;
+    font-size: 30pt;
     line-height: 120%;
     width: 650px;
+    max-height: 200px;
+    min-height: 200px;
+    overflow: hidden;
   }
 
   .tweet-text-and-user {
@@ -53,7 +57,7 @@
     margin-left: 10pt;
 
     color: dimgrey;
-    font-size: 20pt;
+    font-size: 18pt;
     text-decoration: none;
   }
 
@@ -62,7 +66,7 @@
     margin-left: 10pt;
 
     color: dimgrey;
-    font-size: 12pt;
+    font-size: 18pt;
     text-decoration: none;
   }
 
@@ -90,14 +94,14 @@
     height: 0;
   }
 
-  .animate.ng-enter.ng-enter-active{
+  .animate.ng-enter.ng-enter-active {
     opacity: 1;
-    height: 180px;
+    height: 250px;
   }
 
   .animate.ng-leave {
     opacity: 1;
-    height: 180px;
+    height: 250px;
     margin-bottom: 40px;
 
     overflow: hidden;
