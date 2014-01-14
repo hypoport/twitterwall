@@ -6,7 +6,7 @@ define({
       'use strict';
 
       var _tweets = new Array();
-      var _maxTweetCount = 30;
+      var _maxTweetCount = 60;
       var _currentTweetNumber = 0;
       var _tweetSearchStartListener = []
       var _activeSearchService;
