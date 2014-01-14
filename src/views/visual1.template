@@ -7,8 +7,8 @@
         <tr>
           <td>
             <a href="https://twitter.com/{{tweetTop.user.screen_name}}" target="_blank"><img
-                    title="@{{tweetTop.user.screen_name}}" class="img-rounded"
-                    ng-src="{{tweetTop.user.profile_image_url_https}}" alt="avatar" style="height: 80px"></a>
+                title="@{{tweetTop.user.screen_name}}" class="img-rounded"
+                ng-src="{{tweetTop.user.profile_image_url_https}}" alt="avatar" style="height: 80px"></a>
           </td>
           <td>
             <div>
@@ -20,7 +20,7 @@
                  title="@{{tweetTop.user.screen_name}}">@{{tweetTop.user.screen_name}}</a>
             </div>
             <div class="tweet-time">
-              {{tweetTop.created_at | date: 'dd MMM yy  HH:mm:ss'}}
+              {{tweetTop.created_at | date: 'dd MMM yy HH:mm:ss'}}
             </div>
           </td>
         </tr>
@@ -29,7 +29,8 @@
 
     <div class="tweet-text">
       <!-- {{tweetTop.text}} -->
-      <span ng-repeat="t in tweetTop.text.split('') track by $index" class="letter" style="opacity: 0">{{t}}</span>
+      <span ng-repeat="t in tweetTop.text.split('') track by $index" class="letter {{t}}"
+            style="opacity: 0">{{t}}</span>
     </div>
 
   </div>
@@ -39,7 +40,8 @@
 
     <div class="tweet-text">
       <!-- {{tweetBottom.text}} -->
-      <span ng-repeat="t in tweetBottom.text.split('') track by $index" class="letter" style="opacity: 0">{{t}}</span>
+      <span ng-repeat="t in tweetBottom.text.split('') track by $index" class="letter {{t}}"
+            style="opacity: 0">{{t}}</span>
     </div>
 
     <div class="tweet-user-avatar" style="opacity: 0">
@@ -51,17 +53,18 @@
                  title="@{{tweetBottom.user.screen_name}}">{{tweetBottom.user.name}}</a>
             </div>
             <div>
-              <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetBottom.user.screen_name}}" target="_blank"
+              <a class="tweet-user-screen-name" href="https://twitter.com/{{tweetBottom.user.screen_name}}"
+                 target="_blank"
                  title="@{{tweetBottom.user.screen_name}}">@{{tweetBottom.user.screen_name}}</a>
             </div>
             <div class="tweet-time">
-              {{tweetBottom.created_at | date: 'dd MMM yy  HH:mm:ss'}}
+              {{tweetBottom.created_at | date: 'dd MMM yy HH:mm:ss'}}
             </div>
           </td>
           <td>
             <a href="https://twitter.com/{{tweetBottom.user.screen_name}}" target="_blank"><img
-                    title="@{{tweetBottom.user.screen_name}}" class="img-rounded"
-                    ng-src="{{tweetBottom.user.profile_image_url_https}}" alt="avatar" style="height: 80px"></a>
+                title="@{{tweetBottom.user.screen_name}}" class="img-rounded"
+                ng-src="{{tweetBottom.user.profile_image_url_https}}" alt="avatar" style="height: 80px"></a>
           </td>
         </tr>
       </table>
