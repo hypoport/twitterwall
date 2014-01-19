@@ -32,7 +32,7 @@ define({
                     callback(data.tweets);
                   })
                   .error(function (data, status, headers, config) {
-                   $log.debug("[" + new Date().toLocaleTimeString() + "] twitterSearchService : Error calling search service ..." + status);
+                    $log.debug("[" + new Date().toLocaleTimeString() + "] twitterSearchService : Error calling search service ..." + status);
                   });
             }
           })();

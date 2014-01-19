@@ -18,7 +18,7 @@
   <!--[if lte IE 8]>
   <script src="scripts/libs/json2.js?v=<%= config.hash('./src/scripts/libs/json2.js') %>"></script>
   <script
-      src="scripts/libs/html5shiv-printshiv.js?v=<%= config.hash('./src/scripts/libs/html5shiv-printshiv.js') %>"></script>
+          src="scripts/libs/html5shiv-printshiv.js?v=<%= config.hash('./src/scripts/libs/html5shiv-printshiv.js') %>"></script>
   <![endif]-->
 
 
@@ -96,7 +96,7 @@
 
       <a class="brand ueberschrift" href="#">Hypoport Twitterwall</a>
 
-      <div class="nav-collapse collapse">
+      <div class="nav-collapse collapse" ng-controller="menuBarController">
         <!--<ul class="nav nav-pills">-->
         <!--<li>-->
         <!--<a href="#/1">-->
@@ -114,7 +114,13 @@
         <!--</a>-->
         <!--</li>-->
         <!--</ul>-->
-        <form class="navbar-form pull-right" ng-controller="menuBarController">
+        <span class="pull-right" ng-hide="isTwitterSignInVisible" class="user-profile">
+          <a href="https://www.twitter.com/{{twitterUser.screen_name}}" target="_blank" class="btn-link"><img class="user-profile-avatar" src="{{twitterUser.profile_image_url_https}}" alt="Twitter avatar" title="{{twitterUser.name}}"></a>
+        </span>
+        <form class="navbar-form pull-right" action="/doTwitterSignIn" method="get" ng-show="isTwitterSignInVisible">
+          <button class="btn btn-info" type="submit"><i class="icon-user"></i> Sign In with Twitter</button>
+        </form>
+        <form class="navbar-form pull-right" action="#" method="get" ng-hide="isTwitterSignInVisible">
           <span class="brand" style="padding: 10px 0 0 0">#</span>
           <input class="span2" type="text" placeholder="Hashtag" ng-model="searchValue" ng-submit="doTwitterSearch()">
           <button class="btn" ng-click="doTwitterSearch()"><i class="icon-search"></i></button>

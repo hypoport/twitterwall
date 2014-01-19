@@ -20,17 +20,23 @@ var port = 8080;
 // App starts here.
 // ##########################################################################
 var app = express();
-app.get('/search', function (req, res) {
+var reverseProxyHandler = function (req, res) {
   var proxy = new httpProxy.RoutingProxy();
   proxy.proxyRequest(req, res, {
     host: tomcatForwardHost,
     port: tomcatForwardPort
   });
+}
+
+var forwarEndpointsToTomcat = ['/search', '/showUser', '/doTwitterSignIn', '/doTwitterCallback'];
+forwarEndpointsToTomcat.forEach(function (elem, index) {
+  console.log('Forwarding : ' + elem);
+  app.get(elem, reverseProxyHandler);
 });
 
 app.use(express.static(distFolder));
 
 app.listen(port);
-console.log('Serving from      : ' + distFolder);
-console.log('Forwarding to     : ' + tomcatForwardHost + ':' + tomcatForwardPort);
-console.log('Listening on port : ' + port);
+console.log('Forwarding to      : ' + tomcatForwardHost + ':' + tomcatForwardPort);
+console.log('Serving satic from : ' + distFolder);
+console.log('Listening on port  : ' + port);
