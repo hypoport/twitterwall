@@ -23,7 +23,7 @@ Assuming, Twitterwall-server is running on port 8000.
 
 ## Live Demo
 
-http://hypoport.github.io/twitterwall
+https://hypoport-twitterwall.appspot.com
 
 ## Organize
 
