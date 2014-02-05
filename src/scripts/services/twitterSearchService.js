@@ -3,6 +3,8 @@ define({
   definition: ['$log', '$timeout', '$http', '$window',
     function ($log, $timeout, $http, $window) {
 
+      'use strict';
+
       function _SearchService() {
 
         var _stopped = false;

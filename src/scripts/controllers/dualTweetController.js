@@ -1,14 +1,17 @@
 define({
   type: 'controller',
   definition: [
-    '$scope', '$location', '$routeParams', '$log', 'tweetListHolder', '$timeout', '$filter',
-    function ($scope, $location, $routeParams, $log, tweetListHolder, $timeout, $filter) {
+    '$scope', '$location', '$routeParams', 'tweetListHolder', '$timeout', '$filter', 'logProvider',
+    function ($scope, $location, $routeParams, tweetListHolder, $timeout, $filter, logProvider) {
       'use strict';
-      
+
       $scope.tweet = null;
       $scope.tweet2 = null;
       var _rotator;
       var _listenerRegistered = false;
+      this.logger = logProvider.newInstance("dualTweetController");
+
+      this.logger.info("test");
 
       var _setTweetVisibility = function () {
         $scope.noTweet1 = $scope.tweet == null;
@@ -18,12 +21,12 @@ define({
 
       if (!_listenerRegistered) {
         _listenerRegistered = true;
-        $log.debug("register SearchStartListener");
+        this.logger.debug("register SearchStartListener");
         tweetListHolder.registerSearchStartListener(function () {
           if (_rotator) {
             _rotator.stop();
           }
-          $log.debug("dualTweetController SearchListener started");
+          this.logger.debug("SearchListener started");
           $scope.tweet = null;
           $scope.tweet2 = null;
           _setTweetVisibility();
@@ -44,7 +47,7 @@ define({
 
         var _rotateTweet1 = function () {
           if (_enabled) {
-            $log.debug("dualTweetController: refresh tweet1 (" + $filter('date')(new Date(), "hh:mm:ss.sss") + ")");
+            this.logger.debug("refresh tweet1 ");
             $scope.tweet = tweetListHolder.getNextTweet();
             _setTweetVisibility();
             $timeout(_rotateTweet1, _readTime);
@@ -53,7 +56,7 @@ define({
 
         var _rotateTweet2 = function () {
           if (_enabled) {
-            $log.debug("dualTweetController: refresh tweet2 (" + $filter('date')(new Date(), "hh:mm:ss.sss") + ")");
+            this.logger.debug("refresh tweet2");
             $scope.tweet2 = tweetListHolder.getNextTweet();
             _setTweetVisibility();
             $timeout(_rotateTweet2, _readTime);
