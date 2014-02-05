@@ -1,23 +1,24 @@
 define({
   type: "service",
-  definition: ['$log', '$timeout', '$http', '$window',
-    function ($log, $timeout, $http, $window) {
+  definition: ['logProvider', '$timeout', '$http',
+    function (logProvider, $timeout, $http) {
 
       'use strict';
 
       function _SearchService() {
+        this.logger = logProvider.newInstance("twitterSearchService");
 
         var _stopped = false;
         var _query;
 
         this.start = function (query, callback) {
           _query = query;
-          $log.debug("[" + new Date().toLocaleTimeString() + "] twitterSearchService : starting new Twitter search. Query=" + query);
+          this.logger.debug("starting new Twitter search. Query=" + query);
           var max_id = "0";
           var repeated;
           (repeated = function () {
             if (!_stopped) {
-              $log.debug("[" + new Date().toLocaleTimeString() + "] twitterSearchService : search with: " + query)
+              this.logger.debug("search with: " + query)
               $http
                   .get('/search', {
                     'params': {
@@ -34,7 +35,7 @@ define({
                     callback(data.tweets);
                   })
                   .error(function (data, status, headers, config) {
-                    $log.debug("[" + new Date().toLocaleTimeString() + "] twitterSearchService : Error calling search service ..." + status);
+                    this.logger.error("Error calling search service ..." + status);
                   });
             }
           })();
@@ -42,7 +43,7 @@ define({
 
         this.stop = function () {
           _stopped = true
-          $log.debug("[" + new Date().toLocaleTimeString() + "] twitterSearchService : stopping Twitter search for '" + _query);
+          this.logger.debug("stopping Twitter search for '" + _query);
         };
 
       }

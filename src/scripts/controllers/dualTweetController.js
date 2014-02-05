@@ -10,8 +10,9 @@ define({
       var _rotator;
       var _listenerRegistered = false;
       this.logger = logProvider.newInstance("dualTweetController");
+      this.logger.setLogLevel(logProvider.LogLevel.INFO);
 
-      this.logger.info("test");
+      this.logger.info("log level is info");
 
       var _setTweetVisibility = function () {
         $scope.noTweet1 = $scope.tweet == null;
