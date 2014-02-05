@@ -13,6 +13,10 @@ define({
         ERROR: {weight: 2}
       }
 
+      _service.logger = new _Logger("logProvider");
+      _service.logger.setLogLevel(_service.LogLevel.DEBUG);
+
+
       function _Logger(context) {
 
         var _context = " " + context + ": ";
@@ -55,10 +59,13 @@ define({
         var _concat = function (message) {
           return _getTimestamp() + _context + message;
         }
+
       }
 
       this.newInstance = function (contextName) {
-        return new _Logger(contextName);
+        var logger = new _Logger(contextName);
+        _service.logger.debug("new logger created for: " + contextName)
+        return  logger;
       }
     }
   ]

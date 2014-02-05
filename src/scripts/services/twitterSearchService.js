@@ -6,7 +6,8 @@ define({
       'use strict';
 
       function _SearchService() {
-        this.logger = logProvider.newInstance("twitterSearchService");
+        var that = this;
+        that.logger = logProvider.newInstance("twitterSearchService");
 
         var _stopped = false;
         var _query;
@@ -18,7 +19,7 @@ define({
           var repeated;
           (repeated = function () {
             if (!_stopped) {
-              this.logger.debug("search with: " + query)
+              that.logger.debug("search with: " + query)
               $http
                   .get('/search', {
                     'params': {
@@ -35,7 +36,7 @@ define({
                     callback(data.tweets);
                   })
                   .error(function (data, status, headers, config) {
-                    this.logger.error("Error calling search service ..." + status);
+                    that.logger.error("Error calling search service ..." + status);
                   });
             }
           })();
@@ -43,7 +44,7 @@ define({
 
         this.stop = function () {
           _stopped = true
-          this.logger.debug("stopping Twitter search for '" + _query);
+          that.logger.debug("stopping Twitter search for '" + _query);
         };
 
       }
