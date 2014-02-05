@@ -1,8 +1,8 @@
 define({
   type: "service",
   definition: [
-    '$log', '$routeParams', '$location', 'twitterSearchService', 'twitterwallModelHolder',
-    function ($log, $routeParams, $location, twitterSearchService, twitterwallModelHolder) {
+    'logProvider', '$routeParams', '$location', 'twitterSearchService', 'twitterwallModelHolder',
+    function (logProvider, $routeParams, $location, twitterSearchService, twitterwallModelHolder) {
       'use strict';
 
       var _tweets = new Array();
@@ -11,6 +11,7 @@ define({
       var _tweetSearchStartListener = []
       var _activeSearchService;
       var _searchWasStarted = false;
+      var _logger = logProvider.newInstance("tweetListHolder");
 
       twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
         if (_activeSearchService) {
@@ -37,40 +38,40 @@ define({
             listener();
           } catch (_error) {
             error = _error;
-            $log.error(error);
+            _logger.error(error);
           }
         }
         _searchWasStarted = true;
       }
 
       var _startRequest = function (newSearchValue) {
-        $log.debug("tweets before dropping: " + _tweets.length);
-        $log.debug("start new search on search value:" + newSearchValue);
+        _logger.debug("tweets before dropping: " + _tweets.length);
+        _logger.debug("start new search on search value:" + newSearchValue);
         while (_tweets.length > 0) {
           _tweets.pop();
         }
-        $log.debug("tweets before search: " + _tweets.length);
+        _logger.debug("tweets before search: " + _tweets.length);
 
         if (newSearchValue && newSearchValue.length > 0) {
           _activeSearchService = twitterSearchService.provideNewService();
-          $log.debug("activeSearchService" + _activeSearchService);
+          _logger.debug("activeSearchService " + _activeSearchService);
           _activeSearchService.start(newSearchValue, function (tweets) {
                 // http://stackoverflow.com/questions/1232040/how-to-empty-an-array-in-javascript
                 if (tweets.length > 0) {
-                  $log.debug("[" + new Date().toLocaleTimeString() + "] tweetListHolder : search results received and inserted: " + tweets.length);
+                  _logger.debug("search results received and inserted: " + tweets.length);
                   _currentTweetNumber = 0; // move pointer to first entry
                   var tweet, _i, _len;
                   for (_i = 0, _len = tweets.length; _i < _len; _i++) {
                     tweet = tweets[_i];
                     _addNewTweet(tweet);
                   }
-                  $log.debug("[" + new Date().toLocaleTimeString() + "] tweetListHolder : current tweet length: " + _tweets.length);
+                  _logger.debug("tweetListHolder : current tweet length: " + _tweets.length);
                   if (!_searchWasStarted) {
                     _fireSearchStartEvent();
                   }
                 }
                 else {
-                  $log.debug("[" + new Date().toLocaleTimeString() + "] tweetListHolder : no new tweets received");
+                  _logger.debug("no new tweets received");
                 }
               }
           );
@@ -80,7 +81,7 @@ define({
 
       var startSearch = function () {
         if (twitterwallModelHolder._searchValue && twitterwallModelHolder._searchValue.length > 0) {
-//          $log.debug("update search value through route parameter");
+          _logger.debug("update search value through route parameter");
           _startRequest(twitterwallModelHolder._searchValue)
         }
       };
@@ -93,7 +94,7 @@ define({
         if (_currentTweetNumber >= _tweets.length) {
           _currentTweetNumber = 0;
         }
-//        $log.debug("getNextTweet: " + _currentTweetNumber)
+        _logger.debug("getNextTweet: " + _currentTweetNumber)
         return _tweets[(_currentTweetNumber++)];
       }
 
