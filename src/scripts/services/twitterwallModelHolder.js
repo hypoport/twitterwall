@@ -1,12 +1,15 @@
 define({
   type: "service",
   definition: [
-    '$log', function ($log) {
+    'logger', function (logger) {
       this._searchValue = "";
       this._valueChangeListeners = [];
+      _logger = logger.getLogger("twitterwallModelHolder");
+      _logger.setLogLevel(logger.LogLevel.DEBUG);
+
       this.setSearchValue = function (newSearchValue) {
         if (this._searchValue !== newSearchValue) {
-          $log.debug("twitterModelHolder: value change, oldValue: " + this._searchValue + ", newValue: " + newSearchValue);
+          _logger.debug("value change, oldValue: " + this._searchValue + ", newValue: " + newSearchValue);
           this._searchValue = newSearchValue;
           this.fireValueChange(newSearchValue);
         }
@@ -23,7 +26,7 @@ define({
             listener(newSearchValue);
           } catch (_error) {
             error = _error;
-            $log.log(error);
+            _logger.log(error);
           }
         }
       };

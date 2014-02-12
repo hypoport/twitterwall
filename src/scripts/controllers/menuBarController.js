@@ -1,13 +1,12 @@
 define({
   type: 'controller',
   definition: [
-    'logProvider', '$scope', '$http', 'twitterwallModelHolder',
-    function (logProvider, $scope, $http, twitterwallModelHolder) {
+    'logger', '$scope', '$http', 'twitterwallModelHolder',
+    function (logger, $scope, $http, twitterwallModelHolder) {
       'use strict';
 
-      var _controller = this;
-      _controller.logger = logProvider.newInstance("menuBarController");
-      _controller.logger.setLogLevel(logProvider.LogLevel.INFO);
+      var _logger = logger.getLogger("menuBarController");
+      _logger.setLogLevel(logger.LogLevel.INFO);
 
       $scope.searchValue = "";
       $scope.isTwitterSignInVisible = true;
@@ -25,12 +24,12 @@ define({
         $http
             .get('/showUser', { })
             .success(function (data, status, headers, config) {
-              _controller.logger.debug("OK" + status);
+              _logger.debug("OK" + status);
               $scope.twitterUser = data;
               $scope.isTwitterSignInVisible = !($scope.twitterUser.screen_name != undefined && $scope.twitterUser.screen_name.length > 0);
             })
             .error(function (data, status, headers, config) {
-              _controller.logger.error("Error calling showUser service ..." + status);
+              _logger.error("Error calling showUser service ..." + status);
             });
       })();
     }

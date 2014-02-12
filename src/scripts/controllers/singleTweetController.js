@@ -1,10 +1,13 @@
 define({
   type: 'controller',
   definition: [
-    '$scope', '$location', '$routeParams', 'tweetListHolder', 'movingElementsService', '$timeout', '$log',
-    function ($scope, $location, $routeParams, tweetListHolder, movingElementsService, $timeout, $log) {
+    '$scope', '$location', '$routeParams', 'tweetListHolder', 'movingElementsService', '$timeout', 'logger',
+    function ($scope, $location, $routeParams, tweetListHolder, movingElementsService, $timeout, logger) {
 
       'use strict';
+
+      var _logger = logger.getLogger("singleTweetController");
+      _logger.setLogLevel(logger.LogLevel.DEBUG);
 
       $scope.tweetTop = {};
       $scope.tweetBottom = {};
@@ -23,7 +26,7 @@ define({
       function startAnimationDeferred(srcId, dstId) {
         $scope.isAnimationActive = true;
         $timeout(function () {
-          $log.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : startAnimationDeferred-callback START");
+          _logger.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : startAnimationDeferred-callback START");
           function createBlurTweeningStepFunction(elements) {
             return function () {
               $(elements).css({
@@ -59,7 +62,7 @@ define({
             }
 
             function triggerTimerForNextTweet() {
-              $log.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : Animation END, triggerTimerForNextTweet");
+              _logger.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : Animation END, triggerTimerForNextTweet");
               $scope.isAnimationActive = false;
               $timeout(rotateTweets.bind(undefined, dstId, srcId), $scope.tweetSwitchTime);
             }
@@ -152,11 +155,11 @@ define({
         var nextTweet = tweetListHolder.getNextTweet();
         if (nextTweet) {
           var tweetLogMsg = JSON.stringify({'id': nextTweet.id, 'created_at': nextTweet.created_at, 'text': nextTweet.text, 'srcId': srcId, 'dstId': dstId});
-          $log.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : nextTweet=" + tweetLogMsg);
+          _logger.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : nextTweet=" + tweetLogMsg);
           $scope[dstId] = nextTweet;
           startAnimationDeferred(srcId, dstId);
         } else {
-          $log.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : nextTweet=undefined");
+          _logger.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : nextTweet=undefined");
           $timeout(rotateTweets.bind(undefined, srcId, dstId), 1000);
         }
       }

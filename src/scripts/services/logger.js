@@ -10,11 +10,13 @@ define({
         DEBUG: {weight: 16},
         INFO: {weight: 8},
         WARN: {weight: 4},
-        ERROR: {weight: 2}
+        ERROR: {weight: 2},
+        OFF: {weight: 0}
       }
 
-      _service.logger = new _Logger("logProvider");
+      _service.logger = new _Logger("logger");
       _service.logger.setLogLevel(_service.LogLevel.DEBUG);
+      _service.globalLogLevel = _service.LogLevel.DEBUG;
 
 
       function _Logger(context) {
@@ -49,7 +51,7 @@ define({
         };
 
         var _isLogLevelEnabled = function (level) {
-          return level.weight <= _logLevel.weight;
+          return level.weight <= _service.globalLogLevel.weight && level.weight <= _logLevel.weight;
         }
 
         var _getTimestamp = function () {
@@ -62,7 +64,7 @@ define({
 
       }
 
-      this.newInstance = function (contextName) {
+      this.getLogger = function (contextName) {
         var logger = new _Logger(contextName);
         _service.logger.debug("new logger created for: " + contextName)
         return  logger;

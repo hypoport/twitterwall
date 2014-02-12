@@ -1,15 +1,18 @@
 define({
   type: 'controller',
   definition: [
-    '$scope', '$location', '$routeParams', '$log', 'tweetListHolder', '$timeout', function ($scope, $location, $routeParams, $log, tweetListHolder, $timeout) {
+    '$scope', '$location', '$routeParams', 'logger', 'tweetListHolder', '$timeout', function ($scope, $location, $routeParams, logger, tweetListHolder, $timeout) {
       'use strict';
+
+      var _logger = logger.getLogger("singleTweetController");
+      _logger.setLogLevel(logger.LogLevel.DEBUG);
 
       $scope.tweets = [];
 
       var rotateTweets = function () {
         var tweet = tweetListHolder.getNextTweet();
         if (tweet) {
-          $log.debug("new tweet : " + tweet.text);
+          _logger.debug("new tweet : " + tweet.text);
           $scope.tweets.push(tweet);
           $timeout(rotateTweets, 10000);
         } else {

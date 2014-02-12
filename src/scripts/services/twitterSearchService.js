@@ -1,13 +1,13 @@
 define({
   type: "service",
-  definition: ['logProvider', '$timeout', '$http',
-    function (logProvider, $timeout, $http) {
+  definition: ['logger', '$timeout', '$http',
+    function (logger, $timeout, $http) {
 
       'use strict';
 
       function _SearchService() {
         var that = this;
-        that.logger = logProvider.newInstance("twitterSearchService");
+        that.logger = logger.getLogger("twitterSearchService");
 
         var _stopped = false;
         var _query;

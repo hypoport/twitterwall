@@ -1,8 +1,8 @@
 define({
   type: "service",
   definition: [
-    'logProvider', '$routeParams', '$location', 'twitterSearchService', 'twitterwallModelHolder',
-    function (logProvider, $routeParams, $location, twitterSearchService, twitterwallModelHolder) {
+    'logger', '$routeParams', '$location', 'twitterSearchService', 'twitterwallModelHolder',
+    function (logger, $routeParams, $location, twitterSearchService, twitterwallModelHolder) {
       'use strict';
 
       var _tweets = new Array();
@@ -11,7 +11,7 @@ define({
       var _tweetSearchStartListener = []
       var _activeSearchService;
       var _searchWasStarted = false;
-      var _logger = logProvider.newInstance("tweetListHolder");
+      var _logger = logger.getLogger("tweetListHolder");
 
       twitterwallModelHolder.onSearchValueChanged(function (newSearchValue) {
         if (_activeSearchService) {
@@ -37,8 +37,7 @@ define({
           try {
             listener();
           } catch (_error) {
-            error = _error;
-            _logger.error(error);
+            _logger.error(_error);
           }
         }
         _searchWasStarted = true;
