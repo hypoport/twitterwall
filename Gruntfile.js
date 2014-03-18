@@ -24,7 +24,17 @@ module.exports = function(grunt) {
         files: [
           {
             cwd: './src/',
-            src: ['img/**/*.png', 'img/**/*.ico'],
+            src: ['img/**/*.png', 'img/**/*.ico', 'img/**/*.jpg'],
+            dest: './.temp/',
+            expand: true
+          }
+        ]
+      },
+      fonts: {
+        files: [
+          {
+            cwd: './src/',
+            src: ['fonts/**/*.css', 'fonts/**/*.woff', 'fonts/**/*.ttf', 'fonts/**/*.eot'],
             dest: './.temp/',
             expand: true
           }
@@ -278,7 +288,7 @@ module.exports = function(grunt) {
   grunt.registerTask('test', ['default', 'env:karma', 'karma:unit']);
   grunt.registerTask('karma:run', ['karma:server:run']);
   grunt.registerTask('server', ['livereload-start', 'express', 'regarde']);
-  grunt.registerTask('default', ['clean:working', 'copy:js', 'less', 'template:views', 'copy:img', 'copy:css', 'template:dev', 'copy:dev']);
+  grunt.registerTask('default', ['clean:working', 'copy:js', 'less', 'template:views', 'copy:img', 'copy:fonts', 'copy:css', 'template:dev', 'copy:dev']);
   grunt.registerTask('dev', ['default', 'watch']);
   grunt.registerTask('prod', ['clean:working', 'copy:js', 'less', 'template:views', 'imagemin', 'ngTemplateCache', 'requirejs', 'template:prod', 'minifyHtml', 'copy:prod']);
 };

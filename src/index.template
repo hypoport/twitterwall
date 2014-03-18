@@ -22,6 +22,8 @@
   <![endif]-->
 
 
+  <link rel="stylesheet" href="fonts/actionforce/actionforce.css">
+  <link href='http://fonts.googleapis.com/css?family=Quantico:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <% if (config.environment === 'prod') { %>

@@ -1,33 +1,26 @@
 .singletweet {
 
   position: absolute;
+  color: #111;
 
   .letter {
     position: relative;
+    /* @See https://www.google.com/fonts#UsePlace:use/Collection:Quantico */
+    text-shadow: 2px 2px 2px rgb(253, 255, 210), -2px -2px 2px rgb(253, 255, 220), 2px -2px 2px rgb(253, 255, 220), -2px 2px 2px rgb(253, 255, 220);
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
   }
 
-  //tr:nth-child(even) {background: #CCC}
-  //tr:nth-child(odd) {background: #FFF}
-  .letter.m:nth-child(even) {
-    color: white;
-    background-color: red;
-  }
-  .letter.m:nth-child(odd) {
-    color: white;
-    background-color: #808080;
-  }
-  .letter.m {
-    color: white;
-    background-color: red;
-    border-radius: 32px;
-    padding: 0 13px;
-    font-family: courier;
-    font-weight: bold;
+  .letter.l8 {
+    padding-left: 0;
+    padding-right: 0.25em;
+    text-shadow: 4px 4px 6px rgb(233, 236, 68), -3px -3px 5px rgb(250, 252, 207), 2px -2px 4px rgb(231, 236, 36), -2px 2px 4px rgb(231, 236, 36);
+    font-weight: 700;
   }
 
   .tweet-time {
     margin-left: 10pt;
-    color: dimgrey;
+    color: silver;
     font-size: 10pt;
     bottom: 0;
   }
@@ -42,7 +35,7 @@
     margin-top: 3pt;
     margin-left: 10pt;
 
-    color: dimgrey;
+    color: silver;
     font-size: 20pt;
     text-decoration: none;
   }
@@ -51,7 +44,7 @@
     margin-top: 3pt;
     margin-left: 10pt;
 
-    color: dimgrey;
+    color: silver;
     font-size: 12pt;
     text-decoration: none;
   }
@@ -61,6 +54,7 @@
 
     img {
       vertical-align: bottom;
+      box-shadow: 2px 2px 2px white, -2px -2px 2px white;
     }
   }
 }
