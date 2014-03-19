@@ -37,6 +37,23 @@ define({
             }
           }
 
+          function rocketStartFlying() {
+            var chance = ((Math.random() * 8) | 0) + 1; // 1:8 chance, that the rocket will fly -- case Java 8  :-)
+            if (chance === 8) {
+              var rocketFlyTime = 2000; // from CSS !!!
+              $("#rocket").attr("class", "end");
+              $timeout(rocketGotoStart, rocketFlyTime);
+            }
+          }
+
+          function rocketGotoStart() {
+            $("#rocket").hide().attr("class", "start");
+          }
+
+          function rocketReappear() {
+            $("#rocket").show(500);
+          }
+
           function finalizeTweetAnimation() {
             function hideOldTwitterNameAvatar() {
               $('#' + srcId).find('.tweet-user-avatar').animate({opacity: 0}, 1000, 'swing');
@@ -65,6 +82,7 @@ define({
               _logger.debug("[" + new Date().toLocaleTimeString() + "] SingleTweetController : Animation END, triggerTimerForNextTweet");
               $scope.isAnimationActive = false;
               $timeout(rotateTweets.bind(undefined, dstId, srcId), $scope.tweetSwitchTime);
+              $timeout(rocketStartFlying, ($scope.tweetSwitchTime / 4) | 0);
             }
 
             (function makeAllDstElementsVisible() {
@@ -88,6 +106,8 @@ define({
               }, 1100);
             })();
           }
+
+          rocketReappear(); // always
 
           var src = toArray($('#' + srcId).find(".letter"));
           var dst = toArray($('#' + dstId).find(".letter"));
