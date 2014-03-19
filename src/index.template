@@ -134,6 +134,7 @@
 </div>
 
 <div id="wrap">
+  <img id="rocket" class="start" src="img/rocket-180x178.png" alt="rocket">
   <div class="container">
     <ng:view></ng:view>
   </div>

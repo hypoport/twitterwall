@@ -6,10 +6,30 @@ body {
   background-color: #222;
 }
 
+#rocket {
+  height: 20%;
+  position: absolute;
+
+  -webkit-transition: left 2s, bottom 2s, top 2s, right 2s, opacity 2s, -webkit-transform 2s ease-out;
+  transition: left 2s, bottom 2s, top 2s, right 2s, opacity 2s, transform 2s ease-out;
+}
+
+#rocket.start {
+  opacity: 1;
+  bottom: 11px;
+  left: -13px;
+}
+
+#rocket.end {
+  opacity: 0.05;
+  bottom: 1000px;
+  left: 1000px;
+}
+
 #wrap {
-  background-image: url("../img/java-8-release-party-background.jpg");
+  background-image: url("../img/java-8-release-party-background.png");
   background-size: 100% 100%;
-  background-position: bottom left;
+  background-position: top left;
   background-repeat: no-repeat;
 }
 
