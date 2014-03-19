@@ -59,7 +59,7 @@
     twitterSearchService: 'services/twitterSearchService',
     twitterwallModelHolder: 'services/twitterwallModelHolder',
     tweetListHolder: 'services/tweetListHolder',
-    logger: 'services/logger',
+    logger: 'services/logservice',
     routes: 'routes'
   });
 
