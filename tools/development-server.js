@@ -21,12 +21,13 @@ var port = 8080;
 // ##########################################################################
 var app = express();
 var reverseProxyHandler = function (req, res) {
-  var proxy = new httpProxy.RoutingProxy();
-  proxy.proxyRequest(req, res, {
-    host: tomcatForwardHost,
-    port: tomcatForwardPort
+  var proxy = new httpProxy.createProxyServer();
+  proxy.web(req, res, { target: {
+      host: tomcatForwardHost,
+      port: tomcatForwardPort
+    }
   });
-}
+};
 
 var forwarEndpointsToTomcat = ['/search', '/showUser', '/doTwitterSignIn', '/doTwitterCallback'];
 forwarEndpointsToTomcat.forEach(function (elem, index) {
