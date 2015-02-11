@@ -94,7 +94,7 @@
   <div class="navbar-inner">
     <div class="container">
 
-      <a class="brand ueberschrift" href="#">Hypoport Twitterwall</a>
+      <a class="brand ueberschrift" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Twitterwall</a>
 
       <div class="nav-collapse collapse" ng-controller="menuBarController">
         <!--<ul class="nav nav-pills">-->
